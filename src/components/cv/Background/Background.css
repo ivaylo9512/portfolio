@@ -1,0 +1,25 @@
+.background{
+    background: url(red-black1.png) no-repeat center top;
+    background-size: 55%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+svg{
+    position: absolute;
+}
+.letters svg:nth-of-type(1){
+    width: 2.7%;
+    left: 46.75%;
+    top: 75.3%;
+}
+.letters svg:nth-of-type(2){
+    width: 1.35%;
+    left: 44%;
+    top: 67.6%;
+}
+.letters svg:nth-of-type(3){
+    width: 1.35%;
+    left: 45.45%;
+    top: 63.1%;
+}
