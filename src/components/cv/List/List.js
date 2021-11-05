@@ -1,4 +1,5 @@
-import Ribon from "../Ribon"
+import Ribon from '../Ribon/Ribon';
+import './List.css';
 
 const List = ({ name, children }) => {
     return(
