@@ -3,7 +3,7 @@ import './Circles.css';
 
 const Circles = () => {
     return(
-        <div>
+        <div className="circles">
             <Circle fill="black" />
             <Circle fill="black"/>
             <Circle fill="black"/>

@@ -1,0 +1,13 @@
+.dots{
+    display: flex;
+    padding: 0.8vw 0 0.8vw 0.5vw;
+}
+.dots span{
+    width: 2.6%;
+    margin-right: 0.8%;
+    box-shadow: 0px 0px 0.15vw 0.15vw rgb(0 0 0);
+    border-radius: 50%;
+    background: black;
+    padding-bottom: 2.6%;
+    position: relative;
+}
