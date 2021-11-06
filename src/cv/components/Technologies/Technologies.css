@@ -1,0 +1,16 @@
+.list.technologies > :nth-child(4n + 5){
+    margin: 0;
+}
+.list.technologies > :first-child{
+    width: 95%;
+    margin-bottom: 3%;
+    text-align: left;
+    display: flex;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.list.technologies > * {
+    display: inline-block;
+    margin-right: 6.5%;
+    text-align: center;
+    width: 19.5%;
+}

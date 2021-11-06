@@ -9,6 +9,11 @@
     width: 75%;
     left: 50%;
     top: 50%;
-    fill: red;
     transform: translate(-50%, -50%);
+}
+.angular{
+    fill: black;
+}
+.angular path{
+    fill: white;
 }

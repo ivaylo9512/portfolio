@@ -1,0 +1,9 @@
+.first-style .list.languages > div{
+    background: black;
+    color: white;
+}
+.list.languages > div:not(:first-child){
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 0.15vw 0.15vw rgb(0 0 0 / 20%);
+}
