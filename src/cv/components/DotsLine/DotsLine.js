@@ -8,7 +8,6 @@ const DotsLine = () => {
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
         </div>
     )
 }
