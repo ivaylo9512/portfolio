@@ -1,0 +1,14 @@
+.technology{
+    padding-bottom: 20%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px 1px black;
+    position: relative;
+    font-size: 1vw;
+}
+.technology svg{
+    width: 75%;
+    left: 50%;
+    top: 50%;
+    fill: red;
+    transform: translate(-50%, -50%);
+}
