@@ -1,4 +1,4 @@
-import Circle from '../../Circle/Circle';
+import Circle from 'cv/components/Circle/Circle';
 import './Circles.css';
 
 const Circles = () => {
