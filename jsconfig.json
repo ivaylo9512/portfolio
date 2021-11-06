@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+      "baseUrl": "src",
+      "paths": {
+          "@tech": ["./cv/components/Technology"],
+          "@comp": ["./cv/components"]
+      }
+  },
+  "exclude": ["node_modules"]
+}
