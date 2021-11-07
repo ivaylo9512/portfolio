@@ -1,7 +1,7 @@
 import DotsLine from "cv/components/DotsLine/DotsLine";
 import Languages from "cv/components/Languages/Languages";
-import List from  'cv/components/List/List';
 import Technologies from "cv/components/Technologies/Technologies";
+import Cources from "cv/components/Cources/Cources";
 import './RightPanel.css';
 
 const RightPanel = () => {
@@ -10,7 +10,7 @@ const RightPanel = () => {
             <DotsLine /> 
             <Languages />
             <Technologies />
-            <List name="Cources"/>
+            <Cources />
         </div>
     )
 }

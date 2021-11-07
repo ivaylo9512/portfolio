@@ -1,18 +1,25 @@
 .dots{
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 5%;
 }
-.dots span{
-    width: 0.85vw;
-    box-shadow: 0px 0px 0.15vw 0.15vw rgb(0 0 0);
-    border-radius: 50%;
-    background: black;
-    padding-bottom: 0.85vw;
+.dots svg{
+    width: 1.1vw;
+    fill: black;
     position: relative;
-    margin-right: 0.77vw;
+    margin-right: 0.45vw;
+    filter: url(#black-shadow);
 }
-.first-style .dots > span:nth-child(-n+3){
-    background: white;
+.first-style .languages div:nth-of-type(2) .dots > svg:nth-child(-n+3){
+    fill: white;
+    filter: url(#shape-shadow)
+}
+.first-style .languages div:nth-of-type(3) .dots > svg:nth-child(-n+2){
+    fill: white;
+    filter: url(#shape-shadow)
+}
+.first-style .languages div:nth-of-type(4) .dots > svg:nth-child(-n+1){
+    fill: white;
+    filter: url(#shape-shadow)
+}
+.first-style .languages div:nth-of-type(4) .dots > svg:nth-child(n + 3){
+    opacity: 0;
 }
