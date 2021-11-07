@@ -1,0 +1,7 @@
+.svg-root{
+    position: absolute;
+    top: -500vh;
+    left: -500vw;
+    opacity: 0;
+    pointer-events: none;
+}
