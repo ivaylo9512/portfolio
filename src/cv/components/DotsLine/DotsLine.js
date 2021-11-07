@@ -1,13 +1,14 @@
+import Circle from 'cv/components/Circle/Circle';
 import './DotsLine.css';
 
 const DotsLine = () => {
     return(
         <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <Circle />
+            <Circle />
+            <Circle />
+            <Circle />
+            <Circle />
         </div>
     )
 }
