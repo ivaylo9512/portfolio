@@ -14,3 +14,5 @@ const NextJs = () => {
         </svg>
     )
 }
+
+export default NextJs
