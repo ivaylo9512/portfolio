@@ -1,16 +1,37 @@
+.technologies .list-svg{
+    fill: black;
+}
 .list.technologies > :nth-child(4n + 5){
     margin: 0;
 }
-.list.technologies > :first-child{
-    width: 95%;
-    margin-bottom: 3%;
-    text-align: left;
-    display: flex;
-    box-shadow: 1px 1px 1px 1px black;
-}
-.list.technologies > * {
-    display: inline-block;
-    margin-right: 6.5%;
-    text-align: center;
+.names > :nth-child(4n + 1){
     width: 19.5%;
+    margin-right: 3.25%;
+}
+.list.technologies > :first-child{
+    width: 98%;
+    display: block;
+    margin: 5% 0 1% 0;
+    fill: white;
+}
+.list.technologies > :first-child .name{
+    height: 57%;
+}
+.names > div{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 2vw ;
+    width: 25.5%;
+}
+.names .name {
+    height: 66%;
+}
+.node-js,
+.next-js{
+    fill: #d20326;
+}
+.next-js{
+    stroke-width: 7px;
+    stroke: #d20326;
 }

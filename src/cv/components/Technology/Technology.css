@@ -1,19 +1,42 @@
 .technology{
-    padding-bottom: 20%;
-    border-radius: 50%;
-    box-shadow: 1px 1px 6px 1px black;
     position: relative;
     font-size: 1vw;
+    position: relative;
+    display: inline-block;
+    margin-right: 6.5%;
+    text-align: center;
+    width: 19.5%;
 }
-.technology svg{
-    width: 75%;
+.technology .circle {
+    filter: url(#shape-shadow);
+    width: 100%;
+    display: block;
+}
+.technology svg:last-child {
+    position: absolute;
+    width: 59%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.technology svg:nth-of-type(2){
+    fill: black;
 }
 .angular{
     fill: black;
 }
 .angular path{
     fill: white;
+}
+.aws :nth-child(n + 3) {
+    fill: white;
+}
+.typescript path{
+    fill: white;
+}
+.technology svg:nth-of-type(2).react{
+    fill: white;
+}
+.react g :first-child{
+    fill: black;
 }
