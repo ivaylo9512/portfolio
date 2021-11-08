@@ -1,0 +1,24 @@
+.project{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.clip{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    border-radius: 0.5vw;
+    fill: black;
+}
+.project-rect{
+    display: block;
+    height: 11vw;
+    width: 20vw;
+    fill: white;
+}
+.project-rect rect{
+    filter: url(#project-shadow-top) url(#project-shadow);
+}
