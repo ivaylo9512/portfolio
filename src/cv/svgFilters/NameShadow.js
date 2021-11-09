@@ -1,6 +1,6 @@
 const NameShadow = () => {
     return(
-        <filter id="name-shadow" x="-20%" y="-20%" width="160%" height="160%" filterUnits="userSpaceOnUse">
+        <filter id="name-shadow" x="-20%" y="-20%" width="160%" height="160%">
             <feOffset result="offset" dx="0.225" dy="0.974" in="SourceAlpha"/>
             <feGaussianBlur result="blur" stdDeviation="2"/>
             <feFlood result="flood" flood-opacity="0.35"/>
