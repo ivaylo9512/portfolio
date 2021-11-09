@@ -6,19 +6,14 @@
     fill: black;
     position: relative;
     margin-right: 0.45vw;
-    filter: url(#black-shadow);
 }
-.first-style .languages div:nth-of-type(2) .dots > svg:nth-child(-n+3){
-    fill: white;
-    filter: url(#shape-shadow)
+.dots svg circle{
+    filter: url(#dot-shadow)
 }
-.first-style .languages div:nth-of-type(3) .dots > svg:nth-child(-n+2){
-    fill: white;
-    filter: url(#shape-shadow)
-}
+.first-style .languages div:nth-of-type(2) .dots > svg:nth-child(-n+3),
+.first-style .languages div:nth-of-type(3) .dots > svg:nth-child(-n+2),
 .first-style .languages div:nth-of-type(4) .dots > svg:nth-child(-n+1){
-    fill: white;
-    filter: url(#shape-shadow)
+        fill: white;
 }
 .first-style .languages div:nth-of-type(4) .dots > svg:nth-child(n + 3){
     opacity: 0;

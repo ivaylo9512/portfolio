@@ -7,12 +7,10 @@
 .list.languages > div:not(:first-child) .name{
     fill: black;
     height: 35%;
-    filter: url(#name-shadow);
 }
 .list.languages > div:first-child .name{
     fill: white;
     height: 56%;
-    filter: url(#name-shadow);
 }
 .javascript{
     width: 39%;

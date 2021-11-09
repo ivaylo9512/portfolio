@@ -5,8 +5,10 @@
     position: relative;
 }
 .ribon > svg{
-    filter: url(#shape-shadow);
     display: block;
+}
+.ribon rect{
+    filter: url(#shape-shadow);
 }
 .ribon .content{
     position: absolute;

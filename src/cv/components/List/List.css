@@ -10,6 +10,8 @@
 }
 .name{
     fill: black;
+}
+.name path{
     filter: url(#name-shadow);
 }
 .list-svg{

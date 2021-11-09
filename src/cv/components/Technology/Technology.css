@@ -8,9 +8,11 @@
     width: 19.5%;
 }
 .technology .circle {
-    filter: url(#shape-shadow);
     width: 100%;
     display: block;
+}
+.technology .circle circle {
+    filter: url(#circle-shadow);
 }
 .technology svg:last-child {
     position: absolute;

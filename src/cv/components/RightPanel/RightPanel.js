@@ -6,12 +6,12 @@ import './RightPanel.css';
 
 const RightPanel = () => {
     return(
-        <div className="right-panel">
+        <section className="right-panel">
             <DotsLine /> 
             <Languages />
             <Technologies />
             <Cources />
-        </div>
+        </section>
     )
 }
 
