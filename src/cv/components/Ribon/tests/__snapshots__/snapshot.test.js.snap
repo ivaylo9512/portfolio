@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ribon snapshot tests should match snapshot 1`] = `
+<div
+  className="ribon"
+>
+  <div
+    className="content"
+  />
+  <Rect />
+</div>
+`;
