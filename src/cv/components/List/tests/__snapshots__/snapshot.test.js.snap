@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List snapshot tests should match snapshot 1`] = `
+<div
+  className="list undefined"
+>
+  <Ribon>
+    <ListSvg />
+  </Ribon>
+</div>
+`;

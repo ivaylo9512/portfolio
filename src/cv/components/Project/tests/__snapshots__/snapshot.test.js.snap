@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project snapshot tests should match snapshot 1`] = `
+<div
+  className="project"
+>
+  <div
+    className="clip"
+  >
+    <Circle />
+  </div>
+  <ProjectRect />
+</div>
+`;
