@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CvRoot snapshot tests should match snapshot 1`] = `
+<section
+  className="cv first-style"
+>
+  <SvgsRoot />
+  <Background />
+  <LeftPanel />
+  <RightPanel />
+</section>
+`;

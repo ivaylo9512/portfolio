@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DotsLine snapshot tests should match snapshot 1`] = `
+<div
+  class="dots"
+>
+  <Circle />
+  <Circle />
+  <Circle />
+  <Circle />
+  <Circle />
+</div>
+`;
