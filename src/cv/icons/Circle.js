@@ -1,5 +1,3 @@
-import './Circle.css'
-
 const Circle = () => {
     return(
         <svg className="circle" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
