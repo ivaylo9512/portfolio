@@ -1,5 +1,5 @@
-import Rect from 'cv/components/Rect';
-import './Ribon.css';
+import Rect from 'cv/icons/Rect';
+import './Ribon.scss';
 
 const Ribon = ({ name, children }) => {
     return(

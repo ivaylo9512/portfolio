@@ -1,5 +1,5 @@
-import Circle from 'cv/components/Circle/Circle';
-import './Circles.css';
+import Circle from 'cv/icons/Circle';
+import './Circles.scss';
 
 const Circles = () => {
     return(

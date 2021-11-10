@@ -1,5 +1,5 @@
 import Projects from 'cv/components/Projects/Projects';
-import './LeftPanel.css';
+import './LeftPanel.scss';
 
 const LeftPanel = () => {
     return(

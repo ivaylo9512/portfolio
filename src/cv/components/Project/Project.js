@@ -1,6 +1,6 @@
 import ProjectRect from "cv/icons/ProjectRect";
-import Circle from "../Circle/Circle";
-import "cv/components/Project/Project.css";
+import Circle from "cv/icons/Circle";
+import "./Project.scss";
 
 const Project = ({ ratio }) => {
     return(

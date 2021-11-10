@@ -1,5 +1,5 @@
-import Circle from 'cv/components/Circle/Circle';
-import './DotsLine.css';
+import Circle from 'cv/icons/Circle';
+import './DotsLine.scss';
 
 const DotsLine = () => {
     return(

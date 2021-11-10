@@ -1,5 +1,5 @@
-import Circle from 'cv/components/Circle/Circle';
-import './Technology.css';
+import Circle from 'cv/icons/Circle';
+import './Technology.scss';
 
 const Technology = ({ icon }) => {
     return(

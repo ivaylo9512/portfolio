@@ -1,5 +1,5 @@
-import Technology from '@tech/Technology';
-import './Technologies.css';
+import Technology from 'cv/components/Technology/Technology';
+import './Technologies.scss';
 import Angular from 'cv/icons/Angular'
 import List from 'cv/components/List/List';
 import Spring from 'cv/icons/Spring';

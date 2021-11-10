@@ -1,6 +1,6 @@
 const Jenkins = () => {
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlSpace="preserve">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlSpace="preserve">
             <defs>
                 <clipPath clipPathUnits="userSpaceOnUse">
                     <path d="M 0,2494.84 0,0 l 1804.34,0 0,2494.84 -1804.34,0 z" />

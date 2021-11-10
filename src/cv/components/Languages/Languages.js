@@ -5,8 +5,8 @@ import Java from "cv/icons/Java";
 import Javascript from "cv/icons/Javascript";
 import Php from "cv/icons/Php";
 import LanguagesSvg from "cv/icons/LanguagesSvg";
+import './Languages.scss';
 
-import './Languages.css'
 const Languages = () => {
     return(
         <List className='languages' name={<LanguagesSvg />}>
