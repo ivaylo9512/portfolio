@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects snapshot tests should match snapshot 1`] = `
+<div
+  className="projects"
+>
+  <Project
+    ratio={1.8181818181818181}
+  />
+  <Project
+    ratio={2.3272727272727276}
+  />
+  <Project
+    ratio={1.8181818181818181}
+  />
+  <Project
+    ratio={1.8181818181818181}
+  />
+  <Project
+    ratio={1.8181818181818181}
+  />
+</div>
+`;
