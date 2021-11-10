@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Languages snapshot tests should match snapshot 1`] = `
+<List
+  className="languages"
+  name={<Languages />}
+>
+  <Ribon>
+    <Javascript />
+    <DotsLine />
+  </Ribon>
+  <Ribon>
+    <Java />
+    <DotsLine />
+  </Ribon>
+  <Ribon>
+    <Php />
+    <DotsLine />
+  </Ribon>
+</List>
+`;

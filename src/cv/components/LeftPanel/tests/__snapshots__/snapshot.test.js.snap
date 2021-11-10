@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeftPanel snapshot tests should match snapshot 1`] = `
+<section
+  className="left-panel"
+>
+  <Projects />
+</section>
+`;
