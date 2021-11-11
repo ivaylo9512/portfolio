@@ -1,10 +1,13 @@
-.cources .name{
-    height: 35%;
-}
-.cources > :first-child .name{
-    height: 57%;
-    fill: white;
-}
-.cources .list-svg{
-    fill: white;
+.cources{
+    & > :first-child .name{
+        fill: white;
+    }
+
+    .name{
+        height: 35%;
+    }
+
+    .list-svg{
+        fill: white;
+    }
 }
