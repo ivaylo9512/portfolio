@@ -2,23 +2,88 @@
     position: relative;
     display: inline-block;
     margin-bottom: 5%;
-}
-.clip{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    border-radius: 0.5vw;
-    fill: black;
-}
-.project-rect{
-    display: block;
-    height: 11vw;
-    width: 20vw;
-    fill: white;
-}
-.project-rect rect{
-    filter: url(#project-shadow-top) url(#project-shadow);
+    width: 46%;
+    color: #312929;
+
+    .content{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 2% 0 5% 4%;
+        box-sizing: border-box;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        text-shadow: 0 0 0.1vw;
+
+        svg{
+            margin-right: 2%;
+        }
+
+        .name{
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.2vw;
+        }
+
+        a{
+            font-weight: bold;
+            font-size: 1.1vw;
+            text-decoration: underline;
+            color: #312929;
+
+            &:hover,
+            &:focus{
+                text-decoration: none;
+                outline: none;
+                transform: scale(1.1);
+            }
+        }
+
+        .github-container{
+            display: flex;
+            align-items: center;
+            height: 25%;
+
+            svg{
+                height: 50%;
+                margin-right: 2%;
+            }
+        }
+
+        .info{
+            display: flex;
+            align-items: center;
+            height: 31%;
+            width: 80%;
+            font-size: 0.9vw;
+
+            .circle{
+                height: 36%;
+            }
+        }
+    }
+
+    .clip{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        fill: black;
+        pointer-events: none;
+        border-radius: calc(0.55vw * 0.69 * 1);
+    }
+
+    .rect{
+        display: block;
+        width: 100%;
+        fill: white;
+    
+        rect{
+            filter: url(#project-shadow);
+        }
+    }
 }
