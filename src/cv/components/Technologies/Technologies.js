@@ -21,20 +21,16 @@ import Orm from 'cv/icons/Orm';
 import Docker from 'cv/icons/Docker';
 
 const Technologies = () => {
+    
+    const getIcons = () => [ 
+        <ReactSvg/>, <Spring/>, <Aws/>, <Jenkins/>, 
+        <Redux/>, <Angular/>, <Ws/>, <Angular/>, 
+        <Typescript/>, <Graphql/>, <Angular/>, <Angular/> 
+    ].map(i => <Technology viewBox="129 129" icon={i} />)
+            
     return(
         <List className="technologies" name={<TechnologiesSvg />}>
-            <Technology icon={<ReactSvg />} />
-            <Technology icon={<Spring />} />
-            <Technology icon={<Aws />} />
-            <Technology icon={<Angular />} />
-            <Technology icon={<Redux />} />
-            <Technology icon={<Angular />} />
-            <Technology icon={<Ws />} />
-            <Technology icon={<Angular />} />
-            <Technology icon={<Typescript />} />
-            <Technology icon={<Graphql />} />
-            <Technology icon={<Angular />} />
-            <Technology icon={<Angular />} />
+            {getIcons()}
             <div className="names">
                 <div><Orm /></div>
                 <div><Express /></div>
