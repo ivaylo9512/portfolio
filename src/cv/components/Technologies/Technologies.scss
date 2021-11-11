@@ -14,18 +14,16 @@
     margin: 5% 0 1% 0;
     fill: white;
 }
-.list.technologies > :first-child .name{
-    height: 57%;
-}
 .names > div{
     position: relative;
     display: inline-block;
     text-align: center;
-    height: 2vw ;
+    height: 2vw;
     width: 25.5%;
 }
 .names .name {
     height: 66%;
+    display: inline-block;
 }
 .node-js,
 .next-js{
@@ -34,4 +32,11 @@
 .next-js{
     stroke-width: 7px;
     stroke: #d20326;
+}
+.first-style .jenkins .circle,
+.first-style .jenkins .towel{
+    fill: #d20326;
+}
+.first-style .jenkins .tie{
+    fill: white;
 }

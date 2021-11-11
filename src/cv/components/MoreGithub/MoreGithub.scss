@@ -1,0 +1,42 @@
+.more-github{
+    width: 46%;
+    padding: 0 9%;
+    box-sizing: border-box;
+    position: relative;
+
+    &:hover,
+    &:focus{
+        transform: scale(1.1);
+    }
+    
+    .content{
+        position: relative;
+
+        a{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.2vw;
+            color: black;
+            text-shadow: 0 0 0.1vw;
+            font-weight: bold;
+            padding: 0 5%;
+            box-sizing: border-box;
+
+            .github{
+                width: 13%;
+                margin-left: 5%;
+            }
+        }
+
+        rect{
+            fill: white;
+            filter: url(#shape-shadow)
+        }
+    }
+}
