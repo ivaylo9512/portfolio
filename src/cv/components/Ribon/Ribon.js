@@ -8,7 +8,7 @@ const Ribon = ({ name, children }) => {
                 {name}
                 {children}
             </div>
-            <Rect />
+            <Rect height='85' width={564}/>
         </div>
     )
 }

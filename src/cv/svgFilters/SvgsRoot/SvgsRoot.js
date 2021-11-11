@@ -4,7 +4,6 @@ import NameShadow from 'cv/svgFilters/NameShadow';
 import ProjectShadow from 'cv/svgFilters/ProjectShadow';
 import CircleShadow from 'cv/svgFilters/CircleShadow';
 import DotShadow from 'cv/svgFilters/DotShadow';
-import ProjectShadowTop from 'cv/svgFilters/ProjectShadowTop';
 import './SvgRoot.css'
 
 const SvgsRoot = () => {
@@ -17,7 +16,6 @@ const SvgsRoot = () => {
                 <BlackShadow />
                 <NameShadow />
                 <ProjectShadow />
-                <ProjectShadowTop />
             </defs>
         </svg>
     )
