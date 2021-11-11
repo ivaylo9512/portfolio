@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cources snapshot tests should match snapshot 1`] = `
+<List
+  className="cources"
+  name={<CourcesSvg />}
+>
+  <Ribon
+    name={<Self />}
+  />
+  <Ribon
+    name={<Telerik />}
+  />
+  <Ribon
+    name={<Self />}
+  />
+</List>
+`;
