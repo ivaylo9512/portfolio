@@ -1,0 +1,17 @@
+.animations{
+
+    .restaurant-animation{
+        $primary-clr: #a50a15;
+
+        .primary{
+            fill: $primary-clr;
+        }
+        .tick{
+            stroke: $primary-clr;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 3.5px;
+            fill: none;
+        }
+    }
+}

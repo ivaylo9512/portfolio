@@ -1,0 +1,30 @@
+.projects-root .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+    
+    svg{
+        position: absolute;
+    }
+}
+.red-blob{
+    width: 30%;
+    bottom: 0;
+    left: 35%;
+    transform: translateY(33%);
+}
+.brown-blob{
+    width: 38%;
+    bottom: 30%;
+    right: -14%;
+}
+.green-blob{
+    width: 42%;
+    left: 14%;
+    transform: translateY(-52%);
+}
