@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsRoot snapshot tests should match snapshot 1`] = `
+<section
+  className="projects-root"
+>
+  <Background />
+  <Animations />
+</section>
+`;
