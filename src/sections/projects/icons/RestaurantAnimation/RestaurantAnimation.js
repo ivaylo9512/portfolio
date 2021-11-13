@@ -41,7 +41,7 @@ const RestaurantAnimation = ({ setTransform }) => {
                 <polyline className="tick" points="367.35 130.39 357.52 140.21 351.18 133.87" />
                 <polyline className="tick" points="367.12 102.11 357.3 111.93 350.95 105.58" />
                 <path className="times" d="M366.33,172.69l-5.19-5.16,5.17-5.18a1.73,1.73,0,1,0-2.44-2.45l-5.19,5.19-5.2-5.17a1.73,1.73,0,1,0-2.44,2.45l5.19,5.16-5.18,5.18a1.74,1.74,0,0,0,0,2.45,1.73,1.73,0,0,0,2.45,0l5.19-5.19,5.2,5.17a1.73,1.73,0,1,0,2.44-2.45Z" />
-                <circle class="indicator" stroke-linecap="round" cx="358" cy="167" r="7" stroke-dasharray="155" stroke-mitterlimit="0" stroke-dashoffset="100"></circle>
+                <circle class="indicator" strokeLinecap="round" cx="358" cy="167" r="7" stroke-mitterlimit="0"></circle>
             </g>
             <g className="phones">
                 <g className="secondary-phone">
