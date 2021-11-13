@@ -1,0 +1,86 @@
+.chat-animation{
+    .lines rect{
+        transform-box: fill-box;
+    }
+
+    .rotate{
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+
+    circle.rotate{
+        transform-origin: 56% 25%;
+    }
+
+    &:hover{
+        .lines rect{
+            width: 0;
+        }
+
+        .lines rect:nth-child(1){
+            animation: widthTransition 3s 0.5s infinite;
+        }
+
+        .lines rect:nth-child(2){
+            animation: widthTransitionFading 3s 1s infinite;
+        }
+
+        .lines rect:nth-child(3){
+            animation: widthTransitionSecond 3s 1.5s infinite;
+        }
+
+        .rotate{
+            animation: rotate 6s infinite;
+        }
+
+        path.rotate{
+            animation: rotate 6s infinite;
+        }
+    }
+
+    @keyframes widthTransition {
+        0%{
+            width: 0;
+        }
+        50%, 83.38%{
+            width: 72.71px;
+        }
+        83.39%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes widthTransitionFading {
+        0%{
+            width: 0;
+        }
+        50%, 66.66%{
+            width: 72.71px;
+        }
+        66.67%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes widthTransitionSecond {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 72.71px;
+        }
+        50.01%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes rotate {
+        from{
+            transform: rotate(0);
+        }
+
+        to{
+            transform: rotate(360deg);
+        }
+    }
+}

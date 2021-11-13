@@ -1,4 +1,4 @@
-.background{
+.cv .background{
     background: url(red-black1.png) no-repeat center top;
     background-size: 75%;
     width: 100%;
@@ -7,22 +7,27 @@
     top: 0;
     left: 50%;
     transform: translateX(-51.9%);
+
+    svg{
+        position: absolute;
+    }
 }
-.background svg{
-    position: absolute;
-}
-.letters svg:nth-of-type(1){
-    width: 2.7%;
-    left: 46.75%;
-    top: 75.3%;
-}
-.letters svg:nth-of-type(2){
-    width: 1.35%;
-    left: 44%;
-    top: 67.6%;
-}
-.letters svg:nth-of-type(3){
-    width: 1.35%;
-    left: 45.45%;
-    top: 63.1%;
+.letters {
+    svg:nth-of-type(1){
+        width: 2.7%;
+        left: 46.75%;
+        top: 75.3%;
+    }
+
+    svg:nth-of-type(2){
+        width: 1.35%;
+        left: 44%;
+        top: 67.6%;
+    }
+
+    svg:nth-of-type(3){
+        width: 1.35%;
+        left: 45.45%;
+        top: 63.1%;
+    }
 }
