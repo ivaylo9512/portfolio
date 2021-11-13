@@ -4,7 +4,7 @@ import "./Animations.scss"
 import ExtensionsAnimation from "@projects/icons/ExtensionsAnimation/ExtensionsAnimation"
 import TasksAnimation from "@projects/icons/TasksAnimation/TasksAnimation"
 import { useState } from "react"
-import ProjectsShadow from "sections/projects/svgFilters/ProjectsShadow"
+import ProfileAnimation from "sections/projects/icons/ProfileAnimation/ProfileAnimation"
 
 const Animations = () => {
     const [transform, setTransform] = useState(0);
@@ -15,7 +15,7 @@ const Animations = () => {
             <ChatAnimation setTransform={setTransform}/>
             <ExtensionsAnimation setTransform={setTransform}/>
             <TasksAnimation setTransform={setTransform}/>
-            <ProjectsShadow setTransform={setTransform}/>
+            <ProfileAnimation setTransform={setTransform}/>
         </div>
     )
 }
