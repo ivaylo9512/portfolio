@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animations snapshot tests should match snapshot 1`] = `
+<div
+  className="animations"
+  style={
+    Object {
+      "transform": 0,
+    }
+  }
+>
+  <RestaurantAnimation
+    setTransform={[Function]}
+  />
+  <ChatAnimation
+    setTransform={[Function]}
+  />
+  <ExtensionsAnimation
+    setTransform={[Function]}
+  />
+  <TasksAnimation
+    setTransform={[Function]}
+  />
+  <ProfileAnimation
+    setTransform={[Function]}
+  />
+</div>
+`;
