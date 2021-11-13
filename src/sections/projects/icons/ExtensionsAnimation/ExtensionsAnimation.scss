@@ -1,0 +1,79 @@
+.extensions-animation{
+    .exclamation-mark{
+        transform-origin: center;
+        transform-box: fill-box;
+        transform-origin: bottom;
+    }
+    .exclamation-connected,
+    .circle{
+        transition: transform 1.5s;
+    }
+
+    .wi-fi * {
+        transform: translate(100px, 100px) scale(0.5);
+        transform-box: fill-box;
+        transition: 2s;
+    }
+
+    &:hover{
+        .exclamation-connected{
+            transform: rotate(-16deg) translate(-15px, 111px) scale(0.75);
+        }
+    
+        .exclamation-mark{
+            animation: scale-exclamation 5.5s infinite linear;
+        }
+
+        .hide{
+            transform: translate(80px, 80px) scale(0.7);
+            transition: 2s;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+    
+        .circle{
+            transform: translate(120px, 50px) scale(0.7)
+        }
+
+        .wi-fi{
+            :nth-child(1){
+                animation: transform-wifi 1.5s forwards;
+            }
+
+            :nth-child(2){
+                animation: transform-wifi 1.5s 0.3s forwards;
+            }
+
+            :nth-child(3){
+                animation: transform-wifi 1.5s 0.6s forwards;
+            }
+
+            :nth-child(4){
+                animation: transform-wifi 1.5s 0.9s forwards;
+            }
+        }
+    }
+
+    @keyframes transform-wifi {
+        from{
+            transform: translate(100px, 100px) scale(0.5);
+        }
+
+        to{
+            transform: translate(0, 0) scale(1);
+        }
+    }
+
+    @keyframes scale-exclamation {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0.8);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+    }
+}
