@@ -5,7 +5,7 @@ const Projects = () => {
     return(
         <div className="projects">
             {projectsInfo.map(p => 
-                <Project height={310} width={310 * 1.6 * p.ratio} name={p.name} repo={p.repo} info={p.info} />)
+                <Project key={p.name} height={310} width={310 * 1.6 * p.ratio} name={p.name} repo={p.repo} info={p.info} />)
             }
         </div>
     )

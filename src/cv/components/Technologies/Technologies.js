@@ -26,7 +26,7 @@ const Technologies = () => {
         <ReactSvg/>, <Spring/>, <Aws/>, <Jenkins/>, 
         <Redux/>, <Angular/>, <Ws/>, <Angular/>, 
         <Typescript/>, <Graphql/>, <Angular/>, <Angular/> 
-    ].map(i => <Technology viewBox="129 129" icon={i} />)
+    ].map(i => <Technology key={i.type.name} viewBox="129 129" icon={i} />)
             
     return(
         <List className="technologies" name={<TechnologiesSvg />}>
