@@ -2,10 +2,6 @@
     $primary-clr: hsl(285deg, 83%, 20%);
     $secondary-clr: black;
 
-    width: 31%;
-    left: 20%;
-    bottom: 20%;
-
     :not(g){
         fill: $primary-clr;
         filter: url(#extensions-shadow);

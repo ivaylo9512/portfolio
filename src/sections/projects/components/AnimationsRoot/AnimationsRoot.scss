@@ -4,18 +4,91 @@
     transition: transform 1.5s;
 
     > div{
+        position: relative;
         transition: transform 1.5s;
-        
+        // position: absolute;
+
         &:hover{
-            transform: scale(1.35);
+            z-index: 2;
+        }
+
+        .translate-wrapper{
+            transition: transform 1.5s;
+            // height: 100%;
+        
+            svg{
+                // height: 100%;
+            }
         }
     }
 
-    .restaurant-animation-wrapper{
-        width: 25%;
-        bottom: 0;
-        right: 20%;
-        position: absolute;
+    @media only screen and (orientation: landscape) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        > div {
+            height: 34%;
+        
+            .translate-wrapper{
+                height: 100%;
+
+                svg{
+                     height: 100%;
+                }
+            }
+        }
+
+        .tasks-animation-wrapper {
+            > div{
+                margin-top: 25%;
+            }
+        }
     }
 
+    @media only screen and (orientation: portrait) {
+        > div{
+            margin-bottom: 18%;
+
+            .translate-wrapper{
+                width: 66%;
+                display: inline-block;
+            
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+
+        .restaurant-animation-wrapper {
+            > div{
+                margin-left: 2%;
+            }
+        }
+    
+        .extensions-animation-wrapper {
+            text-align: center;
+
+            > div{
+                margin-left: 9%;
+            }
+        }
+    
+        .chat-animation-wrapper {
+            text-align: center;
+    
+            > div{
+                width: 41%;
+            }
+        }
+        
+        .tasks-animation-wrapper {
+            text-align: right;
+    
+            > div{
+                margin-right: 15%;
+                margin-top: 8%;
+            }
+        }
+    }
 }

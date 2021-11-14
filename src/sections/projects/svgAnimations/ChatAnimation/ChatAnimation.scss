@@ -2,9 +2,6 @@
     $primary-clr: hsl(21deg, 78%, 46%);
     $secondary-clr: black;
 
-    width: 16%;
-    left: 46%;
-
     :not(g){
         filter: url(#chat-shadow);
     }
