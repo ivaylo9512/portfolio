@@ -9,11 +9,11 @@ import AnimationWrapper from "../AnimationWrapper/AnimationWrapper"
 const Animations = () => {
     return(
         <div className="animations">
-            <AnimationWrapper transalteAmount={"translate(-10%, -12%)"} SvgAnimation={RestaurantAnimation} className="restaurant-animation"/>
-            <ChatAnimation />
-            <ExtensionsAnimation />
-            <TasksAnimation />
-            <ProfileAnimation />
+            <AnimationWrapper SvgAnimation={TasksAnimation} className="tasks"/>
+            <AnimationWrapper SvgAnimation={RestaurantAnimation} className="restaurant"/>
+            <AnimationWrapper SvgAnimation={ExtensionsAnimation} className="extensions"/>
+            <AnimationWrapper SvgAnimation={ChatAnimation} className="chat"/>
+            <AnimationWrapper SvgAnimation={ProfileAnimation} className="profile"/>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { getTransform, setTransform, resetTransform } from "app/slices/animationsSlice";
+import { getTransform, setVisited, resetVisited } from "app/slices/animationsSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -9,16 +9,16 @@ const AnimationWrapper = ({ transalteAmount, SvgAnimation, className }) => {
 
     const animate = (e) => {
         setVisited('visited');
-        dispatch(setTransform(transalteAmount))
+        dispatch(setVisited(className + 'visited'));
     }
 
     const resetAnimation = () => {
         setVisited('');
-        dispatch(resetTransform());
+        dispatch(resetVisited());
     }
     
     return (
-        <div onMouseEnter={animate} onMouseLeave={resetAnimation} onTouchStart={animate} onTouchEnd={resetAnimation} className={`${className}-animation-wrapper ${visited}`}>
+        <div onMouseEnter={animate} onMouseLeave={resetAnimation} onTouchStart={animate} onTouchEnd={resetAnimation} className={`${className}-animation-wrapper`}>
             <div className={'translate-wrapper'} style={{ transform }}>
                 <SvgAnimation className={`${className}-animation ${visited}`}/>
             </div>
