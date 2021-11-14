@@ -1,4 +1,36 @@
+@use "@sassUtils/strokes.scss" as *;
+
 .restaurant-animation{
+    $primary-clr: hsl(356deg, 89%, 34%);
+    $secondary-clr: black;
+    transform: translateY(0);
+    
+    :not(g){
+    }
+
+    .tick{
+        stroke: $primary-clr;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3.5px;
+        fill: none;
+    }
+
+    line{
+        stroke-width: $stroke-200;
+        stroke: $primary-clr;
+    }
+
+    .fill-primary{
+        fill: $primary-clr;
+    }
+    .stroke-primary{
+        stroke: $primary-clr;
+    }
+    .stroke-secondary{
+        stroke: $secondary-clr;
+    }
+
     .bar,
     .left-bar{
         transition: transform 1.5s;

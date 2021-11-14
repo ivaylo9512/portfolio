@@ -1,37 +1,21 @@
 import ProjectsShadow from "@projects/svgFilters/ProjectsShadow"
-import { useState } from "react"
 import "./RestaurantAnimation.scss"
 
-const RestaurantAnimation = ({ setTransform }) => {
-    const [isVisited, setVisited] = useState();
-
-    const translate = (e) => {
-        setVisited(true);
-        setTransform("translate(-10%, -12%)");
-    }
-
-    const resetTransform = () => {
-        setVisited(false);
-        setTransform("translateX(0)");
-    }
-
+const RestaurantAnimation = ({ className }) => {
     return(
-        <svg onMouseEnter={translate} onMouseLeave={resetTransform} onTouchStart={translate} onTouchEnd={resetTransform} className={`restaurant-animation ${isVisited && 'visited'}`} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 378.19 191.41">
-            <defs>
-                <ProjectsShadow id="restaurant-shadow"/>
-            </defs>
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 378.19 191.41">
             <g>
-                <rect class="menu-bar fill-primary stroke-secondary stroke-100" x="204.55" y="51.45" width="23" height="23" rx="11.5"></rect>
-                <rect class="btn wait-100 fill-secondary stroke-100" x="265" y="53.5" width="31" height="18" rx="9.5"></rect>
-                <rect class="btn wait-200 fill-secondary stroke-100" x="299" y="53.5" width="31" height="18" rx="9.5"></rect>
-                <rect class="btn wait-300 fill-secondary stroke-100" x="231" y="53.5" width="31" height="18" rx="9.5"></rect>
+                <rect className="menu-bar fill-primary stroke-secondary stroke-100" x="204.55" y="51.45" width="23" height="23" rx="11.5"></rect>
+                <rect className="btn wait-100 fill-secondary stroke-100" x="265" y="53.5" width="31" height="18" rx="9.5"></rect>
+                <rect className="btn wait-200 fill-secondary stroke-100" x="299" y="53.5" width="31" height="18" rx="9.5"></rect>
+                <rect className="btn wait-300 fill-secondary stroke-100" x="231" y="53.5" width="31" height="18" rx="9.5"></rect>
                 <rect className="left-bar fill-primary stroke-secondary" x="0.5" y="114.16" width="129.02" height="26.89" rx="13.45" />
                 <rect className="bar fill-primary stroke-secondary" x="249.15" y="0.5" width="128.54" height="26.89" rx="13.45" />
                 <rect className="fill-primary stroke-secondary stroke-100" x="204.55" y="51.45" width="23" height="23" rx="11.5" />
                 <rect x="211.28" y="58.45" width="9.54" height="1.99" rx="0.99" />
                 <rect x="211.28" y="61.95" width="9.54" height="1.99" rx="0.99" />
                 <rect x="211.28" y="65.46" width="9.54" height="1.99" rx="0.99" />
-                <rect className="fill-primary stroke-secondary stroke-100" x="203.41" y="88.55" width="134.6" height="102.36" rx="6.63" />
+                <rect className="fill-primary stroke-secondary shadow stroke-100" x="203.41" y="88.55" width="134.6" height="102.36" rx="6.63" />
                 <rect x="248.44" y="128.13" width="71.87" height="16.24" rx="5.02" />
                 <rect x="248.44" y="101.58" width="71.87" height="16.24" rx="5.02" />
                 <rect x="248.44" y="154.67" width="71.87" height="16.24" rx="5.02" />
@@ -41,7 +25,7 @@ const RestaurantAnimation = ({ setTransform }) => {
                 <polyline className="tick" points="367.35 130.39 357.52 140.21 351.18 133.87" />
                 <polyline className="tick" points="367.12 102.11 357.3 111.93 350.95 105.58" />
                 <path className="times" d="M366.33,172.69l-5.19-5.16,5.17-5.18a1.73,1.73,0,1,0-2.44-2.45l-5.19,5.19-5.2-5.17a1.73,1.73,0,1,0-2.44,2.45l5.19,5.16-5.18,5.18a1.74,1.74,0,0,0,0,2.45,1.73,1.73,0,0,0,2.45,0l5.19-5.19,5.2,5.17a1.73,1.73,0,1,0,2.44-2.45Z" />
-                <circle class="indicator" strokeLinecap="round" cx="358" cy="167" r="7" stroke-mitterlimit="0"></circle>
+                <circle className="indicator" strokeLinecap="round" cx="358" cy="167" r="7" stroke-mitterlimit="0"></circle>
             </g>
             <g className="phones">
                 <g className="secondary-phone">
