@@ -1,0 +1,20 @@
+$stroke-100: 0.5px;
+$stroke-200: 1px;
+$stroke-300: 1.5px;
+$stroke-400: 1.5px;
+
+.stroke-100{
+    stroke-width: $stroke-100;
+}
+
+.stroke-200{
+    stroke-width: $stroke-200;
+}
+
+.stroke-300{
+    stroke-width: $stroke-100;
+}
+
+.stroke-400{
+    stroke-width: $stroke-200;
+}
