@@ -1,0 +1,21 @@
+.animations{
+    position: relative;
+    height: 100%;
+    transition: transform 1.5s;
+
+    > div{
+        transition: transform 1.5s;
+        
+        &:hover{
+            transform: scale(1.35);
+        }
+    }
+
+    .restaurant-animation-wrapper{
+        width: 25%;
+        bottom: 0;
+        right: 20%;
+        position: absolute;
+    }
+
+}

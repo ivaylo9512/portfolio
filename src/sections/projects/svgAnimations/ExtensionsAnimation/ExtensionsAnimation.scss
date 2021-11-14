@@ -1,4 +1,20 @@
 .extensions-animation{
+    $primary-clr: hsl(285deg, 83%, 20%);
+    $secondary-clr: black;
+
+    width: 31%;
+    left: 20%;
+    bottom: 20%;
+
+    :not(g){
+        fill: $primary-clr;
+        filter: url(#extensions-shadow);
+    }
+    
+    .fill-secondary{
+        fill: $secondary-clr;
+    }
+    
     .exclamation-mark{
         transform-origin: center;
         transform-box: fill-box;
@@ -21,14 +37,11 @@
         }
     
         .exclamation-mark{
-            animation: scale-exclamation 5.5s infinite linear;
+            animation: scale-exclamation 4.5s infinite linear;
         }
 
         .hide{
-            transform: translate(80px, 80px) scale(0.7);
-            transition: 2s;
-            transform-origin: center;
-            transform-box: fill-box;
+            opacity: 0;
         }
     
         .circle{

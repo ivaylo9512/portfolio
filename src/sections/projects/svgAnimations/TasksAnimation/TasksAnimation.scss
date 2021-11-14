@@ -1,4 +1,18 @@
 .tasks-animation{
+    $primary-clr: hsl(179deg, 89%, 21%);
+
+    width: 25%;
+    right: 0;
+    top: 11%;
+
+    :not(g){
+        filter: url(#tasks-shadow);
+    }
+
+    .fill-primary{
+        fill: $primary-clr;
+    }
+    
     &:hover{
         .top{
             animation: transform 6s infinite;

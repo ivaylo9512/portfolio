@@ -1,9 +1,9 @@
 import { shallow } from "enzyme";
-import Animations from "../Animations"
+import AnimationsRoot from "../AnimationsRoot"
 
-describe('Animations snapshot tests', () => {
+describe('AnimationsRoot snapshot tests', () => {
     const createWrapper = () => shallow(
-        <Animations />
+        <AnimationsRoot />
     )
 
     it('should match snapshot', () => {

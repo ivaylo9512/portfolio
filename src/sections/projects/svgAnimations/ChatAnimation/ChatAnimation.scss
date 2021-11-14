@@ -1,4 +1,22 @@
 .chat-animation{
+    $primary-clr: hsl(21deg, 78%, 46%);
+    $secondary-clr: black;
+
+    width: 16%;
+    left: 46%;
+
+    :not(g){
+        filter: url(#chat-shadow);
+    }
+
+    .fill-primary{
+        fill: $primary-clr
+    }
+
+    .stroke-secondary{
+        stroke: $secondary-clr;
+    }
+
     .lines rect{
         transform-box: fill-box;
     }
