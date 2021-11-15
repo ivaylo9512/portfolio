@@ -5,8 +5,10 @@ import "./ProjectsRoot.scss"
 const ProjectsRoot = () => {
     return(
         <section className="projects-root">
-            <Background />
-            <AnimationsRoot />
+            <div className="scroll">
+                <Background />
+                <AnimationsRoot />
+            </div>
         </section>
     )
 }

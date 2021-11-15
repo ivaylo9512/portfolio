@@ -1,14 +1,18 @@
-import BrownBlob from "@projects/icons/BrownBlob"
-import RedBlob from "@projects/icons/RedBlob"
-import GreenBlob from "@projects/icons/GreenBlob"
+import ProfileBlob from "@projects/icons/ProfileBlob"
+import RestaurantBlob from "@projects/icons/RestaurantBlob"
+import TasksBlob from "@projects/icons/TasksBlob"
 import "./Background.scss"
+import ExtensionsBlob from "@projects/icons/ExtensionsBlob"
+import ChatBlob from "sections/projects/icons/ChatBlob"
 
 const Background = () => {
     return(
         <div className="background">
-            <RedBlob />
-            <BrownBlob />
-            <GreenBlob />
+            <RestaurantBlob />
+            <ProfileBlob />
+            <TasksBlob />
+            <ExtensionsBlob />
+            <ChatBlob />
         </div>
     )
 }
