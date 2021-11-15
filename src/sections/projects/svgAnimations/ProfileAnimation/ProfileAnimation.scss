@@ -1,11 +1,11 @@
 .profile-animation{
     $priamry-clr: hsl(22deg, 41%, 18%);
-    $secondary-clr: hsl(48deg, 11%, 91%);
+    $secondary-clr: black;
 
     fill: $secondary-clr;
 
-    :not(g){
-        filter: url(#projects-shadow);
+    .shadow {
+        filter: url(#profile-shadow);
     }
     .fill-primary{
         fill: $priamry-clr;

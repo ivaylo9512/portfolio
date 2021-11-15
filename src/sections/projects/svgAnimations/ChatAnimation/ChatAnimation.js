@@ -1,8 +1,8 @@
 import ProjectsShadow from "@projects/svgFilters/ProjectsShadow"
 import "./ChatAnimation.scss"
-const ChatAnimation = () => {
+const ChatAnimation = ({ className }) => {
     return(
-        <svg className="chat-animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.25 331.07">
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.25 331.07">
             <defs>
                 <ProjectsShadow id="chat-shadow"/>
             </defs>

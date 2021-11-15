@@ -1,11 +1,8 @@
 .tasks-animation{
     $primary-clr: hsl(179deg, 89%, 21%);
+    background: transparent;
 
-    width: 25%;
-    right: 0;
-    top: 11%;
-
-    :not(g){
+    .shadow{
         filter: url(#tasks-shadow);
     }
 

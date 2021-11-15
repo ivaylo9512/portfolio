@@ -1,9 +1,16 @@
 .projects-root{
-    width: 100vw;
     position: relative;
-    height: 100vh;
-    padding-bottom: 5%;
-    padding-top: 3%;
+    height: 100%;
     box-sizing: border-box;
-    padding-right: 12%;
+
+    .scroll{
+        position: relative;
+        height: 100%;
+        width: auto;
+        display: inline-block;
+    }
+    
+    @media only screen and (orientation: landscape) {
+        overflow-x: scroll;
+    }
 }

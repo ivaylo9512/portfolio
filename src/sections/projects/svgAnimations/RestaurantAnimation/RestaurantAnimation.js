@@ -9,8 +9,8 @@ const RestaurantAnimation = ({ className }) => {
                 <rect className="btn wait-100 fill-secondary stroke-100" x="265" y="53.5" width="31" height="18" rx="9.5"></rect>
                 <rect className="btn wait-200 fill-secondary stroke-100" x="299" y="53.5" width="31" height="18" rx="9.5"></rect>
                 <rect className="btn wait-300 fill-secondary stroke-100" x="231" y="53.5" width="31" height="18" rx="9.5"></rect>
-                <rect className="left-bar fill-primary stroke-secondary" x="0.5" y="114.16" width="129.02" height="26.89" rx="13.45" />
-                <rect className="bar fill-primary stroke-secondary" x="249.15" y="0.5" width="128.54" height="26.89" rx="13.45" />
+                <rect className="left-bar fill-primary" x="0.5" y="114.16" width="129.02" height="26.89" rx="13.45" />
+                <rect className="bar fill-primary" x="249.15" y="0.5" width="128.54" height="26.89" rx="13.45" />
                 <rect className="fill-primary stroke-secondary stroke-100" x="204.55" y="51.45" width="23" height="23" rx="11.5" />
                 <rect x="211.28" y="58.45" width="9.54" height="1.99" rx="0.99" />
                 <rect x="211.28" y="61.95" width="9.54" height="1.99" rx="0.99" />
@@ -34,9 +34,9 @@ const RestaurantAnimation = ({ className }) => {
                     <rect className="fill-primary" x="347.44" y="79.85" width="3.51" height="3.51" rx="1.76" transform="translate(235.54 -258.51) rotate(58.37)" />
                     <rect className="fill-primary" x="346.9" y="96.61" width="3.51" height="3.51" rx="1.76" transform="translate(249.56 -250.08) rotate(58.37)" />
                     <rect className="fill-primary" x="331.9" y="89.42" width="3.51" height="3.51" rx="1.76" transform="translate(236.3 -240.73) rotate(58.37)" />
-                    <line className="stroke-primary" x1="351.27" y1="84.97" x2="357.04" y2="94.34" />
-                    <line className="stroke-primary" x1="340.83" y1="85.66" x2="346.59" y2="95.02" />
-                    <line className="stroke-primary" x1="335.68" y1="94.7" x2="341.45" y2="104.07" />
+                    <line x1="351.27" y1="84.97" x2="357.04" y2="94.34" />
+                    <line x1="340.83" y1="85.66" x2="346.59" y2="95.02" />
+                    <line x1="335.68" y1="94.7" x2="341.45" y2="104.07" />
                 </g>
                 <g className="primary-phone">
                     <path className="fill-primary stroke-secondary" d="M344.66,72.13l-8,23.15a4.9,4.9,0,0,1-6.17,3.15l-15-5.21a4.9,4.9,0,0,1-2.9-6.3l8-23.15a4.9,4.9,0,0,1,6.18-3.15l15,5.21A4.92,4.92,0,0,1,344.66,72.13Z" />

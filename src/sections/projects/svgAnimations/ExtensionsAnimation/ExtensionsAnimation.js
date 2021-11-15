@@ -1,9 +1,9 @@
 import ProjectsShadow from "@projects/svgFilters/ProjectsShadow"
 import "./ExtensionsAnimation.scss"
 
-const ExtensionsAnimation = ({ setTransform }) => {
+const ExtensionsAnimation = ({ className }) => {
     return(
-        <svg onMouseEnter={() => setTransform("translateX(10%)")} onMouseLeave={() => setTransform("translateX(0)")} className="extensions-animation"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.85 272.98">
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.85 272.98">
             <defs>
                 <ProjectsShadow id="extensions-shadow"/>
             </defs>
