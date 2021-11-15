@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimationWrapper snapshot tests should match snapshot 1`] = `
+<div
+  className="chat-animation-wrapper"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="translate-wrapper"
+  >
+    <ChatAnimation
+      className="chat-animation "
+    />
+  </div>
+</div>
+`;
