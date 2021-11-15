@@ -1,0 +1,14 @@
+@use '@sassUtils/maps/colorsMap';
+
+@each $project, $types in colorsMap.$projects {
+    @each $type, $value in $types {
+        .#{$project}-animation{
+            .fill-#{$type}{
+                fill: #{$value};
+            }
+            .stroke-#{$type}{
+                stroke: #{$value};
+            }
+        }
+    }
+}
