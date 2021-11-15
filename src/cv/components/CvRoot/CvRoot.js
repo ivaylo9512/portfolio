@@ -5,13 +5,14 @@ import SvgsRoot from "cv/svgFilters/SvgsRoot/SvgsRoot";
 import "./CvRoot.scss";
 
 const CvRoot = () => {
-
     return(
         <section className='cv first-style'>
-            <SvgsRoot />
-            <Background />
-            <LeftPanel />
-            <RightPanel />
+            <div className='translate-wrapper'>
+                <SvgsRoot />
+                <Background />
+                <LeftPanel />
+                <RightPanel />
+            </div>
         </section>
     )
 

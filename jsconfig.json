@@ -2,7 +2,10 @@
   "compilerOptions": {
       "baseUrl": "src",
       "paths": {
-          "@comp": ["./cv/components"]
+          "@comp": ["./cv/components"],
+          "@projects": ["./sections/projects"],
+          "@svgAnimations": ["./sections/projects/svgAnimations"],
+          "@sassUtils": ["./sassUtils"]
       }
   },
   "exclude": ["node_modules"]

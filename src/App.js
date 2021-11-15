@@ -1,12 +1,22 @@
+import ProjectsRoot from '@projects/ProjectsRoot/ProjectsRoot';
+import Header from 'sections/Header/Header';
 import './App.scss';
 import CvRoot from './cv/components/CvRoot/CvRoot';
+import { useSelector } from 'react-redux';
+import { isProjectsSection } from 'app/slices/animationsSlice';
 
-function App() {
-  return (
-    <div className="App">
-      <CvRoot></CvRoot>
-    </div>
-  );
+const App = () => {
+    const isProjects = useSelector(isProjectsSection);
+
+    return (
+        <div className={`app ${isProjects ? 'projects-section' : ''}`}>
+            <Header />
+            <div className="transition-container">
+                <CvRoot />
+                <ProjectsRoot />
+            </div>
+        </div>
+    );
 }
 
 export default App;

@@ -5,15 +5,19 @@ import ExtensionsAnimation from "@svgAnimations/ExtensionsAnimation/ExtensionsAn
 import TasksAnimation from "@svgAnimations/TasksAnimation/TasksAnimation"
 import ProfileAnimation from "@svgAnimations/ProfileAnimation/ProfileAnimation"
 import AnimationWrapper from "../AnimationWrapper/AnimationWrapper"
+import { useSelector } from 'react-redux';
+import { getVisited } from "app/slices/animationsSlice"
 
 const Animations = () => {
+    const visited = useSelector(getVisited);
+
     return(
-        <div className="animations">
+        <div className={`animations ${visited ? visited : ''}`}>
             <AnimationWrapper SvgAnimation={TasksAnimation} className="tasks"/>
+            <AnimationWrapper SvgAnimation={ProfileAnimation} className="profile"/>
             <AnimationWrapper SvgAnimation={RestaurantAnimation} className="restaurant"/>
             <AnimationWrapper SvgAnimation={ExtensionsAnimation} className="extensions"/>
             <AnimationWrapper SvgAnimation={ChatAnimation} className="chat"/>
-            <AnimationWrapper SvgAnimation={ProfileAnimation} className="profile"/>
         </div>
     )
 }
