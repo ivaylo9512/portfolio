@@ -1,4 +1,4 @@
-import CvRoot from "../CvRoot";
+import CvRoot from '../CvRoot';
 import { shallow } from 'enzyme';
 
 describe('CvRoot snapshot tests', () => {

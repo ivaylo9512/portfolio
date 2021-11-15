@@ -1,5 +1,5 @@
-import { shallow } from "enzyme";
-import ProjectsRoot from "../ProjectsRoot"
+import { shallow } from 'enzyme';
+import ProjectsRoot from '../ProjectsRoot'
 
 describe('ProjectsRoot snapshot tests', () => {
     const createWrapper = () => shallow(

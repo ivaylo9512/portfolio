@@ -1,4 +1,4 @@
-import Projects from "../Projects";
+import Projects from '../Projects';
 import { shallow } from 'enzyme';
 
 describe('Projects snapshot tests', () => {

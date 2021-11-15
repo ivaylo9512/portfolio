@@ -26,12 +26,12 @@ const Technologies = () => {
         <ReactSvg/>, <Spring/>, <Aws/>, <Jenkins/>, 
         <Redux/>, <Angular/>, <Ws/>, <Angular/>, 
         <Typescript/>, <Graphql/>, <Angular/>, <Angular/> 
-    ].map(i => <Technology key={i.type.name} viewBox="129 129" icon={i} />)
+    ].map(i => <Technology key={i.type.name} viewBox='129 129' icon={i} />)
             
     return(
-        <List className="technologies" name={<TechnologiesSvg />}>
+        <List className='technologies' name={<TechnologiesSvg />}>
             {getIcons()}
-            <div className="names">
+            <div className='names'>
                 <div><Orm /></div>
                 <div><Express /></div>
                 <div><Pgres /></div>

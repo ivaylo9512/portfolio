@@ -1,4 +1,4 @@
-import Circles from "../Circles";
+import Circles from '../Circles';
 import { shallow } from 'enzyme';
 
 describe('Circles snapshot tests', () => {

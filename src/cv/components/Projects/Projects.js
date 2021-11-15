@@ -1,9 +1,9 @@
-import Project from "../Project/Project";
-import "./Projects.scss";
+import Project from '../Project/Project';
+import './Projects.scss';
 
 const Projects = () => {
     return(
-        <div className="projects">
+        <div className='projects'>
             {projectsInfo.map(p => 
                 <Project key={p.name} height={310} width={310 * 1.6 * p.ratio} name={p.name} repo={p.repo} info={p.info} />)
             }

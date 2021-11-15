@@ -3,8 +3,8 @@ import './Ribon.scss';
 
 const Ribon = ({ name, children }) => {
     return(
-        <div className="ribon">
-            <div className="content">
+        <div className='ribon'>
+            <div className='content'>
                 {name}
                 {children}
             </div>

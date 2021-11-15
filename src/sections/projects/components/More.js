@@ -1,4 +1,4 @@
-import Github from "svgIcons/Github"
+import Github from 'svgIcons/Github'
 
 const More = () => {
     return(

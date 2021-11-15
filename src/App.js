@@ -11,7 +11,7 @@ const App = () => {
     return (
         <div className={`app ${isProjects ? 'projects-section' : ''}`}>
             <Header />
-            <div className="transition-container">
+            <div className='transition-container'>
                 <CvRoot />
                 <ProjectsRoot />
             </div>

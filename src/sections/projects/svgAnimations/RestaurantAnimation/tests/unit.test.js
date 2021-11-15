@@ -1,5 +1,5 @@
-const { shallow } = require("enzyme");
-const { default: RestaurantAnimation } = require("../RestaurantAnimation");
+const { shallow } = require('enzyme');
+const { default: RestaurantAnimation } = require('../RestaurantAnimation');
 
 describe('RestaurantAnimation unit tests', () => {
     const setTransform = jest.fn();
@@ -13,7 +13,7 @@ describe('RestaurantAnimation unit tests', () => {
         
         wrapper.find('svg').props().onTouchStart();
 
-        expect(setTransform).toHaveBeenCalledWith("translate(-10%, -12%)");
+        expect(setTransform).toHaveBeenCalledWith('translate(-10%, -12%)');
     })
 
     it('should set transform on mouse enter', () => {
@@ -21,7 +21,7 @@ describe('RestaurantAnimation unit tests', () => {
         
         wrapper.find('svg').props().onMouseEnter();
 
-        expect(setTransform).toHaveBeenCalledWith("translate(-10%, -12%)");
+        expect(setTransform).toHaveBeenCalledWith('translate(-10%, -12%)');
     })
 
     it('should reset transform on mouse leave', () => {
@@ -29,7 +29,7 @@ describe('RestaurantAnimation unit tests', () => {
         
         wrapper.find('svg').props().onMouseLeave();
 
-        expect(setTransform).toHaveBeenCalledWith("translate(0, 0)");
+        expect(setTransform).toHaveBeenCalledWith('translate(0, 0)');
     })
 
     it('should reset transform on touch end', () => {
@@ -37,7 +37,7 @@ describe('RestaurantAnimation unit tests', () => {
         
         wrapper.find('svg').props().onMouseLeave();
 
-        expect(setTransform).toHaveBeenCalledWith("translate(0, 0)");
+        expect(setTransform).toHaveBeenCalledWith('translate(0, 0)');
     })
 
     it('should reset transform on mouse leave', () => {
@@ -45,6 +45,6 @@ describe('RestaurantAnimation unit tests', () => {
         
         wrapper.find('svg').props().onMouseLeave();
 
-        expect(setTransform).toHaveBeenCalledWith("translate(0, 0)");
+        expect(setTransform).toHaveBeenCalledWith('translate(0, 0)');
     })
 })

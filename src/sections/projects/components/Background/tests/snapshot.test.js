@@ -1,5 +1,5 @@
-import { shallow } from "enzyme";
-import Background from "../Background"
+import { shallow } from 'enzyme';
+import Background from '../Background'
 
 describe('Background snapshot tests', () => {
     const createWrapper = () => shallow(

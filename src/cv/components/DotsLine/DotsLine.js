@@ -3,7 +3,7 @@ import './DotsLine.scss';
 
 const DotsLine = () => {
     return(
-        <div className="dots">
+        <div className='dots'>
             <Circle />
             <Circle />
             <Circle />

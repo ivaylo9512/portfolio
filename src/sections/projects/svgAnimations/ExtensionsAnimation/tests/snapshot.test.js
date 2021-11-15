@@ -1,5 +1,5 @@
-import { shallow } from "enzyme";
-import ExtensionsAnimation from "../ExtensionsAnimation"
+import { shallow } from 'enzyme';
+import ExtensionsAnimation from '../ExtensionsAnimation'
 
 describe('ExtensionsAnimation snapshot tests', () => {
     const createWrapper = () => shallow(

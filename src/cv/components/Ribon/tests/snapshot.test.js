@@ -1,4 +1,4 @@
-import Ribon from "../Ribon";
+import Ribon from '../Ribon';
 import { shallow } from 'enzyme';
 
 describe('Ribon snapshot tests', () => {

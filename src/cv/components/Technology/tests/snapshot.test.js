@@ -1,4 +1,4 @@
-import Technology from "../Technology";
+import Technology from '../Technology';
 import { shallow } from 'enzyme';
 
 describe('Technology snapshot tests', () => {

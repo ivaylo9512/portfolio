@@ -4,7 +4,7 @@ import './LeftPanel.scss';
 
 const LeftPanel = () => {
     return(
-        <section className="left-panel">
+        <section className='left-panel'>
             <Projects />
             <MoreGithub />
         </section>

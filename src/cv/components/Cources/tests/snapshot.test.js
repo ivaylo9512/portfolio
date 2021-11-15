@@ -1,4 +1,4 @@
-import Cources from "../Cources";
+import Cources from '../Cources';
 import { shallow } from 'enzyme';
 
 describe('Cources snapshot tests', () => {

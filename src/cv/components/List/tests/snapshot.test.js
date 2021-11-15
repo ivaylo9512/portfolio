@@ -1,4 +1,4 @@
-import List from "../List";
+import List from '../List';
 import { shallow } from 'enzyme';
 
 describe('List snapshot tests', () => {

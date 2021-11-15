@@ -1,5 +1,5 @@
-import { shallow } from "enzyme";
-import ProfileAnimation from "../ProfileAnimation"
+import { shallow } from 'enzyme';
+import ProfileAnimation from '../ProfileAnimation'
 
 describe('ProfileAnimation snapshot tests', () => {
     const createWrapper = () => shallow(

@@ -1,6 +1,6 @@
-import { setVisited, resetVisited } from "app/slices/animationsSlice";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { setVisited, resetVisited } from 'app/slices/animationsSlice';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 const AnimationWrapper = ({ SvgAnimation, className }) => {
     const [visitedClass, setVisitedClass] = useState('');

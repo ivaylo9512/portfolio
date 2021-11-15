@@ -1,4 +1,4 @@
-import RightPanel from "../RightPanel";
+import RightPanel from '../RightPanel';
 import { shallow } from 'enzyme';
 
 describe('RightPanel snapshot tests', () => {

@@ -1,4 +1,4 @@
-import Languages from "../Languages";
+import Languages from '../Languages';
 import { shallow } from 'enzyme';
 
 describe('Languages snapshot tests', () => {

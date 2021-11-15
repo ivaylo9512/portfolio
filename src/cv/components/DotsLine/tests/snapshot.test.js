@@ -1,4 +1,4 @@
-import DotsLine from "../DotsLine";
+import DotsLine from '../DotsLine';
 import { shallow } from 'enzyme';
 
 describe('DotsLine snapshot tests', () => {
