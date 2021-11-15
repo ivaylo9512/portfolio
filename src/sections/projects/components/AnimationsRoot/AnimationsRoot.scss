@@ -6,7 +6,6 @@
     > div{
         position: relative;
         transition: transform 1.5s;
-        // position: absolute;
 
         &:hover{
             z-index: 2;
@@ -14,16 +13,11 @@
 
         .translate-wrapper{
             transition: transform 1.5s;
-            // height: 100%;
-        
-            svg{
-                // height: 100%;
-            }
         }
     }
 
     &.tasks-visited > div {
-        transform: translate(-20%, 5%);
+        transform: translate(20%, 15%);
     }
 
     &.restaurant-visited > div {
@@ -41,7 +35,7 @@
     &.profile-visited > div {
         transform: translate(20%, -5%);
     }
-    
+
     @media only screen and (orientation: landscape) {
         display: flex;
         align-items: center;
@@ -60,9 +54,32 @@
         }
 
         .tasks-animation-wrapper {
-            > div{
-                margin-top: 25%;
-            }
+            margin-top: 10vh;
+            margin-left: 5vh;
+        }
+
+        .restaurant-animation-wrapper {
+            align-self: flex-end;
+            margin-bottom: 30vh;
+            margin-left: 75vh;
+            height: 29%;
+        }
+
+        .extensions-animation-wrapper {
+            margin-left: 37vh;
+            align-self: flex-start;
+            margin-top: 9vh;
+        }
+
+        .profile-animation-wrapper {
+            margin-left: 68vh;
+            align-self: start;
+            margin-top: 14vh;
+            height: 21%;
+        }
+
+        .chat-animation-wrapper {
+            margin-left: 57vh;
         }
     }
 

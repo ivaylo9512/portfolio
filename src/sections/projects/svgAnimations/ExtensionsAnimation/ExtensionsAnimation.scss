@@ -1,14 +1,9 @@
-.extensions-animation{
-    $primary-clr: hsl(285deg, 83%, 20%);
-    $secondary-clr: black;
+@use '@sassUtils/projectsClasses/colors';
 
+.extensions-animation{
     :not(g){
-        fill: $primary-clr;
+        fill: var(--clr-extensions-primary);
         filter: url(#extensions-shadow);
-    }
-    
-    .fill-secondary{
-        fill: $secondary-clr;
     }
     
     .exclamation-mark{

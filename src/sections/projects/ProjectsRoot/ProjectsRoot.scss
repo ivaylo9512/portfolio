@@ -6,10 +6,9 @@
     .scroll{
         position: relative;
         height: 100%;
-        width: auto;
         display: inline-block;
     }
-    
+
     @media only screen and (orientation: landscape) {
         overflow-x: scroll;
     }

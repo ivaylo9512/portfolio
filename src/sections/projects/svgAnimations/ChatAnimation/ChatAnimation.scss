@@ -1,17 +1,8 @@
-.chat-animation{
-    $primary-clr: hsl(21deg, 78%, 46%);
-    $secondary-clr: black;
+@use '@sassUtils/projectsClasses/colors';
 
+.chat-animation{
     :not(g){
         filter: url(#chat-shadow);
-    }
-
-    .fill-primary{
-        fill: $primary-clr
-    }
-
-    .stroke-secondary{
-        stroke: $secondary-clr;
     }
 
     .lines rect{

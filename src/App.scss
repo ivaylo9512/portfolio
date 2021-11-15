@@ -1,6 +1,26 @@
 .app{
-    height: 100vh;
-    max-height: -moz-available;
-    max-height: -webkit-fill-available;
-    max-height: stretch;
+    width: 100vw;
+
+    .transition-container{
+        display: flex;
+        height: 100%;  
+        width: 200%;
+        transform: translateX(0);
+        transition: transform 1.5s;
+    
+        > section{
+            width: 50%;
+        }
+    }
+
+    @media only screen and (orientation: landscape) {
+        height: 100vh;
+        max-height: -moz-available;
+        max-height: -webkit-fill-available;
+        max-height: stretch;
+    }
+
+    &.projects-section .transition-container{
+        transform: translateX(-50%);
+    }
 }
