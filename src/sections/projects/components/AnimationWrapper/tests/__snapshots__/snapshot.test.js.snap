@@ -3,6 +3,7 @@
 exports[`AnimationWrapper snapshot tests should match snapshot 1`] = `
 <div
   className="chat-animation-wrapper"
+  data-testid="animation-wrapper"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
   onTouchEnd={[Function]}

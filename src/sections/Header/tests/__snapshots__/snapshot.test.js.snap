@@ -11,9 +11,14 @@ exports[`Header snapshot tests should match snapshot with cv secton 1`] = `
       </li>
       <li>
         <a
+          data-testid="sections-toggle"
           onClick={[Function]}
         >
-          Projects
+          <span
+            data-testid="projects"
+          >
+            'Projects'
+          </span>
         </a>
       </li>
       <li>
@@ -37,9 +42,14 @@ exports[`Header snapshot tests should match snapshot with projects secton 1`] = 
       </li>
       <li>
         <a
+          data-testid="sections-toggle"
           onClick={[Function]}
         >
-          Cv
+          <span
+            data-testid="cv"
+          >
+            Cv'
+          </span>
         </a>
       </li>
       <li>
