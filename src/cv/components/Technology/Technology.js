@@ -1,4 +1,4 @@
-import Circle from 'cv/icons/Circle';
+import Circle from '@svgIcons/Circle';
 import './Technology.scss';
 
 const Technology = ({ icon, viewBox }) => {

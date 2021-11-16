@@ -1,7 +1,7 @@
-import Circle from 'cv/icons/Circle';
+import Circle from '@svgIcons/Circle';
 import './Project.scss';
 import Github from 'svgIcons/Github';
-import Rect from 'cv/icons/Rect';
+import Rect from '@svgIcons/Rect';
 import { useSelector } from 'react-redux';
 import { isProjectsSection } from 'app/slices/animationsSlice';
 

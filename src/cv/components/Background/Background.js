@@ -1,6 +1,6 @@
-import X from 'cv/icons/X.js';
+import X from '@svgIcons/X.js';
 import './Background.scss';
-import Circles from 'cv/components/Circles/Circles.js';
+import Circles from '@cv/components/Circles/Circles.js';
 
 const Background = () => {
     return(

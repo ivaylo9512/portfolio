@@ -1,4 +1,4 @@
-import Circle from 'cv/icons/Circle';
+import Circle from '@svgIcons/Circle';
 import './Circles.scss';
 
 const Circles = () => {

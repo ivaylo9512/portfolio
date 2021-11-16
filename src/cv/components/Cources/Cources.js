@@ -1,8 +1,8 @@
-import List from 'cv/components/List/List'
-import CourcesSvg from 'cv/icons/CourcesSvg'
-import Self from 'cv/icons/Self';
-import Telerik from 'cv/icons/Telerik';
-import Ribon from 'cv/components/Ribon/Ribon';
+import List from '@cv/components/List/List'
+import CourcesSvg from '@svgIcons/CourcesSvg'
+import Self from '@svgIcons/Self';
+import Telerik from '@svgIcons/Telerik';
+import Ribon from '@cv/components/Ribon/Ribon';
 import './Cources.scss';
 
 const Cources = () => {

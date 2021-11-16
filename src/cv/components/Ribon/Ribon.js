@@ -1,4 +1,4 @@
-import Rect from 'cv/icons/Rect';
+import Rect from '@svgIcons/Rect';
 import './Ribon.scss';
 
 const Ribon = ({ name, children }) => {

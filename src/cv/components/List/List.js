@@ -1,5 +1,5 @@
-import Ribon from 'cv/components/Ribon/Ribon';
-import ListSvg from 'cv/icons/ListSvg';
+import Ribon from '@cv/components/Ribon/Ribon';
+import ListSvg from '@svgIcons/ListSvg';
 import './List.scss';
 
 const List = ({ name, children, className }) => {

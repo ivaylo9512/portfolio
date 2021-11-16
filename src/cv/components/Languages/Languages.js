@@ -1,10 +1,10 @@
-import DotsLine from 'cv/components/DotsLine/DotsLine';
-import List from 'cv/components/List/List';
-import Ribon from 'cv/components/Ribon/Ribon';
-import Java from 'cv/icons/Java';
-import Javascript from 'cv/icons/Javascript';
-import Php from 'cv/icons/Php';
-import LanguagesSvg from 'cv/icons/LanguagesSvg';
+import DotsLine from '@cv/components/DotsLine/DotsLine';
+import List from '@cv/components/List/List';
+import Ribon from '@cv/components/Ribon/Ribon';
+import Java from '@svgIcons/Java';
+import Javascript from '@svgIcons/Javascript';
+import Php from '@svgIcons/Php';
+import LanguagesSvg from '@svgIcons/LanguagesSvg';
 import './Languages.scss';
 
 const Languages = () => {
