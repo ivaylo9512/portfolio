@@ -2,7 +2,7 @@
   "compilerOptions": {
       "baseUrl": "src",
       "paths": {
-          "@cv": ["./cv"],
+          "@cv": ["./sections/cv"],
           "@svgIcons": ["./svgIcons"],
           "@projects": ["./sections/projects"],
           "@svgAnimations": ["./sections/projects/svgAnimations"],
