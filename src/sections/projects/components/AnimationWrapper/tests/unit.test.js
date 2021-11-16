@@ -2,6 +2,7 @@ import { shallow } from 'enzyme';
 import AnimationWrapper from '../AnimationWrapper'
 import * as Redux from 'react-redux';
 import { setVisited, resetVisited } from 'app/slices/animationsSlice';
+import ChatAnimation from '@projects/svgAnimations/ChatAnimation/ChatAnimation';
 
 describe('AnimationWrapper unit tests', () => {
     const dispatchMock = jest.fn();
@@ -17,23 +18,23 @@ describe('AnimationWrapper unit tests', () => {
     it('should dispatch on touch start', () => {
         const wrapper = createWrapper();
         
-        wrapper.find('svg').props().onTouchStart();
+        wrapper.findByTestid('animation-wrapper').props().onTouchStart();
 
-        expect(dispatchMock).toHaveBeenCalledWith('translate(-10%, -12%)');
+        expect(dispatchMock).toHaveBeenCalledWith(setVisited('chat-visited'));
     })
 
     it('should dispatch on mouse enter', () => {
         const wrapper = createWrapper();
         
-        wrapper.find('svg').props().onMouseEnter();
+        wrapper.findByTestid('animation-wrapper').props().onMouseEnter();
 
-        expect(dispatchMock).toHaveBeenCalledWith('translate(-10%, -12%)');
+        expect(dispatchMock).toHaveBeenCalledWith(setVisited('chat-visited'));
     })
 
     it('should dispatch on mouse leave', () => {
         const wrapper = createWrapper();
         
-        wrapper.find('svg').props().onMouseLeave();
+        wrapper.findByTestid('animation-wrapper').props().onMouseLeave();
 
         expect(dispatchMock).toHaveBeenCalledWith(resetVisited());
     })
@@ -41,15 +42,7 @@ describe('AnimationWrapper unit tests', () => {
     it('should dispatch on touch end', () => {
         const wrapper = createWrapper();
         
-        wrapper.find('svg').props().onMouseLeave();
-
-        expect(dispatchMock).toHaveBeenCalledWith(resetVisited());
-    })
-
-    it('should dispatch on mouse leave', () => {
-        const wrapper = createWrapper();
-        
-        wrapper.find('svg').props().onMouseLeave();
+        wrapper.findByTestid('animation-wrapper').props().onMouseLeave();
 
         expect(dispatchMock).toHaveBeenCalledWith(resetVisited());
     })

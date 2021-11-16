@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    ul{
+        display: flex;
+    }
+
+    ul > :last-child{
+        margin-left: auto;
+    }
+
+    a{
+        padding: 5vh;
+        background-color: black;
+    }
+}

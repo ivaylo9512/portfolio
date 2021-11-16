@@ -21,10 +21,10 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a onClick={onToggleSections}>
+                        <a data-testid='sections-toggle' onClick={onToggleSections}>
                             {isProjects 
-                                ? 'cv' 
-                                : 'Projects'
+                                ? <span data-testid='cv'>Cv'</span>
+                                : <span data-testid='projects'>'Projects'</span>
                             }
                         </a>
                     </li>

@@ -17,13 +17,13 @@ describe('MoreGithub snapshot tests', () => {
         )
     }
 
-    it('should match snapshot with matching section', () => {
+    it('should match snapshot on matching section', () => {
         const wrapper = createWrapper(true, true);
 
         expect(wrapper).toMatchSnapshot();
     })
 
-    it('should match snapshot without matching section', () => {
+    it('should match snapshot on not matching section', () => {
         const wrapper = createWrapper(true, false);
 
         expect(wrapper).toMatchSnapshot();
