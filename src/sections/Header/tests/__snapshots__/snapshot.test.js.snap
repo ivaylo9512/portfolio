@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header snapshot tests should match snapshot with cv secton 1`] = `
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a>
+          <Arrow />
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a>
+          <Arrow />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Header snapshot tests should match snapshot with projects secton 1`] = `
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a>
+          <Arrow />
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+        >
+          Cv
+        </a>
+      </li>
+      <li>
+        <a>
+          <Arrow />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
