@@ -1,13 +1,8 @@
-.tasks-animation{
-    $primary-clr: hsl(179deg, 89%, 21%);
-    background: transparent;
+@use '@sassUtils/projectsClasses/colors';
 
+.tasks-animation{
     .shadow{
         filter: url(#tasks-shadow);
-    }
-
-    .fill-primary{
-        fill: $primary-clr;
     }
     
     &:hover{

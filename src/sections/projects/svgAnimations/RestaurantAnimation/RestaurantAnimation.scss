@@ -1,15 +1,14 @@
-@use "@sassUtils/strokes.scss" as *;
+@use '@sassUtils/projectsClasses/strokes' as *;
+@use '@sassUtils/projectsClasses/colors' as *;
 
 .restaurant-animation{
-    $primary-clr: hsl(356deg, 89%, 34%);
-    $secondary-clr: black;
     transform: translateY(0);
     
     :not(g){
     }
 
     .tick{
-        stroke: $primary-clr;
+        stroke: var(--clr-restaurant-primary);
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 3.5px;
@@ -17,18 +16,8 @@
     }
 
     line{
-        stroke-width: $stroke-200;
-        stroke: $primary-clr;
-    }
-
-    .fill-primary{
-        fill: $primary-clr;
-    }
-    .stroke-primary{
-        stroke: $primary-clr;
-    }
-    .stroke-secondary{
-        stroke: $secondary-clr;
+        stroke-width: var(--stroke-200);
+        stroke: var(--clr-restaurant-primary);
     }
 
     .bar,

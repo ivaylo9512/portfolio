@@ -2,14 +2,21 @@
     position: relative;
     height: 100%;
     box-sizing: border-box;
-
+    overflow-y: hidden;
+    
     .scroll{
         position: relative;
         height: 100%;
         display: inline-block;
     }
 
+    .scroll-container{
+        height: 100%;
+    }
+
     @media only screen and (orientation: landscape) {
-        overflow-x: scroll;
+        .scroll-container{
+            overflow-x: scroll;
+        }
     }
 }
