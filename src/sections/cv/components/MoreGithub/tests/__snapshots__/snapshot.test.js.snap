@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoreGithub snapshot tests should match snapshot with matching section 1`] = `
+<div
+  className="more-github"
+>
+  <div
+    className="content"
+  >
+    <Rect
+      height="89"
+      width="328"
+    />
+    <a
+      href="https://github.com/ivaylo9512"
+      tabIndex="-1"
+    >
+      <span>
+        More on
+      </span>
+      <Github />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`MoreGithub snapshot tests should match snapshot without matching section 1`] = `
+<div
+  className="more-github"
+>
+  <div
+    className="content"
+  >
+    <Rect
+      height="89"
+      width="328"
+    />
+    <a
+      href="https://github.com/ivaylo9512"
+    >
+      <span>
+        More on
+      </span>
+      <Github />
+    </a>
+  </div>
+</div>
+`;
