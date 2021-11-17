@@ -1,8 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const slides = ['first', 'second', 'third'];
+
 const initialState = {
     currentVisited: null,
-    isProjectsSection: false
+    isProjectsSection: false,
+    currentSlideIndex: 0,
+    currentSlide: slides[0]
 }
 
 const animationSlice = createSlice({
@@ -17,11 +21,17 @@ const animationSlice = createSlice({
         },
         resetVisited: (state) => {
             state.currentVisited = initialState.currentVisited;
+        },
+        changeSlide: (state, { payload }) => {
+            console.log(payload);
+            state.currentSlideIndex += payload;
+            state.currentSlide = slides[state.currentSlideIndex];
         }
     }
 })
 
 export default animationSlice.reducer;
-export const { setVisited, resetVisited, toggleSections } = animationSlice.actions;
+export const { setVisited, resetVisited, toggleSections, changeSlide } = animationSlice.actions;
 export const getVisited = state => state.animations.currentVisited;
 export const isProjectsSection = state => state.animations.isProjectsSection;
+export const getCurrentSlide = state => state.animations.currentSlide;
