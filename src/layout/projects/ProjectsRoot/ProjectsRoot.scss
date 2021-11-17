@@ -10,21 +10,22 @@
         width: 100%;
         transition: transform 1.5s;
     }
-    
-    .scroll-container{
-        height: 100%;
-    }
 
     @media only screen and (orientation: landscape) {
-        .scroll{
-            width: auto;
-        
-            &.first-slide{
+        &.second-slide{
+            .scroll{
                 transform: translateX(calc(-100vw - 64vh));
             }
-            &.second-slide{
+        }
+
+        &.third-slide{
+            .scroll{
                 transform: translateX(calc(-200vw + 23vh));
             }
+        }
+
+        .scroll{
+            width: auto;
         }
     }
 

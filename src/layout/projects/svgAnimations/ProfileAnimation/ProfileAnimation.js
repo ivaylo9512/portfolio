@@ -7,9 +7,9 @@ const ProfileAnimation = ({ className }) => {
             <defs>
                 <ProjectsShadow id='profile-shadow'/>
             </defs>
-            <circle class='fill-primary shadow' cx='37.86' cy='137.86' r='35.86'></circle>
-            <circle class='fill-primary shadow' cx='190.09' cy='31.21' r='46.83' ></circle>
-            <rect class='fill-primary shadow' x='49.46' y='35.17' width='134.6' height='102.36' rx='6.63'></rect>
+            <circle className='fill-primary shadow' cx='37.86' cy='137.86' r='35.86'></circle>
+            <circle className='fill-primary shadow' cx='190.09' cy='31.21' r='46.83' ></circle>
+            <rect className='fill-primary shadow' x='49.46' y='35.17' width='134.6' height='102.36' rx='6.63'></rect>
             <circle cx='74.85' cy='65.06' r='17.86'></circle>
             <circle cx='147.1' cy='112.16' r='4.27'></circle>
             <rect x='57.26' y='92.88' width='36' height='3.24' rx='2'></rect>

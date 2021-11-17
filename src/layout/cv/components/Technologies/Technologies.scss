@@ -4,9 +4,20 @@
     @include getStyleColors('first-style'); 
 }
 
-.technologies .list-svg{
-    fill: black;
+.cv.third-style{
+    @include getStyleColors('third-style'); 
 }
+
+.technologies{
+    .list-svg{
+        fill: black;
+    }
+
+    svg{
+        fill: $primary;
+    }
+}
+
 .list.technologies {
     > :nth-child(4n + 5){
         margin: 0;
@@ -19,6 +30,7 @@
         fill: white;
     }
 }
+
 .names {
     > :nth-child(4n + 1){
         width: 19.5%;
@@ -37,14 +49,17 @@
         width: 25.5%;
     }
 }
+
 .node-js,
 .next-js{
     fill: $primary;
 }
+
 .next-js{
     stroke-width: 7px;
     stroke: $primary;
 }
+
 .jenkins{
     .circle,
     .towel{
