@@ -1,0 +1,7 @@
+@use '@sassUtils/maps/strokes' as *;
+
+@each $stroke, $value in $svg {
+    .stroke-#{$stroke}{
+        stroke-width: #{$value};
+    }
+}

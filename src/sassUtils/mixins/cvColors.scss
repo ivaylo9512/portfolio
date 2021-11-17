@@ -1,0 +1,9 @@
+@use '@sassUtils/maps/colors' as *;
+@use 'sass:map';
+
+@mixin getStyleColors($style) {
+    $map: map.get($cv, $style);
+
+    $primary: map.get($map, 'primary') !global;
+    $secondary: map.get($map, 'secondary') !global;
+}

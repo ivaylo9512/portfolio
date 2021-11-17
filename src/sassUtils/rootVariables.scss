@@ -1,14 +1,14 @@
-@use './maps/colorsMap';
-@use './maps/strokesMap';
+@use './maps/colors';
+@use './maps/strokes';
 
 :root {
-    @each $project, $colors in colorsMap.$projects {
+    @each $project, $colors in colors.$projects {
         @each $color, $value in $colors {
             --clr-#{$project}-#{$color}: #{$value};
         }
     }
 
-    @each $stroke, $value in strokesMap.$svgStrokes {
+    @each $stroke, $value in strokes.$svg {
         --stroke-#{$stroke}: #{$value};
     }
 }

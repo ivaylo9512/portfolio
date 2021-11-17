@@ -1,6 +1,6 @@
-@use '@sassUtils/maps/colorsMap';
+@use '@sassUtils/maps/colors' as *;
 
-@each $project, $types in colorsMap.$projects {
+@each $project, $types in $projects {
     @each $type, $value in $types {
         .#{$project}-animation{
             .fill-#{$type}{
