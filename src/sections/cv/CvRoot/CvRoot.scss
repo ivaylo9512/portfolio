@@ -1,6 +1,18 @@
 .cv{
     overflow-y: scroll;   
-    
+    position: relative;
+    z-index: 3;
+    background: white;
+        
+    &::-webkit-scrollbar {
+        width: 0.55vw;
+    }
+       
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 0.4vw;
+    }
+      
     .translate-wrapper{
         display: flex;
         padding-top: 17.6%;
@@ -9,5 +21,15 @@
         margin: auto;
         justify-content: space-between;
         position: relative;
+    }
+
+    @media only screen and (max-device-height : 896px) and (orientation : landscape) { 
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    
+    
+        .translate-wrapper{
+            padding-bottom: 8vh;
+            width: 75%;
+        }
     }
 }

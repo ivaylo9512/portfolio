@@ -1,6 +1,6 @@
 .app{
     width: 100vw;
-
+    
     .transition-container{
         display: flex;
         height: 100%;  
@@ -10,14 +10,15 @@
     
         > section{
             width: 50%;
+        
+            &.cv{
+                width: 49.9%;
+            }
         }
     }
 
     @media only screen and (orientation: landscape) {
         height: 100vh;
-        max-height: -moz-available;
-        max-height: -webkit-fill-available;
-        max-height: stretch;
     }
 
     &.projects-section .transition-container{

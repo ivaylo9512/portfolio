@@ -1,42 +1,58 @@
+@use '@sassUtils/mixins/cvColors' as *;
+
+.cv.first-style{
+    @include getStyleColors('first-style'); 
+}
+
 .technologies .list-svg{
     fill: black;
 }
-.list.technologies > :nth-child(4n + 5){
-    margin: 0;
+.list.technologies {
+    > :nth-child(4n + 5){
+        margin: 0;
+    }
+
+    > :first-child{
+        width: 98%;
+        display: block;
+        margin: 5% 0 1% 0;
+        fill: white;
+    }
 }
-.names > :nth-child(4n + 1){
-    width: 19.5%;
-    margin-right: 3.25%;
-}
-.list.technologies > :first-child{
-    width: 98%;
-    display: block;
-    margin: 5% 0 1% 0;
-    fill: white;
-}
-.names > div{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    height: 2vw;
-    width: 25.5%;
-}
-.names .name {
-    height: 66%;
-    display: inline-block;
+.names {
+    > :nth-child(4n + 1){
+        width: 19.5%;
+        margin-right: 3.25%;
+    }
+
+    .name {
+        height: 66%;
+        display: inline-block;
+    }
+    > div{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        height: 2vw;
+        width: 25.5%;
+    }
 }
 .node-js,
 .next-js{
-    fill: #d20326;
+    fill: $primary;
 }
 .next-js{
     stroke-width: 7px;
-    stroke: #d20326;
+    stroke: $primary;
 }
-.first-style .jenkins .circle,
-.first-style .jenkins .towel{
-    fill: #d20326;
-}
-.first-style .jenkins .tie{
-    fill: white;
+.jenkins{
+    .circle,
+    .towel{
+    fill: $primary;
+
+    }
+
+    .tie{
+        fill: $secondary;
+    }
 }

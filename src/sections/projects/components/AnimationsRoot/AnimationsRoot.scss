@@ -15,78 +15,96 @@
             transition: transform 1.5s;
         }
     }
+}
 
-    &.tasks-visited > div {
-        transform: translate(20%, 15%);
-    }
-
-    &.restaurant-visited > div {
-        transform: translate(-20%, -24%);
-    }
-
-    &.extensions-visited > div {
-        transform: translate(20%, -5%);
-    }
-
-    &.chat-visited > div {
-        transform: translate(20%, 24%);
-    }
-
-    &.profile-visited > div {
-        transform: translate(20%, -5%);
-    }
-
-    @media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
+    .animations{
         display: flex;
         align-items: center;
         height: 100%;
+    
+        &.tasks-visited .tasks-animation-wrapper,
+        &.tasks-visited .profile-animation-wrapper {
+            transform: translate(20%, 15%);
+        }
+    
+        &.profile-visited .tasks-animation-wrapper,
+        &.profile-visited .profile-animation-wrapper {
+            transform: translate(-20%, 30%);
+        }
 
-        > div {
+        & > div {
             height: 34%;
         
             .translate-wrapper{
                 height: 100%;
-
+    
                 svg{
                      height: 100%;
                 }
             }
         }
-
+    
         .tasks-animation-wrapper {
             margin-top: 10vh;
-            margin-left: 5vh;
+            left: 5vh;
+            width: 50vw;
         }
-
+    
         .restaurant-animation-wrapper {
+            position: relative;
+            width: 50vw;
+            margin-top: 4vh;
             align-self: flex-end;
-            margin-bottom: 30vh;
-            margin-left: 75vh;
-            height: 29%;
+            margin-bottom: 12vh;
+            height: 31%;
+            left: 76vh;
+            margin-left: 5vw;
         }
-
+    
         .extensions-animation-wrapper {
-            margin-left: 37vh;
+            height: 40%;
             align-self: flex-start;
-            margin-top: 9vh;
+            margin-top: 4vh;
+            width: 50vw;
+            display: flex;
+            justify-content: flex-end;
+            left: 54vh;
         }
-
+    
         .profile-animation-wrapper {
-            margin-left: 68vh;
             align-self: start;
             margin-top: 14vh;
             height: 21%;
+            width: 45vw;
+            display: flex;
+            justify-content: flex-end;
         }
-
+    
         .chat-animation-wrapper {
-            margin-left: 57vh;
+            height: 45%;
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: -23vh;
+            right: 6vw;
         }
     }
 
-    @media only screen and (orientation: portrait) {
+    .scroll.first-slide .animations{
+        &.extensions-visited .extensions-animation-wrapper,
+        &.extensions-visited .restaurant-animation-wrapper {
+            transform: translate(-28%, 15%);
+        }
+    }
+ 
+}
+
+@media only screen and (orientation: portrait) {
+    .animations{
         > div{
             margin-bottom: 18%;
-
+    
             .translate-wrapper{
                 width: 66%;
                 display: inline-block;
@@ -96,7 +114,7 @@
                 }
             }
         }
-
+    
         .restaurant-animation-wrapper {
             > div{
                 margin-left: 2%;
@@ -105,7 +123,7 @@
     
         .extensions-animation-wrapper {
             text-align: center;
-
+    
             > div{
                 margin-left: 9%;
             }
@@ -127,5 +145,6 @@
                 margin-top: 8%;
             }
         }
+
     }
 }
