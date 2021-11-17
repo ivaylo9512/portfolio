@@ -7,6 +7,9 @@ exports[`Ribon snapshot tests should match snapshot 1`] = `
   <div
     className="content"
   />
-  <Rect />
+  <Rect
+    height="85"
+    width={564}
+  />
 </div>
 `;

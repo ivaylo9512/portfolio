@@ -5,5 +5,8 @@ exports[`LeftPanel snapshot tests should match snapshot 1`] = `
   className="left-panel"
 >
   <Projects />
+  <MoreGithub
+    shouldEqual={false}
+  />
 </section>
 `;

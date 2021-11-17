@@ -5,19 +5,44 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
   className="projects"
 >
   <Project
-    ratio={1.8181818181818181}
+    height={310}
+    info="Long polling restaurant app with integrated chat"
+    key="Restaurant App"
+    name="Restaurant App"
+    repo="restaurant-app-with-chat-long-polling-server"
+    width={496}
   />
   <Project
-    ratio={2.3272727272727276}
+    height={310}
+    info="Desktop client for restaurant app"
+    key="Restaurant Client Desktop"
+    name="Restaurant Client Desktop"
+    repo="restaurant-app-with-chat-long-polling-server"
+    width={641.5652173913044}
   />
   <Project
-    ratio={1.8181818181818181}
+    height={310}
+    info="Chat app with websockets and spring"
+    key="Chat App"
+    name="Chat App"
+    repo="restaurant-app-with-chat-long-polling-server"
+    width={496}
   />
   <Project
-    ratio={1.8181818181818181}
+    height={310}
+    info="Chat app web application with React"
+    key="Chat App Web"
+    name="Chat App Web"
+    repo="restaurant-app-with-chat-long-polling-server"
+    width={496}
   />
   <Project
-    ratio={1.8181818181818181}
+    height={310}
+    info="Task app with graphql and react"
+    key="Task App"
+    name="Task App"
+    repo="restaurant-app-with-chat-long-polling-server"
+    width={496}
   />
 </div>
 `;

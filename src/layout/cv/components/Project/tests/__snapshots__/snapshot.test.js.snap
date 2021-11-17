@@ -1,14 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project snapshot tests should match snapshot 1`] = `
+exports[`Project snapshot tests should match snapshot with projects 1`] = `
 <div
   className="project"
 >
+  <div
+    className="content"
+  >
+    <p
+      className="name"
+    />
+    <div
+      className="github-container"
+    >
+      <Github />
+      <a
+        data-testid="github-link"
+        href="https://github.com/ivaylo9512/undefined"
+        tabIndex="-1"
+      >
+        Github
+      </a>
+    </div>
+    <div
+      className="info"
+    >
+      <Circle />
+      <p />
+    </div>
+  </div>
   <div
     className="clip"
   >
     <Circle />
   </div>
-  <ProjectRect />
+  <Rect />
+</div>
+`;
+
+exports[`Project snapshot tests should match snapshot with projects to false 1`] = `
+<div
+  className="project"
+>
+  <div
+    className="content"
+  >
+    <p
+      className="name"
+    />
+    <div
+      className="github-container"
+    >
+      <Github />
+      <a
+        data-testid="github-link"
+        href="https://github.com/ivaylo9512/undefined"
+      >
+        Github
+      </a>
+    </div>
+    <div
+      className="info"
+    >
+      <Circle />
+      <p />
+    </div>
+  </div>
+  <div
+    className="clip"
+  >
+    <Circle />
+  </div>
+  <Rect />
 </div>
 `;

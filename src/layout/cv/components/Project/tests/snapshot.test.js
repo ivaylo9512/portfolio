@@ -1,13 +1,30 @@
 import Project from '../Project';
 import { shallow } from 'enzyme';
+import * as Redux from 'react-redux';
 
 describe('Project snapshot tests', () => {
-    const createWrapper = () => shallow(
-        <Project />
-    )
+    let selectorSpy = jest.fn();
 
-    it('should match snapshot', () => {
-        const wrapper = createWrapper();
+    beforeEach(() => {
+        selectorSpy = jest.spyOn(Redux, 'useSelector');
+    })
+
+    const createWrapper = (state) => {
+        selectorSpy.mockReturnValue(state);
+        
+        return shallow(
+            <Project />
+        )
+    }
+
+    it('should match snapshot with projects', () => {
+        const wrapper = createWrapper(true);
+     
+        expect(wrapper).toMatchSnapshot();
+    })
+
+    it('should match snapshot with projects to false', () => {
+        const wrapper = createWrapper(false);
      
         expect(wrapper).toMatchSnapshot();
     })

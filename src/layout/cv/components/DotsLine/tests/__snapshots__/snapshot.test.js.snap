@@ -2,7 +2,7 @@
 
 exports[`DotsLine snapshot tests should match snapshot 1`] = `
 <div
-  class="dots"
+  className="dots"
 >
   <Circle />
   <Circle />
