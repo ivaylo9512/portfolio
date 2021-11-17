@@ -23,7 +23,6 @@ const animationSlice = createSlice({
             state.currentVisited = initialState.currentVisited;
         },
         changeSlide: (state, { payload }) => {
-            console.log(payload);
             state.currentSlideIndex += payload;
             state.currentSlide = slides[state.currentSlideIndex];
         }
