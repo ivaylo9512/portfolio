@@ -2,10 +2,10 @@
   "compilerOptions": {
       "baseUrl": "src",
       "paths": {
-          "@cv": ["./sections/cv"],
+          "@cv": ["./layout/cv"],
           "@svgIcons": ["./svgIcons"],
-          "@projects": ["./sections/projects"],
-          "@svgAnimations": ["./sections/projects/svgAnimations"],
+          "@projects": ["./layout/projects"],
+          "@svgAnimations": ["./layout/projects/svgAnimations"],
           "@sassUtils": ["./sassUtils"]
       }
   },

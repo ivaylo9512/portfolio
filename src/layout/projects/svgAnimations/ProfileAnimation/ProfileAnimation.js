@@ -1,4 +1,4 @@
-import ProjectsShadow from 'sections/projects/svgFilters/ProjectsShadow';
+import ProjectsShadow from '@projects/svgFilters/ProjectsShadow';
 import './ProfileAnimation.scss';
 
 const ProfileAnimation = ({ className }) => {

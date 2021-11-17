@@ -1,7 +1,7 @@
 import ProjectsRoot from '@projects/ProjectsRoot/ProjectsRoot';
-import Header from 'sections/Header/Header';
+import Header from 'layout/Header/Header';
 import './App.scss';
-import CvRoot from './sections/cv/CvRoot/CvRoot';
+import CvRoot from '@cv/CvRoot/CvRoot';
 import { useSelector } from 'react-redux';
 import { isProjectsSection } from 'app/slices/animationsSlice';
 

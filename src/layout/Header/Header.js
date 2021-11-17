@@ -1,7 +1,8 @@
 import { isProjectsSection, toggleSections } from 'app/slices/animationsSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import Arrow from 'svgIcons/Arrow';
-import Rect from 'svgIcons/Rect';
+import Arrow from '@svgIcons/Arrow';
+import Circle from '@svgIcons/Circle';
+import Rect from '@svgIcons/Rect';
 import './Header.scss';
 
 const Header = () => {
@@ -31,6 +32,7 @@ const Header = () => {
                     </li>
                     <li>
                         <a>
+                            <Circle />
                             <Arrow />
                         </a>
                     </li>

@@ -3,7 +3,7 @@ import RestaurantBlob from '@projects/icons/RestaurantBlob'
 import TasksBlob from '@projects/icons/TasksBlob'
 import './Background.scss'
 import ExtensionsBlob from '@projects/icons/ExtensionsBlob'
-import ChatBlob from 'sections/projects/icons/ChatBlob'
+import ChatBlob from '@projects/icons/ChatBlob'
 
 const Background = () => {
     return(

@@ -1,9 +1,9 @@
-import ShapeShadow from 'sections/cv/svgFilters/ShapeShadow';
-import BlackShadow from 'sections/cv/svgFilters/BlackShadow';
-import NameShadow from 'sections/cv/svgFilters/NameShadow';
-import ProjectShadow from 'sections/cv/svgFilters/ProjectShadow';
-import CircleShadow from 'sections/cv/svgFilters/CircleShadow';
-import DotShadow from 'sections/cv/svgFilters/DotShadow';
+import ShapeShadow from '@cv/svgFilters/ShapeShadow';
+import BlackShadow from '@cv/svgFilters/BlackShadow';
+import NameShadow from '@cv/svgFilters/NameShadow';
+import ProjectShadow from '@cv/svgFilters/ProjectShadow';
+import CircleShadow from '@cv/svgFilters/CircleShadow';
+import DotShadow from '@cv/svgFilters/DotShadow';
 import './FiltersRoot.scss'
 
 const FiltersRoot = () => {
