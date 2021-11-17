@@ -4,6 +4,6 @@
 @mixin getStyleColors($style) {
     $map: map.get($cv, $style);
 
-    $primary: map.get($map, 'primary') !global;
-    $secondary: map.get($map, 'secondary') !global;
+    --clr-primary: #{map.get($map, 'primary')};
+    --clr-secondary: #{map.get($map, 'secondary')};
 }

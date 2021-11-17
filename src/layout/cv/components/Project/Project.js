@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { isProjectsSection } from 'app/slices/animationsSlice';
 
 const Project = ({ height, width, name, repo, info }) => {
-    const isProfile = useSelector(isProjectsSection);
+    const isProjects = useSelector(isProjectsSection);
 
     return(
         <div className='project'>
@@ -14,7 +14,7 @@ const Project = ({ height, width, name, repo, info }) => {
                 <p className='name'>{name}</p>
                 <div className='github-container'>
                     <Github />
-                    <a tabIndex={isProfile ? '-1' : undefined} href={`https://github.com/ivaylo9512/${repo}`}>Github</a>
+                    <a data-testid='github-link' tabIndex={isProjects ? '-1' : undefined} href={`https://github.com/ivaylo9512/${repo}`}>Github</a>
                 </div>
                 <div className='info'>
                     <Circle />

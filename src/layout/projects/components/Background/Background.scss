@@ -61,7 +61,7 @@
 
         .restaurant-blob {
             height: 75%;
-            left: 100vw;
+            left: 98vw;
             transform: rotate(199deg);
             top: -57%;
         }
@@ -83,7 +83,7 @@
         .chat-blob {
             width: 153vh;
             top: -117vh;
-            left: 284vw;
+            left: calc(300vw - 129vh);
             transform: rotate(175deg);
         }
     }

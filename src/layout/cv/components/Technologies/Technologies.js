@@ -29,7 +29,7 @@ const Technologies = () => {
     ].map(i => <Technology key={i.type.name} viewBox='129 129' icon={i} />)
             
     return(
-        <List className='technologies' name={<TechnologiesSvg />}>
+        <List className='technologies' data-style='first-style' name={<TechnologiesSvg />}>
             {getIcons()}
             <div className='names'>
                 <div><Orm /></div>

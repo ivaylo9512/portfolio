@@ -5,16 +5,29 @@
 }
 
 .cv.third-style{
+    @include getStyleColors('second-style'); 
+}
+
+.cv.third-style{
     @include getStyleColors('third-style'); 
 }
+
 
 .technologies{
     .list-svg{
         fill: black;
     }
 
-    svg{
-        fill: $primary;
+    .technology svg:not(.circle, .react, .angular) {
+        fill: var(--clr-primary);
+    }
+
+    .list-svg{
+        fill: var(--clr-secondary);
+    }
+
+    .ribon .name{
+        fill: var(--clr-secondary);
     }
 }
 
@@ -27,7 +40,6 @@
         width: 98%;
         display: block;
         margin: 5% 0 1% 0;
-        fill: white;
     }
 }
 
@@ -41,6 +53,7 @@
         height: 66%;
         display: inline-block;
     }
+
     > div{
         position: relative;
         display: inline-block;
@@ -52,22 +65,42 @@
 
 .node-js,
 .next-js{
-    fill: $primary;
+    fill: var(--clr-primary);;
 }
 
 .next-js{
     stroke-width: 7px;
-    stroke: $primary;
+    stroke: var(--clr-primary);;
 }
 
 .jenkins{
     .circle,
     .towel{
-    fill: $primary;
+    fill: var(--clr-primary);;
 
     }
 
     .tie{
-        fill: $secondary;
+        fill: var(--clr-secondary);;
+    }
+}
+
+.first-style .technologies {
+    .node-js,
+    .next-js{
+        fill: var(--clr-secondary);;
+    }
+
+    .next-js{
+        stroke: var(--clr-secondary);;
+    }
+
+    .ribon{
+        fill: white;
+        
+        .name,
+        .list-svg{
+            fill: var(--clr-primary);
+        }
     }
 }

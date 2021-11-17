@@ -39,6 +39,10 @@ header {
         }
     }
 
+    button, a{
+        height: 6vh;
+    }
+
     a{
         display: block;
         position: relative;
@@ -49,7 +53,7 @@ header {
             color: white;
             border-radius: 1vw;
             align-items: center;
-            font-size: 0.8vw;
+            font-size: 1.8vh;
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -63,7 +67,7 @@ header {
 
         .rect{
             position: relative;
-            width: 7vw;
+            height: 100%;
             z-index: -1;
        
             rect{
@@ -82,11 +86,11 @@ header {
     }
 
     button{
-        width: 6vh;
         position: relative;
+        display: block;
 
         .circle{
-            width: 100%;
+            height: 100%;
         }    
         
         .arrow{
@@ -118,55 +122,64 @@ header {
             transform: rotate(-90deg);
         }
     }
+
+    &.second-slide {
+        .slide-right {
+            circle{
+                transition: fill 0.5s 0.7s;
+                fill: var(--clr-extensions-primary);
+            }
+        }
+    
+        .sections-toggle{
+            rect{
+                fill: var(--clr-extensions-primary);
+            }
+        }
+    
+        .slide-left{
+            opacity: 1;
+            pointer-events: all;
+    
+            circle{
+                fill: var(--clr-extensions-primary);
+            }
+        }
+    
+        .left-menu{    
+            transform: translateX(calc(98vw - 100% - 7vh));
+        }
+    }
+    
+    &.third-slide {
+        .sections-toggle{
+            rect{
+                fill: var(--clr-extensions-primary);
+            }
+        }
+    
+        .slide-right {
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    
+        .slide-left{
+            opacity: 1;
+            pointer-events: all;
+            
+            circle{
+                fill: var(--clr-extensions-primary);
+            }
+        }
+    }
+
 }
 
-header.second-slide {
-    .slide-right {
-        circle{
-            transition: fill 0.5s 0.7s;
-            fill: var(--clr-extensions-primary);
-        }
-    }
 
-    .sections-toggle{
-        rect{
-            fill: var(--clr-extensions-primary);
-        }
-    }
 
-    .slide-left{
-        opacity: 1;
-        pointer-events: all;
-
-        circle{
-            fill: var(--clr-extensions-primary);
-        }
-    }
-
-    .left-menu{    
-        transform: translateX(calc(98vw - 100% - 7vh));
-    }
-}
-
-header.third-slide {
-    .sections-toggle{
-        rect{
-            fill: var(--clr-extensions-primary);
-        }
-    }
-
-    .slide-right {
-        pointer-events: none;
+@media only screen and (max-aspect-ratio: 10 / 6 ) {
+    header{
         opacity: 0;
-        transition: opacity 0.5s;
-    }
-
-    .slide-left{
-        opacity: 1;
-        pointer-events: all;
-        
-        circle{
-            fill: var(--clr-extensions-primary);
-        }
     }
 }

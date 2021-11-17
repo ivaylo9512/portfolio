@@ -3,7 +3,11 @@
     position: relative;
     z-index: 3;
     background: white;
-        
+    
+    svg{
+        transition: fill 11s 5s;
+    }
+
     &::-webkit-scrollbar {
         width: 0.55vw;
     }
