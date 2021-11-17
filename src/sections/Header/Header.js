@@ -1,6 +1,7 @@
 import { isProjectsSection, toggleSections } from 'app/slices/animationsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Arrow from 'svgIcons/Arrow';
+import Rect from 'svgIcons/Rect';
 import './Header.scss';
 
 const Header = () => {
@@ -21,11 +22,11 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a data-testid='sections-toggle' onClick={onToggleSections}>
-                            {isProjects 
-                                ? <span data-testid='cv'>Cv'</span>
-                                : <span data-testid='projects'>'Projects'</span>
-                            }
+                        <a data-testid='sections-toggle' className='section-toggle' onClick={onToggleSections}>
+                            <Rect width={496} height={210} radius={100} />
+                            <span data-testid={isProjects ? 'cv' : 'projects'}>{isProjects ? 'Cv' : 'Projects'}
+                                <Arrow />
+                            </span>
                         </a>
                     </li>
                     <li>

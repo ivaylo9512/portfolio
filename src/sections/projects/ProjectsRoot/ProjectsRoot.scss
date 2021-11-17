@@ -2,21 +2,34 @@
     position: relative;
     height: 100%;
     box-sizing: border-box;
-    overflow-y: hidden;
     
     .scroll{
         position: relative;
         height: 100%;
         display: inline-block;
+        width: 100%;
+        transition: transform 1.5s;
     }
-
+    
     .scroll-container{
         height: 100%;
     }
 
     @media only screen and (orientation: landscape) {
-        .scroll-container{
-            overflow-x: scroll;
+        .scroll{
+            width: auto;
+        
+            &.first-slide{
+                transform: translateX(calc(-100vw - 64vh));
+            }
+            &.second-slide{
+                transform: translateX(calc(-200vw + 23vh));
+            }
         }
+    }
+
+    @media only screen and (max-device-height : 896px) and (orientation : landscape) { 
+        padding-right: env(safe-area-inset-right);
+
     }
 }

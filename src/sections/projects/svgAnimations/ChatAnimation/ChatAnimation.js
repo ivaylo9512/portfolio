@@ -10,7 +10,7 @@ const ChatAnimation = ({ className }) => {
             <path d='M33.67,15A18.67,18.67,0,1,1,15,33.67,18.66,18.66,0,0,1,33.67,15m0-15A33.67,33.67,0,1,0,67.33,33.67,33.7,33.7,0,0,0,33.67,0Z'/>
             <circle className='fill-primary' cx='122.79' cy='111.12' r='52.16' transform='translate(-33.18 55.45) rotate(-22.5)'/>
             <path d='M122.79,70a41.16,41.16,0,1,1-41.16,41.15A41.15,41.15,0,0,1,122.79,70m0-22A63.16,63.16,0,1,0,186,111.12,63.23,63.23,0,0,0,122.79,48Z'/>
-            <rect className='fill-primary stroke-100 stroke-secondary' x='133.43' y='114.66' width='134.6' height='102.36' rx='6.63' />
+            <rect className='fill-primary' x='133.43' y='114.66' width='134.6' height='102.36' rx='6.63' />
             <rect x='142.91' y='187.45' width='115.67' height='21.69' rx='3' />
             <circle className='rotate' cx='252.91' cy='132.9' r='5.71' />
             <g className='lines'>

@@ -1,10 +1,11 @@
-@use '@sassUtils/projectsClasses/strokes' as *;
-@use '@sassUtils/projectsClasses/colors' as *;
+@use '@sassUtils/classGenerators/strokes' as *;
+@use '@sassUtils/classGenerators/colors' as *;
 
 .restaurant-animation{
     transform: translateY(0);
-    
-    :not(g){
+
+    .shadow {
+        filter: url(#restaurant-blob-shadow);
     }
 
     .tick{
@@ -23,6 +24,7 @@
     .bar,
     .left-bar{
         transition: transform 1.5s;
+        filter: url(#restaurant-blob-shadow);
     }
 
     .phones{
@@ -42,7 +44,7 @@
     .menu-bar{
         transition: width 1.5s, opacity 0s 1.5s;
         width: 23px;
-        opacity: 0;
+        filter: url(#restaurant-blob-shadow);
     }
 
     .btn{

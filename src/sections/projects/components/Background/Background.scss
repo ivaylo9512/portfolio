@@ -61,29 +61,30 @@
 
         .restaurant-blob {
             height: 75%;
-            left: 147vh;
-            transform: rotate(239deg);
-            top: -69%;
+            left: 100vw;
+            transform: rotate(199deg);
+            top: -57%;
         }
 
         .extensions-blob {
             top: 68%;
-            transform: rotate(2deg);
-            left: 316vh;
+            left: 200vw;
             height: 114%;
+            transform: translateX(-30%) rotate(2deg);
         }
 
         .profile-blob {
             height: 139%;
             top: 55%;
-            left: 78vh;
+            left: 100vw;
+            transform: translate(-60%);
         }
 
         .chat-blob {
-            width: 71vh;
-            top: -33vh;
-            left: 421vh;
-            transform: rotate(-140deg);
+            width: 153vh;
+            top: -117vh;
+            left: 284vw;
+            transform: rotate(175deg);
         }
     }
 
