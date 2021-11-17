@@ -7,7 +7,11 @@
     .clip .circle{
         position: absolute;
     }
-
+    
+    .circle{
+        fill: var(--clr-primary)
+    }
+    
     :first-child{
         .clip .circle{
             right: -23%;
@@ -20,7 +24,6 @@
         width: 59.5%;
         
         circle{
-            fill: white;
             filter: url(#shape-shadow);
         }
     
@@ -33,7 +36,6 @@
 
     > :nth-child(3){
         circle{
-            fill: white;
             filter: url(#shape-shadow);
         }
     
@@ -51,7 +53,6 @@
 
     > :nth-child(4){
         circle{
-            fill: white;
             filter: url(#shape-shadow);
         }
     
@@ -70,5 +71,24 @@
             width: 51%;
         }
     }
-    
+}
+
+.first-style .projects{
+    > :nth-child(2){
+        .circle{
+            fill: white;
+        }
+    }
+
+    > :nth-child(3){
+        .circle{
+            fill: white;
+        }
+    }
+
+    > :nth-child(4){
+        .circle{
+            fill: white;
+        }
+    }
 }

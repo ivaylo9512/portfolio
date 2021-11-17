@@ -1,22 +1,30 @@
 .list{
     margin-top: 3%;
     font-size: 1.5vw;
-}
-.list > div:not(:first-child){
-    text-transform: uppercase;
-    margin-top: 3.2%;
-    fill: white;
 
-}
-.list > :first-child .name{
-    height: 50%;
+    > div:first-child{
+        fill: var(--clr-primary);
+    }
+    
+    > div:not(:first-child){
+        text-transform: uppercase;
+        margin-top: 3.2%;
+        fill: white;
+
+    }
+    
+    > :first-child .name{
+        height: 50%;
+    }
 }
 .name{
     fill: black;
+
+    path{
+        filter: url(#name-shadow);
+    }
 }
-.name path{
-    filter: url(#name-shadow);
-}
+
 .list-svg{
     height: 50%;
     fill: black;

@@ -3,23 +3,27 @@
     width: 98%;
     margin-top: 3.2%;
     position: relative;
-}
-.ribon > svg{
-    display: block;
-}
-.ribon rect{
-    filter: url(#shape-shadow);
-}
-.ribon .content{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding-left: 3%;
-    z-index: 5;
-    box-sizing: border-box;
-    align-items: center;
-}
-.ribon span{
-    flex: 1;
+
+    > svg{
+        display: block;
+    }
+
+    rect{
+        filter: url(#shape-shadow);
+    }
+
+    .content{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-left: 3%;
+        z-index: 5;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    span{
+        flex: 1;
+    }
 }

@@ -27,8 +27,8 @@ $projects: (
 
 $cv: (
     first-style: (
-        primary: hsl(350deg 97% 42%),
-        secondary: white
+        primary: black,
+        secondary: hsl(350deg, 97%, 42%)
     ),
 
     second-style: (
@@ -38,6 +38,6 @@ $cv: (
 
     third-style: (
         primary: hsl(234deg, 87%, 50%),
-        secondary: black
+        secondary: white
     )
 )
