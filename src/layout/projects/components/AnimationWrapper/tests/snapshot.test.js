@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import ChatAnimation from 'sections/projects/svgAnimations/ChatAnimation/ChatAnimation';
+import ChatAnimation from '@projects/svgAnimations/ChatAnimation/ChatAnimation';
 import AnimationWrapper from '../AnimationWrapper'
 import * as Redux from 'react-redux';
 

@@ -2,9 +2,6 @@
 
 exports[`ExtensionsAnimation snapshot tests should match snapshot 1`] = `
 <svg
-  className="extensions-animation"
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
   viewBox="0 0 464.85 272.98"
   xmlns="http://www.w3.org/2000/svg"
 >

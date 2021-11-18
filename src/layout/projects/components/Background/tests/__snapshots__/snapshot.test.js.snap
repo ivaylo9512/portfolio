@@ -4,8 +4,10 @@ exports[`Background snapshot tests should match snapshot 1`] = `
 <div
   className="background"
 >
-  <RedBlob />
-  <BrownBlob />
-  <GreenBlob />
+  <RestaurantBlob />
+  <ProfileBlob />
+  <TasksBlob />
+  <ExtensionsBlob />
+  <ChatBlob />
 </div>
 `;

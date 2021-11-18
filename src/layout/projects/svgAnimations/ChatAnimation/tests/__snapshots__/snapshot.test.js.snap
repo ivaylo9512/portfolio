@@ -2,7 +2,6 @@
 
 exports[`ChatAnimation snapshot tests should match snapshot 1`] = `
 <svg
-  className="chat-animation"
   viewBox="0 0 274.25 331.07"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -29,7 +28,7 @@ exports[`ChatAnimation snapshot tests should match snapshot 1`] = `
     d="M122.79,70a41.16,41.16,0,1,1-41.16,41.15A41.15,41.15,0,0,1,122.79,70m0-22A63.16,63.16,0,1,0,186,111.12,63.23,63.23,0,0,0,122.79,48Z"
   />
   <rect
-    className="fill-primary stroke-100 stroke-secondary"
+    className="fill-primary"
     height="102.36"
     rx="6.63"
     width="134.6"

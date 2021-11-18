@@ -16,12 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'yarn test-jenkins'
-            }
-            post {
-                always {
-                    step([$class: 'CoberturaPublisher', coberturaReportFile: 'coverage/jest/cobertura-coverage.xml'])
-                }
+                sh 'yarn test'
             }
         }
     }
