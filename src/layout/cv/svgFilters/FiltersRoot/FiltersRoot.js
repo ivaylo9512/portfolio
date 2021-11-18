@@ -1,6 +1,7 @@
 import ShapeShadow from '@cv/svgFilters/ShapeShadow';
 import BlackShadow from '@cv/svgFilters/BlackShadow';
 import NameShadow from '@cv/svgFilters/NameShadow';
+import GithubShadow from '@cv/svgFilters/GithubShadow';
 import ProjectShadow from '@cv/svgFilters/ProjectShadow';
 import CircleShadow from '@cv/svgFilters/CircleShadow';
 import DotShadow from '@cv/svgFilters/DotShadow';
@@ -16,6 +17,7 @@ const FiltersRoot = () => {
                 <BlackShadow />
                 <NameShadow />
                 <ProjectShadow />
+                <GithubShadow />
             </defs>
         </svg>
     )

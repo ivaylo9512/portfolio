@@ -13,6 +13,7 @@ exports[`FiltersRoot snapshot tests should match snapshot 1`] = `
     <RectangleWhite />
     <NameShadow />
     <ShapeShadow />
+    <GithubShadow />
   </defs>
 </svg>
 `;
