@@ -3,6 +3,7 @@
 exports[`App snapshot tests should match snapshot with isProjects to false 1`] = `
 <div
   className="app projects-section"
+  data-testid="app"
 >
   <Header />
   <div
@@ -17,6 +18,7 @@ exports[`App snapshot tests should match snapshot with isProjects to false 1`] =
 exports[`App snapshot tests should match snapshot with isProjects to true 1`] = `
 <div
   className="app projects-section"
+  data-testid="app"
 >
   <Header />
   <div

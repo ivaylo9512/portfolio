@@ -9,7 +9,7 @@ const App = () => {
     const isProjects = useSelector(isProjectsSection);
 
     return (
-        <div className={`app ${isProjects ? 'projects-section' : ''}`}>
+        <div data-testid='app' className={`app ${isProjects ? 'projects-section' : ''}`}>
             <Header />
             <div className='transition-container'>
                 <CvRoot />
