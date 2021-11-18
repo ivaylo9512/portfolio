@@ -2,9 +2,26 @@
 
 exports[`ProjectsRoot snapshot tests should match snapshot 1`] = `
 <section
-  className="projects-root"
+  className="projects-root first-slide"
 >
-  <Background />
-  <Animations />
+  <div
+    className="scroll"
+  >
+    <Background />
+    <Animations />
+  </div>
+</section>
+`;
+
+exports[`ProjectsRoot snapshot tests should match snapshot with second slide 1`] = `
+<section
+  className="projects-root second-slide"
+>
+  <div
+    className="scroll"
+  >
+    <Background />
+    <Animations />
+  </div>
 </section>
 `;

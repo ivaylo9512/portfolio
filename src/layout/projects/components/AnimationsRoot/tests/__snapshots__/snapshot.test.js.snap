@@ -1,28 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Animations snapshot tests should match snapshot 1`] = `
+exports[`AnimationsRoot snapshot tests should match snapshot with visited 1`] = `
 <div
-  className="animations"
-  style={
-    Object {
-      "transform": 0,
-    }
-  }
+  className="animations tasks"
 >
-  <RestaurantAnimation
-    setTransform={[Function]}
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="tasks"
   />
-  <ChatAnimation
-    setTransform={[Function]}
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="profile"
   />
-  <ExtensionsAnimation
-    setTransform={[Function]}
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="restaurant"
   />
-  <TasksAnimation
-    setTransform={[Function]}
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="extensions"
   />
-  <ProfileAnimation
-    setTransform={[Function]}
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="chat"
+  />
+</div>
+`;
+
+exports[`AnimationsRoot snapshot tests should match snapshot without visited 1`] = `
+<div
+  className="animations "
+>
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="tasks"
+  />
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="profile"
+  />
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="restaurant"
+  />
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="extensions"
+  />
+  <AnimationWrapper
+    SvgAnimation={[Function]}
+    className="chat"
   />
 </div>
 `;
