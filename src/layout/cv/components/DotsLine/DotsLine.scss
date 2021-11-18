@@ -11,6 +11,12 @@
             filter: url(#dot-shadow)
         }
     }
+
+    @media only screen and (max-width: 742px) and (orientation:portrait){
+        svg{
+            margin-right: 1vw;
+        }
+    }
 }
 .first-style .languages{
     div:nth-of-type(2) .dots > svg:nth-child(-n+3),

@@ -29,6 +29,38 @@
     .ribon .name{
         fill: var(--clr-secondary);
     }
+
+    .names {
+        > :nth-child(4n + 1){
+            width: 19.5%;
+            margin-right: 3.25%;
+        }
+    
+        .name {
+            height: 66%;
+            display: inline-block;
+        }
+    
+        > div{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            height: 2vw;
+            width: 25.5%;
+        }
+    }
+
+    @media only screen and (max-width: 742px) and (orientation:portrait){
+        .names{
+            > div{
+                height: 4.2vw;
+            }
+            
+            .name{
+                height: 100%;
+            }
+        }
+    }
 }
 
 .list.technologies {
@@ -39,27 +71,14 @@
     > :first-child{
         width: 98%;
         display: block;
-        margin: 5% 0 1% 0;
-    }
-}
-
-.names {
-    > :nth-child(4n + 1){
-        width: 19.5%;
-        margin-right: 3.25%;
+        margin-bottom: 2%;
+        margin-top: 0;
     }
 
-    .name {
-        height: 66%;
-        display: inline-block;
-    }
-
-    > div{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        height: 2vw;
-        width: 25.5%;
+    @media only screen and (max-width: 742px) and (orientation:portrait){
+        > :first-child{
+            margin-bottom: 1vh;
+        }
     }
 }
 
@@ -69,7 +88,7 @@
 }
 
 .next-js{
-    stroke-width: 7px;
+    stroke-width: 14px;
     stroke: var(--clr-primary);;
 }
 

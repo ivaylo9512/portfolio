@@ -8,6 +8,12 @@
         transition: fill 11s 5s;
     }
 
+    .github path{
+        stroke-width: 1px;
+        stroke: black;
+        filter: url(#github-shadow); 
+    }
+
     &::-webkit-scrollbar {
         width: 0.55vw;
     }
@@ -19,12 +25,19 @@
       
     .translate-wrapper{
         display: flex;
-        padding-top: 17.6%;
+        flex-wrap: wrap;
         padding-bottom: 3%;
         width: 60%;
         margin: auto;
         justify-content: space-between;
         position: relative;
+    }
+
+    @media only screen and (max-width: 742px) and (orientation:portrait){
+        .translate-wrapper{
+            width: 100%;
+            flex-direction: column;
+        }
     }
 
     @media only screen and (max-device-height : 896px) and (orientation : landscape) { 

@@ -1,7 +1,19 @@
 .right-panel{
     width: 30%;
-}
-.right-panel > .dots{
-    margin-bottom: 5%;
-    width: 59%;
+    
+    > .dots{
+        margin-bottom: 5%;
+        width: 59%;
+    }
+
+    @media only screen and (max-width: 742px) and (orientation:portrait){
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > .dots {
+            display: none;
+        }
+    }
 }
