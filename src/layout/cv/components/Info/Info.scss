@@ -1,95 +1,82 @@
 .profile-info{
-    width: 100%;
-    height: 17.6vw;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0;
+    width: 100%;
 
     .image-container{
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-    
-        .circle{
-            width: 70%;
-            margin-top: 2vh;
-            margin-right: 4%;
-            fill: white;
-
-            circle{
-                filter: url(#shape-shadow);
-            }
+        display: flex;
+        width: 70%;
+        
+        img{
+            width: 100%;
         }
     }
 
     .data{
-        font-family: Abril;
-        width: 42%;
-        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 2.9vw;
         justify-content: center;
-        flex-direction: column;
+        font-family: Abril;
+        display: flex;
         font-weight: bold;
-        font-size: 0.85vw;
         color: black;
-        padding-left: 3%;
         box-sizing: border-box;
-
+                
         a:hover,
         a:focus{
             transform: scale(1.1);
         }
 
         > div{
+            width: 50%;
             display: flex;
             align-items: center;
-        }
-
-        .phone{
-            margin-bottom: 2%;
+            justify-content: center;
         }
 
         svg{
-            width: 5.5%;
+            width: 12%;
             margin-right: 2%;
         }
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vw;
+    @media only screen and (min-width: 742px) {
+        justify-content: flex-end;
+        flex-direction: row;
 
         .image-container{
-            flex: 1;
-            width: 61%;
-            justify-content: center;
+            width: 20%;
+            justify-content: flex-end;
+            align-items: center;
 
-            .circle{
-                height: 80%;
-                width: auto;
+            img{
+                margin-right: 4%;
             }
         }
 
         .data{
-            flex-direction: row;
-            height: 25vw;
-            width: 100%;
-            font-size: 2.5vh;
-            padding-left: 0;
-            align-items: center;
-            justify-content: space-around;
-
-            > div{
-                justify-content: center;
-            }
+            flex-direction: column;
+            font-size: 0.85vw;
+            padding-left: 3%;
+            width: 42%;
 
             svg{
-                width: 6vw;
+                width: 12%;
+                margin-right: 4%;
             }
 
+            > div {
+                justify-content: flex-start;
+            }
+            
             .phone{
-                margin-bottom: 0;
+                margin-bottom: 2%;
             }
         }
     }

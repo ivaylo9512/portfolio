@@ -1,6 +1,7 @@
 .dots{
     display: flex;
-
+    align-items: flex-start;
+    
     svg{
         width: 10%;
         fill: var(--clr-primary);

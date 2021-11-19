@@ -11,17 +11,31 @@
   font-weight: normal;
   src: url('./fonts/Abril.ttf') format('truetype');
 }
-
-html{
-  overflow: hidden;
-}
 body {
+  $background-color: white;
+  $track-color: black;
+
   margin: 0;
   font-family: Myriad Pro Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 	line-height: 1;
+
+  &::-webkit-scrollbar {
+    width: 0.9vw;
+  }
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: $track-color $background-color;
+  }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $track-color;
+    border-radius: 1vw;
+    border: 0.2vw solid $background-color;
+  }
 }
 
 html, body, button, div, span, applet, object, iframe,
@@ -47,6 +61,7 @@ time, mark, audio, video {
 }
 a{
   color: black;
+  cursor: pointer;
 }
 button{
   background: transparent;
@@ -72,10 +87,4 @@ p{
 }
 #root{
   overflow: hidden;
-}
-
-@media only screen and (orientation: portrait){
-  html{
-    overflow-y: scroll;
-  }
 }

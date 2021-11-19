@@ -1,27 +1,16 @@
 .app{
     width: 100vw;
-    
+        
     .transition-container{
         display: flex;
         height: 100%;  
         width: 200%;
         transform: translateX(0);
         transition: transform 1.5s;
-    
-        > section{
-            width: 50%;
-        
-            &.cv{
-                width: 49.9%;
-            }
-        }
-    }
-
-    @media only screen and (orientation: landscape) {
-        height: 100vh;
     }
 
     &.projects-section .transition-container{
         transform: translateX(-50%);
+        height: 100vh;
     }
 }

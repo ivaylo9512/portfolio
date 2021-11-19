@@ -39,6 +39,10 @@
         .name {
             height: 66%;
             display: inline-block;
+
+            &.node-js{
+                height: 76%;
+            }
         }
     
         > div{
@@ -71,47 +75,54 @@
     > :first-child{
         width: 98%;
         display: block;
-        margin-bottom: 2%;
+        margin-bottom: 1vh;
         margin-top: 0;
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
+    @media only screen and (min-width: 742px) and (orientation:portrait){
         > :first-child{
-            margin-bottom: 1vh;
+            margin-bottom: 2%;
         }
     }
 }
 
+.sql{
+    width: 64%;
+}
+.rest{
+    width: 70%;
+}
+.jwt{
+    width: 55%;
+}
 .node-js,
 .next-js{
-    fill: var(--clr-primary);;
+    fill: var(--clr-primary);
 }
-
 .next-js{
     stroke-width: 14px;
-    stroke: var(--clr-primary);;
+    stroke: var(--clr-primary);
 }
-
 .jenkins{
     .circle,
     .towel{
-    fill: var(--clr-primary);;
+    fill: var(--clr-primary);
 
     }
 
     .tie{
-        fill: var(--clr-secondary);;
+        fill: var(--clr-secondary);
     }
 }
 
 .first-style .technologies {
     .node-js,
     .next-js{
-        fill: var(--clr-secondary);;
+        fill: var(--clr-secondary);
     }
 
     .next-js{
-        stroke: var(--clr-secondary);;
+        stroke: var(--clr-secondary);
     }
 
     .ribon{
