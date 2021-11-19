@@ -1,10 +1,10 @@
-import { shallow } from 'enzyme';
 import Info from '../Info';
+import { shallow } from 'enzyme';
 import * as Redux from 'react-redux';
 
-describe('Info unit tests', () => {
-    let selectorSpy;
-   
+describe('Info snapshot tests', () => {
+    let selectorSpy = jest.fn();
+
     beforeEach(() => {
         selectorSpy = jest.spyOn(Redux, 'useSelector');
     })
@@ -17,15 +17,15 @@ describe('Info unit tests', () => {
         )
     }
 
-    it('should set tab index prop on isProjects to true', () => {
+    it('should match snapshot with isProjects to true', () => {
         const wrapper = createWrapper(true);
-
-        expect(wrapper.findByTestid('github-link').props().tabIndex).toEqual('-1');
+     
+        expect(wrapper).toMatchSnapshot();
     })
 
-    it('should not set tab index on isProjects to false', () => {
+    it('should match snapshot with isProjects to false', () => {
         const wrapper = createWrapper(false);
-
-        expect(wrapper.findByTestid('github-link').props().tabIndex).toBeUndefined();
+     
+        expect(wrapper).toMatchSnapshot();
     })
-})
+});
