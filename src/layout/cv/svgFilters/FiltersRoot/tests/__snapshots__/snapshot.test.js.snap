@@ -7,13 +7,62 @@ exports[`FiltersRoot snapshot tests should match snapshot 1`] = `
   xmlnsXlink="http://www.w3.org/1999/xlink"
 >
   <defs>
-    <ShapeShadow />
-    <CircleShadow />
-    <DotShadow />
-    <RectangleWhite />
-    <NameShadow />
-    <ShapeShadow />
-    <GithubShadow />
+    <Shadow
+      dx="0.45"
+      dy="1.949"
+      floodOpacity="0.35"
+      id="shape-shadow"
+      stdDeviation="2.646"
+    />
+    <Shadow
+      dx="0.45"
+      dy="3.549"
+      floodOpacity="0.45"
+      id="project-shadow"
+      stdDeviation="2.646"
+    />
+    <Shadow
+      dx="0.225"
+      dy="0.974"
+      floodOpacity="0.35"
+      id="name-shadow"
+      stdDeviation="2"
+    />
+    <Shadow
+      dx="0.45"
+      dy="3.549"
+      floodOpacity="0.55"
+      id="circle-shadow"
+      stdDeviation="5.646"
+    />
+    <Shadow
+      dx="0.45"
+      dy="1.949"
+      floodOpacity="0.55"
+      id="dot-shadow"
+      stdDeviation="4.646"
+    />
+    <Shadow
+      dx="0.45"
+      dy="3.249"
+      floodOpacity="0.5"
+      id="black-shadow"
+      stdDeviation="2.646"
+    />
+    <Shadow
+      dx="0.225"
+      dy="0.974"
+      floodOpacity="0.35"
+      id="github-shadow"
+      stdDeviation="1"
+    />
+    <Shadow
+      dx="0"
+      dy="0"
+      floodOpacity="0.68"
+      id="background-circle-shadow"
+      stdDeviation="4.583"
+    />
   </defs>
 </svg>
 `;
