@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabLink snapshot tests should match snapshot on isProjects to false and shouldMatch to false 1`] = `
+<a
+  href="https://link.com"
+  tabIndex="-1"
+>
+  <span>
+    text
+  </span>
+</a>
+`;
+
+exports[`TabLink snapshot tests should match snapshot on isProjects to false and shouldMatch to true 1`] = `
+<a
+  href="https://link.com"
+>
+  <span>
+    text
+  </span>
+</a>
+`;
+
+exports[`TabLink snapshot tests should match snapshot on isProjects to true and shouldMatch to false 1`] = `
+<a
+  href="https://link.com"
+>
+  <span>
+    text
+  </span>
+</a>
+`;
+
+exports[`TabLink snapshot tests should match snapshot on isProjects to true and shouldMatch to true 1`] = `
+<a
+  href="https://link.com"
+  tabIndex="-1"
+>
+  <span>
+    text
+  </span>
+</a>
+`;

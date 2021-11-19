@@ -13,7 +13,7 @@ describe('TabLink unit tests', () => {
         selectorSpy.mockReturnValue(state);
         
         return shallow(
-            <TabLink shouldMatch={shouldMatch} href='https://link.com' text='text' />
+            <TabLink shouldMatch={shouldMatch} href='https://link.com' />
         )
     }
 
