@@ -15,7 +15,7 @@ export default Projects
 
 const projectsInfo = [
     { 
-        repo: 'restaurant-app-with-chat-long-polling-server', 
+        repo: 'restaurant-app-with-chat-javaFx-desktop-app-3-designs-client', 
         info: 'Long polling restaurant app with integrated chat',
         name: 'Restaurant App',
         ratio: 1
@@ -27,19 +27,19 @@ const projectsInfo = [
         ratio: 59.5 / 46
     },
     { 
-        repo: 'restaurant-app-with-chat-long-polling-server', 
+        repo: 'chat-application-web-sockets-server', 
         info: 'Chat app with websockets and spring',
         name: 'Chat App',
         ratio: 1
     },
     { 
-        repo: 'restaurant-app-with-chat-long-polling-server', 
+        repo: 'chat-application-client-react', 
         info: 'Chat app web application with React',
         name: 'Chat App Web',
         ratio: 1
     },
     { 
-        repo: 'restaurant-app-with-chat-long-polling-server', 
+        repo: 'tasks-app-client-next', 
         info: 'Task app with graphql and react',
         name: 'Task App',
         ratio: 1

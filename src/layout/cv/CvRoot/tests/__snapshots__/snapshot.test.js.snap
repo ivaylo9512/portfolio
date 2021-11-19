@@ -8,9 +8,14 @@ exports[`CvRoot snapshot tests should match snapshot 1`] = `
     className="translate-wrapper"
   >
     <FiltersRoot />
+    <Info />
     <Background />
-    <LeftPanel />
-    <RightPanel />
+    <div
+      className="panels"
+    >
+      <LeftPanel />
+      <RightPanel />
+    </div>
   </div>
 </section>
 `;

@@ -1,6 +1,6 @@
 import Technology from '@cv/components/Technology/Technology';
 import './Technologies.scss';
-import Angular from 'svgIcons/Angular'
+import Angular from '@svgIcons/Angular'
 import List from '@cv/components/List/List';
 import Spring from '@svgIcons/Spring';
 import Aws from '@svgIcons/Aws';
@@ -19,13 +19,16 @@ import Jest from '@svgIcons/Jest';
 import Sass from '@svgIcons/Sass';
 import Orm from '@svgIcons/Orm';
 import Docker from '@svgIcons/Docker';
+import Jwt from '@svgIcons/Jwt';
+import Rest from '@svgIcons/Rest';
+import Sql from '@svgIcons/Sql';
 
 const Technologies = () => {
     
     const getIcons = () => [ 
         <ReactSvg/>, <Spring/>, <Aws/>, <Jenkins/>, 
-        <Redux/>, <Angular/>, <Ws/>, <Angular/>, 
-        <Typescript/>, <Graphql/>, <Angular/>, <Angular/> 
+        <Redux/>, <Angular/>, <Ws/>, <Jwt/>, 
+        <Typescript/>, <Graphql/>, <Sql/>, <Rest/> 
     ].map(i => <Technology key={i.type.name} viewBox='129 129' icon={i} />)
             
     return(

@@ -9,7 +9,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Long polling restaurant app with integrated chat"
     key="Restaurant App"
     name="Restaurant App"
-    repo="restaurant-app-with-chat-long-polling-server"
+    repo="restaurant-app-with-chat-javaFx-desktop-app-3-designs-client"
     width={496}
   />
   <Project
@@ -25,7 +25,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Chat app with websockets and spring"
     key="Chat App"
     name="Chat App"
-    repo="restaurant-app-with-chat-long-polling-server"
+    repo="chat-application-web-sockets-server"
     width={496}
   />
   <Project
@@ -33,7 +33,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Chat app web application with React"
     key="Chat App Web"
     name="Chat App Web"
-    repo="restaurant-app-with-chat-long-polling-server"
+    repo="chat-application-client-react"
     width={496}
   />
   <Project
@@ -41,7 +41,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Task app with graphql and react"
     key="Task App"
     name="Task App"
-    repo="restaurant-app-with-chat-long-polling-server"
+    repo="tasks-app-client-next"
     width={496}
   />
 </div>
