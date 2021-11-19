@@ -1,4 +1,5 @@
 import { isProjectsSection } from 'app/slices/animationsSlice';
+import { useSelector } from 'react-redux';
 
 const TabLink = ({ shouldMatch, href, text }) => {
     const isProjects = useSelector(isProjectsSection);
