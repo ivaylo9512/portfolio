@@ -1,9 +1,9 @@
-.project{
+.left-panel .project{
     position: relative;
-    display: inline-block;
-    margin-bottom: 5%;
-    width: 46%;
+    margin-top: 5vh;
+    width: 75%;
     color: #312929;
+    font-family: Myriad Pro Regular;
 
     .content{
         position: absolute;
@@ -15,7 +15,6 @@
         display: flex;
         flex-direction: column;
         font-weight: bold;
-        text-shadow: 0 0 0.1vw rgb(0, 0, 0, 0.5);
 
         svg{
             margin-right: 2%;
@@ -23,13 +22,11 @@
 
         .name{
             margin: 0;
-            font-weight: bold;
-            font-size: 1.2vw;
+            font-size: 5.2vw;
         }
 
         a{
-            font-weight: bold;
-            font-size: 1.1vw;
+            font-size: 4.1vw;
             text-decoration: underline;
             color: #312929;
 
@@ -57,7 +54,7 @@
             align-items: center;
             height: 31%;
             width: 80%;
-            font-size: 0.9vw;
+            font-size: 3.9vw;
 
             .circle{
                 height: 36%;
@@ -83,6 +80,26 @@
     
         rect{
             filter: url(#project-shadow);
+        }
+    }
+
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        width: 46%;
+        margin-bottom: 4vh;
+        margin-top: 0;
+        
+        .content{
+            .name{
+                font-size: 1.2vw;
+            }
+
+            a{
+                font-size: 1.1vw;
+            }
+
+            .info{
+                font-size: 0.9vw;
+            }
         }
     }
 }

@@ -2,7 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 3vh;
 
     .clip .circle{
         position: absolute;
@@ -21,7 +22,7 @@
     }
 
     > :nth-child(2){
-        width: 59.5%;
+        width: 90%;
         
         circle{
             filter: url(#shape-shadow);
@@ -69,6 +70,15 @@
             right: -19%;
             top: -36%;
             width: 51%;
+        }
+    }
+
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        align-items: flex-start;
+        margin-bottom: 0;
+
+        > :nth-child(2){
+            width: 59.5%;    
         }
     }
 }

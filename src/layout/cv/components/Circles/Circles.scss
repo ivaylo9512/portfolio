@@ -18,16 +18,18 @@
         left: 35%;
         padding-bottom: 10%;
     
-        svg:first-child{
-            width: 21%;
-            left: 27.5%;
-            top: 13.2%;
-        }
-
-        svg:last-child{
-            width: 25%;
-            left: 59.5%;
-            top: 36.2%;
+        > {
+            :first-child{
+                width: 21%;
+                left: 27.5%;
+                top: 13.2%;
+            }
+    
+            :last-child{
+                width: 25%;
+                left: 59.5%;
+                top: 36.2%;
+            }
         }
     }
 
@@ -37,30 +39,33 @@
         padding-bottom: 15%;
         top: 2%;
 
-        svg:nth-child(1){
-            width: 18%;
-            left: 35.5%;
-            top: 13.2%;
-        }
-
-        svg:nth-child(2),
-        svg:nth-child(3){
-            circle{
-                fill: white;
-                filter: url(#white-shadow);
+        > {
+            :nth-child(1){
+                width: 18%;
+                left: 35.5%;
+                top: 13.2%;
+            }
+    
+            :nth-child(2),
+            :nth-child(3){
+                circle{
+                    fill: white;
+                    filter: url(#white-shadow);
+                }
+            }
+            :nth-child(2){
+                width: 18%;
+                left: 67.7%;
+                top: 24.45%;
+            }
+    
+            :nth-child(3){
+                width: 10%;
+                left: 56.6%;
+                top: 66.9%;
             }
         }
-        svg:nth-child(2){
-            width: 18%;
-            left: 67.7%;
-            top: 24.45%;
-        }
 
-        svg:nth-child(3){
-            width: 10%;
-            left: 56.6%;
-            top: 66.9%;
-        }
     }
 
     .top-right-circles{
@@ -68,28 +73,30 @@
         padding-bottom: 15%;
         right: 22%;
         top: 2%;
+        > {
 
-        svg:nth-child(1){
-            width: 17%;
-            left: 65.7%;
-            top: 30.45%;
-        }
-
-        svg:nth-child(2){
-            width: 17%;
-            left: 39.7%;
-            top: 11.45%;
-            
-            circle{
-                fill: white;
-                filter: url(#white-shadow);
+            :nth-child(1){
+                width: 17%;
+                left: 65.7%;
+                top: 30.45%;
             }
-        }
 
-        svg:nth-child(3){
-            width: 12%;
-            left: 43.7%;
-            top: 56.45%;
+            :nth-child(2){
+                width: 17%;
+                left: 39.7%;
+                top: 11.45%;
+                
+                circle{
+                    fill: white;
+                    filter: url(#white-shadow);
+                }
+            }
+
+            :nth-child(3){
+                width: 12%;
+                left: 43.7%;
+                top: 56.45%;
+            }
         }
     }
 
@@ -99,41 +106,155 @@
         left: 47%;
         top: 15%;
 
-        svg:nth-child(1){
-            width: 11%;
-            left: 31.7%;
-            top: 1.45%;
+        > {
+            :nth-child(1){
+                width: 11%;
+                left: 31.7%;
+                top: 1.45%;
+            }
+    
+            :nth-child(2){
+                width: 11%;
+                left: 48.5%;
+                top: 13.2%;
+            }
+    
+            :nth-child(3){
+                width: 13%;
+                left: 62.6%;
+                top: 25.9%;
+            }
+    
+            :nth-child(4){
+                width: 16%;
+                left: 68.6%;
+                top: 42.9%;
+            }
+    
+            :nth-child(5){
+                width: 11%;
+                left: 60.6%;
+                top: 60.9%;
+            }
+    
+            :nth-child(6){
+                width: 12%;
+                left: 46.6%;
+                top: 74.9%;
+            }
         }
 
-        svg:nth-child(2){
-            width: 11%;
-            left: 48.5%;
-            top: 13.2%;
-        }
+    }
 
-        svg:nth-child(3){
-            width: 13%;
-            left: 62.6%;
-            top: 25.9%;
-        }
+    .bottom-spiral{
+        width: 20%;
+        top: 62%;
+        left: 47.5%;
+        padding-bottom: 26%;
 
-        svg:nth-child(4){
-            width: 16%;
-            left: 68.6%;
-            top: 42.9%;
-        }
+        > {
+            :nth-child(1){
+                width: 10%;
+                left: 38%;
+                top: 4%;
+            }
 
-        svg:nth-child(5){
-            width: 11%;
-            left: 60.6%;
-            top: 60.9%;
-        }
+            :nth-child(2){
+                width: 8%;
+                left: 39%;
+                top: 17%;
+            }
 
-        svg:nth-child(6){
-            width: 12%;
-            left: 46.6%;
-            top: 74.9%;
+            :nth-child(3){
+                width: 7%;
+                left: 46%;
+                top: 27%;
+            }
+
+            :nth-child(4){
+                width: 11%;
+                left: 52%;
+                top: 36%;
+            }
+
+            :nth-child(5){
+                width: 9%;
+                left: 52.5%;
+                top: 48%;
+            }
+
+            :nth-child(6){
+                width: 7.5%;
+                left: 51%;
+                top: 59%;
+            }
+
+            :nth-child(7){
+                width: 6.5%;
+                left: 51%;
+                top: 69%;
+            }
+
+            :nth-child(8){
+                width: 5.5%;
+                left: 55%;
+                top: 78%;
+            }
+
+            :nth-child(9){
+                width: 5.5%;
+                left: 65%;
+                top: 85%;
+            }
+
+            :nth-child(10){
+                width: 5.5%;
+                left: 79%;
+                top: 92%;
+            }
         }
     }
- 
+
+    .bottom-project-circles{
+        width: 8%;
+        padding-bottom: 8%;
+        left: 38%;
+        top: 75%;
+
+        > {
+            :nth-child(1){
+                width: 33%;
+            }
+
+            :nth-child(2){
+                width: 36%;
+                top: 42%;
+                left: 35%;
+            }
+        }
+    }
+
+    .bottom-circles{
+        width: 18%;
+        padding-bottom: 20%;
+        left: 39%;
+        top: 63%;
+
+        :nth-child(1){
+            width: 13%;
+            top: 6%;
+            left: 9%;
+        }
+
+        :nth-child(2){
+            width: 13%;
+            left: 51%;
+        }
+        
+        :nth-child(3){
+            width: 46%;
+            top: 26%;
+            left: 39%;
+        }
+    }
 }

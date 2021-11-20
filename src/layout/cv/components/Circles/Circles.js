@@ -7,17 +7,26 @@ const Circles = () => {
     return(
         <div className='circles'>
             <div className='top-project-circles'>
-                {c({ l: 2})}
+                {c({ l: 2 })}
             </div>
             <div className='top-left-circles'>
-                {c({ l: 2})}
-                {c({ l: 1, u: 98})}
+                {c({ l: 2 })}
+                {c({ l: 1, u: 98 })}
             </div>
             <div className='top-right-circles'>
-                {c({ l: 3})}
+                {c({ l: 3 })}
             </div>
             <div className='top-spiral'>
-                {c({ l: 6})}
+                {c({ l: 6 })}
+            </div>
+            <div className='bottom-spiral'>
+                {c({ l: 10 })}
+            </div>
+            <div className='bottom-circles'>
+                {c({ l: 3 })}
+            </div>
+            <div className='bottom-project-circles'>
+                {c({ l: 2 })}
             </div>
         </div>
     )

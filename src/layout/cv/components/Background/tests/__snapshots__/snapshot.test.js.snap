@@ -5,12 +5,31 @@ exports[`Background snapshot tests should match snapshot 1`] = `
   className="background"
 >
   <Circles />
+  <MidLogo />
   <div
-    className="letters"
+    className="react-icons"
+  >
+    <React />
+    <React />
+    <React />
+  </div>
+  <div
+    className="letters bottom"
   >
     <X />
-    <X />
-    <X />
+    <O />
+  </div>
+  <div
+    className="letters project"
+  >
+    <div>
+      <X />
+      <O />
+    </div>
+    <div>
+      <X />
+      <O />
+    </div>
   </div>
 </div>
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import '@sassUtils/rootVariables.scss';
-import App from './App';
+import App from './AppRoot/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import store from 'app/store';

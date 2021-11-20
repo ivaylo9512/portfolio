@@ -62,5 +62,62 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
       viewBoxUnit={129}
     />
   </div>
+  <div
+    className="bottom-spiral"
+  >
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+  </div>
+  <div
+    className="bottom-circles"
+  >
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+  </div>
+  <div
+    className="bottom-project-circles"
+  >
+    <Circle
+      viewBoxUnit={129}
+    />
+    <Circle
+      viewBoxUnit={129}
+    />
+  </div>
 </div>
 `;
