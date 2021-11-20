@@ -17,7 +17,7 @@
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-aspect-ratio: 10 / 6 ) {
     .animations{
         display: flex;
         align-items: center;
@@ -101,7 +101,7 @@
  
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-aspect-ratio: 10 / 6 ) {
     .animations{
         > div{
             margin-bottom: 18%;

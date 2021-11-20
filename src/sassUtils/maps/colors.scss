@@ -28,16 +28,19 @@ $projects: (
 $cv: (
     first-style: (
         primary: black,
-        secondary: hsl(350deg, 97%, 42%)
+        secondary: hsl(350deg, 97%, 42%),
+        accent: hsl(350deg, 97%, 42%)
     ),
 
     second-style: (
         primary: hsl(21deg, 78%, 46%),
-        secondary: black
+        secondary: hsl(179deg, 89%, 21%),
+        accent: hsl(179deg, 89%, 21%)
     ),
 
     third-style: (
         primary: hsl(234deg, 87%, 50%),
-        secondary: white
+        secondary: white,
+        accent: hsl(234deg, 87%, 33%)
     )
 )

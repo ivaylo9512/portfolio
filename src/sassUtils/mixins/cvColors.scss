@@ -6,4 +6,5 @@
 
     --clr-primary: #{map.get($map, 'primary')};
     --clr-secondary: #{map.get($map, 'secondary')};
+    --clr-accent: #{map.get($map, 'accent')};
 }

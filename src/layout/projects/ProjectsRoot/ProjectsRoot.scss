@@ -1,8 +1,10 @@
 .projects-root{
     position: relative;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
-    
+    overflow-y: scroll;
+    width: 50%;
+
     .scroll{
         position: relative;
         height: 100%;
@@ -11,7 +13,9 @@
         transition: transform 1.5s;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media only screen and (min-aspect-ratio: 10 / 6 ) {
+        overflow: hidden;
+
         &.second-slide{
             .scroll{
                 transform: translateX(calc(-100vw - 64vh));
@@ -31,6 +35,5 @@
 
     @media only screen and (max-device-height : 896px) and (orientation : landscape) { 
         padding-right: env(safe-area-inset-right);
-
     }
 }
