@@ -4,6 +4,7 @@
     z-index: 3;
     background: white;
     width: 50%;
+    box-sizing: border-box;
     
     svg{
         transition: fill 11s 5s;
@@ -48,7 +49,7 @@
         }
     }
 
-    @media only screen and (max-width : 896px) and (orientation : landscape) { 
+    @media only screen and (min-width: 700px) and (max-width : 896px) and (orientation : landscape) { 
         .translate-wrapper{
             padding-bottom: 5vh;
             width: 95%;

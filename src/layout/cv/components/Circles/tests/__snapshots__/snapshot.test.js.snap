@@ -8,9 +8,11 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="top-project-circles"
   >
     <Circle
+      key="top-project-circles0"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-project-circles1"
       viewBoxUnit={129}
     />
   </div>
@@ -18,12 +20,15 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="top-left-circles"
   >
     <Circle
+      key="top-left-circles0"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-left-circles1"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-left-circles0"
       viewBoxUnit={98}
     />
   </div>
@@ -31,12 +36,15 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="top-right-circles"
   >
     <Circle
+      key="top-right-circles0"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-right-circles1"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-right-circles2"
       viewBoxUnit={129}
     />
   </div>
@@ -44,21 +52,27 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="top-spiral"
   >
     <Circle
+      key="top-spiral0"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-spiral1"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-spiral2"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-spiral3"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-spiral4"
       viewBoxUnit={129}
     />
     <Circle
+      key="top-spiral5"
       viewBoxUnit={129}
     />
   </div>
@@ -66,33 +80,43 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="bottom-spiral"
   >
     <Circle
+      key="bottom-spiral0"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral1"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral2"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral3"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral4"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral5"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral6"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral7"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral8"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-spiral9"
       viewBoxUnit={129}
     />
   </div>
@@ -100,12 +124,15 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="bottom-circles"
   >
     <Circle
+      key="bottom-circles0"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-circles1"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-circles2"
       viewBoxUnit={129}
     />
   </div>
@@ -113,9 +140,11 @@ exports[`Circles snapshot tests should match snapshot 1`] = `
     className="bottom-project-circles"
   >
     <Circle
+      key="bottom-project-circles0"
       viewBoxUnit={129}
     />
     <Circle
+      key="bottom-project-circles1"
       viewBoxUnit={129}
     />
   </div>

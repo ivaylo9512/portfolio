@@ -7,7 +7,6 @@
     overflow: hidden;
     pointer-events: none;
     z-index: -1;
-    width: 100vw;
 
     svg{
         position: absolute;
@@ -54,6 +53,8 @@
     }
 
     @media only screen and (min-aspect-ratio: 10 / 6 ) {
+        width: 100%;
+
         .tasks-blob{
             height: 82%;
             left: 28vh;
@@ -90,10 +91,14 @@
     }
 
     @media only screen and (max-aspect-ratio: 10 / 6) and (min-aspect-ratio: 6 / 11){
+        width: 100vw;
+       
         .tasks-blob {
             width: 87%;
             left: -32%;
             transform: translateY(-63%);
+            height: auto;
+            top: 0;
         }
 
         .profile-blob {
@@ -101,6 +106,7 @@
             transform: translateY(-27vw);
             width: 108%;
             left: 70%;
+            height: auto;
         }
 
         .restaurant-blob {
@@ -108,6 +114,7 @@
             transform: rotate(93deg);
             left: -48%;
             width: 86%;
+            height: auto;     
         }
 
         .extensions-blob {
@@ -115,6 +122,8 @@
             transform: translateY(20vw) rotate(296deg);
             width: 100%;
             right: -73%;
+            height: auto;
+            left: auto;
         }
 
         .chat-blob{
