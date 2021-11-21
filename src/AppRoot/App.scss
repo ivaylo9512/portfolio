@@ -1,6 +1,6 @@
 .app{
     width: 100vw;
-        
+    
     .transition-container{
         display: flex;
         height: 100%;  
@@ -11,6 +11,10 @@
 
     &.projects-section .transition-container{
         transform: translateX(-50%);
-        height: 100vh;
+        height: 100%;
+
+        @media only screen and (min-aspect-ratio: 10 / 6 ) {
+            height: 100vh;
+        }
     }
 }

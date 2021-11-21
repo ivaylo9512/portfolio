@@ -7,6 +7,7 @@
     overflow: hidden;
     pointer-events: none;
     z-index: -1;
+    width: 100vw;
 
     svg{
         position: absolute;
@@ -52,7 +53,7 @@
         }
     }
 
-    @media only screen and (orientation: landscape) {
+    @media only screen and (min-aspect-ratio: 10 / 6 ) {
         .tasks-blob{
             height: 82%;
             left: 28vh;
@@ -88,24 +89,89 @@
         }
     }
 
-    @media only screen and (orientation: portrait) {
-        .restaurant-blob{
-            width: 70%;
-            top: 23%;
-            right: -47%;
-            transform: rotate(119deg);
+    @media only screen and (max-aspect-ratio: 10 / 6) and (min-aspect-ratio: 6 / 11){
+        .tasks-blob {
+            width: 87%;
+            left: -32%;
+            transform: translateY(-63%);
         }
 
+        .profile-blob {
+            top: 72vh;
+            transform: translateY(-27vw);
+            width: 108%;
+            left: 70%;
+        }
+
+        .restaurant-blob {
+            top: 120vh;
+            transform: rotate(93deg);
+            left: -48%;
+            width: 86%;
+        }
+
+        .extensions-blob {
+            top: 138vh;
+            transform: translateY(20vw) rotate(296deg);
+            width: 100%;
+            right: -73%;
+        }
+
+        .chat-blob{
+            top: 243vh;
+            transform: rotate(281deg);
+            width: 100%;
+            left: -54%;
+        }
+    }
+
+    @media only screen and (max-aspect-ratio: 6 / 11 ) {
         .tasks-blob{
-            width: 48%;
-            left: 6%;
+            width: 104%;
+            left: -32%;
             transform: translateY(-54%);
         }
 
+        .profile-blob{
+            top: 72vh;
+            transform: translateY(-95vw);
+            width: 150%;
+            left: 70%;
+        }
+
+        .restaurant-blob{
+            top: 96vh;
+            transform: rotate(93deg) translateX(3vw);
+            left: -48%;
+            width: 86%;
+        }
+
         .extensions-blob{
-            top: 42%;
-            transform: rotate(58deg);
-            left: -25%;
+            top: 136vh;
+            transform: rotate(-68deg) translateX(18vw);
+            right: -72%;
+            width: 100%;
+        }
+
+        .chat-blob{
+            top: 181vh;
+            transform: translateY(-32vw) rotate(112deg);
+            left: -75%;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-aspect-ratio: 10 / 13) and (min-aspect-ratio: 6 / 11){
+        .chat-blob{
+            top: 209vh;
+            transform: translateY(22vw) rotate(281deg);
+        }
+    }
+
+    @media only screen and (max-aspect-ratio: 12 / 10) and (min-aspect-ratio: 6 / 11){
+        .restaurant-blob{
+            top: 96vh;
+            transform: translateY(30vw) rotate(93deg);
         }
     }
 }

@@ -3,10 +3,11 @@
     height: 100%;
     transition: transform 1.5s;
 
-    > div{
+    .animation-wrapper{
         position: relative;
         transition: transform 1.5s;
-
+        height: 48vh;
+        
         &:hover{
             z-index: 2;
         }
@@ -15,137 +16,289 @@
             transition: transform 1.5s;
         }
     }
-}
 
-@media only screen and (min-aspect-ratio: 10 / 6 ) {
-    .animations{
-        display: flex;
+    @media only screen and (min-aspect-ratio: 10 / 6) {
         align-items: center;
         height: 100%;
-    
-        &.tasks-visited .tasks-animation-wrapper,
-        &.tasks-visited .profile-animation-wrapper {
+        display: flex;
+      
+        &.tasks-visited .tasks,
+        &.tasks-visited .profile {
             transform: translate(20%, 15%);
         }
     
-        &.profile-visited .tasks-animation-wrapper,
-        &.profile-visited .profile-animation-wrapper {
+        &.profile-visited .tasks,
+        &.profile-visited .profile {
             transform: translate(-20%, 30%);
         }
 
-        & > div {
+        .animation-wrapper {
             height: 34%;
+            width: 50vw;
+            display: flex;
         
             .translate-wrapper{
                 height: 100%;
-    
+
                 svg{
                      height: 100%;
                 }
             }
         }
     
-        .tasks-animation-wrapper {
+        .tasks {
             margin-top: 10vh;
-            left: 5vh;
-            width: 50vw;
+
+            .translate-wrapper{
+                margin-left: 5vh;
+            }
         }
     
-        .restaurant-animation-wrapper {
-            position: relative;
+        .restaurant {
             width: 50vw;
-            margin-top: 4vh;
             align-self: flex-end;
             margin-bottom: 12vh;
             height: 31%;
-            left: 76vh;
-            margin-left: 5vw;
+
+            .translate-wrapper{
+                margin-left: 76vh;
+            }
         }
     
-        .extensions-animation-wrapper {
+        .extensions {
             height: 40%;
             align-self: flex-start;
             margin-top: 7vh;
             width: 50vw;
-            display: flex;
             justify-content: flex-end;
-            left: 52vh;
+
+            .translate-wrapper{
+                margin-right: -52vh;   
+            }
         }
     
-        .profile-animation-wrapper {
+        .profile {
             align-self: start;
             margin-top: 14vh;
             height: 21%;
-            width: 45vw;
-            display: flex;
             justify-content: flex-end;
+
+            .translate-wrapper{
+                margin-right: 5vw;
+            }
         }
     
-        .chat-animation-wrapper {
+        .chat {
             height: 45%;
             width: 100vw;
-            display: flex;
             justify-content: flex-end;
-            margin-left: -20vh;
-            right: 12vw;
             margin-top: 24vh;
-        }
-    }
 
-    .scroll.first-slide .animations{
-        &.extensions-visited .extensions-animation-wrapper,
-        &.extensions-visited .restaurant-animation-wrapper {
-            transform: translate(-28%, 15%);
-        }
-    }
- 
-}
-
-@media only screen and (max-aspect-ratio: 10 / 6 ) {
-    .animations{
-        > div{
-            margin-bottom: 18%;
-    
             .translate-wrapper{
-                width: 66%;
-                display: inline-block;
-            
-                svg{
-                    width: 100%;
-                }
+                margin-right: 35vh;
             }
         }
-    
-        .restaurant-animation-wrapper {
-            > div{
-                margin-left: 2%;
+
+        .scroll.first-slide .animations{
+            &.extensions-visited .extensions,
+            &.extensions-visited .restaurant {
+                transform: translate(-28%, 15%);
             }
         }
-    
-        .extensions-animation-wrapper {
-            text-align: center;
-    
-            > div{
-                margin-left: 9%;
-            }
-        }
-    
-        .chat-animation-wrapper {
-            text-align: center;
-    
-            > div{
-                width: 41%;
+    }
+
+
+
+    @media only screen and (max-aspect-ratio: 6 / 11) {
+        .animation-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .translate-wrapper{
+                width: 90%;
             }
         }
         
-        .tasks-animation-wrapper {
-            text-align: right;
+        .profile{
+            .translate-wrapper{
+                width: 61%;
+            }
+        }
     
-            > div{
-                margin-right: 15%;
-                margin-top: 8%;
+        .tasks{
+            align-items: flex-start;     
+            
+            .translate-wrapper{
+                margin-top: 33%;
+            }
+        }
+    
+        .extensions{
+            align-items: flex-start;     
+            height: 45vh;
+        }
+    
+        .chat{
+            align-items: flex-start;
+            height: auto;
+            margin-bottom: 4vh;
+          
+            .translate-wrapper{
+                width: 55%;
+                margin-right: -20%;
+            }   
+        }
+    
+        .restaurant{
+            align-items: flex-start;
+            height: 40vh;
+       
+        }
+    }
+    @media only screen and (max-aspect-ratio: 10 / 6) and (min-aspect-ratio: 6 / 11){
+        .animation-wrapper {
+            display: flex;
+            align-items: center;
+
+            .translate-wrapper {
+                width: 43%;
+            }
+        }
+            
+        .profile .translate-wrapper {
+            width: 32%;
+            margin-left: 17%;
+        }
+
+        .tasks {
+            align-items: flex-start;
+            justify-content: flex-end;
+        
+            .translate-wrapper {
+                margin-top: 3%;
+                margin-right: 5%; 
             }
         }
 
+        .restaurant {
+            align-items: flex-start;
+            margin-top: 18%;
+
+            .translate-wrapper {
+                margin-left: 26%;
+            }
+        }
+
+        .extensions {
+            margin-top: 19%;
+
+            .translate-wrapper {
+                margin-left: 13%;
+            }
+        }
+
+        .chat{
+            height: auto;
+            margin-top: 40vh;
+            margin-bottom: 23vh;
+            justify-content: flex-end;
+
+            .translate-wrapper{
+                width: 25.3%;
+                margin-right: 14%;
+            }
+        }
+    }
+
+    @media only screen and (max-aspect-ratio: 12 / 10) and (min-aspect-ratio: 6 / 11){
+        .translate-wrapper {
+            width: 43%;
+        }
+
+        .tasks .translate-wrapper{
+            margin-top: 7%;
+            width: 59%;
+        }
+        
+        .profile .translate-wrapper {
+            width: 42%;
+        }
+
+        .extensions{
+            .translate-wrapper{
+                margin-left: 3%;
+                width: 64%;
+            }
+        }
+
+        .chat{
+            margin-bottom: 14vh;
+
+            .translate-wrapper{
+                width: 35.3%;
+            }
+        }
+
+        .restaurant{
+            .translate-wrapper{
+                width: 56%;
+                margin-left: 16%;
+            }
+        }
+    }
+
+    @media only screen and (max-aspect-ratio: 10 / 13) and (min-aspect-ratio: 6 / 11){
+        .translate-wrapper {
+            width: 55%;
+        }
+
+        .tasks {
+            justify-content: center;
+            .translate-wrapper{
+                margin-top: 11%;
+                margin-right: 0%;
+                width: 93%;
+            }
+        }
+        
+        .profile .translate-wrapper {
+            width: 65%;
+            margin-left: 14%;
+            margin-bottom: 19%;
+        }
+
+        .restaurant { 
+            margin-top: 21%;
+
+            .translate-wrapper {
+                width: 86%;
+                margin-left: 2%;
+            }
+        }
+
+        .extensions {
+            margin-top: 0;
+
+            .translate-wrapper{
+                margin-left: 2%;
+                width: 96%;
+            }
+        }
+
+        .chat{
+            margin-top: 14vh;
+
+            .translate-wrapper{
+                width: 52.3%;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 896px) and (orientation : landscape) { 
+    .animations{
+        .extensions {
+            margin-top: 14vh;
+        }
     }
 }

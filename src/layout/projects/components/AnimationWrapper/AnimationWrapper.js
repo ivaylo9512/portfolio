@@ -17,7 +17,7 @@ const AnimationWrapper = ({ SvgAnimation, className }) => {
     }
     
     return (
-        <div onMouseEnter={animate} data-testid='animation-wrapper' onMouseLeave={resetAnimation} onTouchStart={animate} onTouchEnd={resetAnimation} className={`${className}-animation-wrapper`}>
+        <div data-testid='animation-wrapper' className={`animation-wrapper ${className}`} onMouseEnter={animate}   onMouseLeave={resetAnimation} onTouchStart={animate} onTouchEnd={resetAnimation}>
             <div className={'translate-wrapper'}>
                 <SvgAnimation className={`${className}-animation ${visitedClass}`}/>
             </div>
