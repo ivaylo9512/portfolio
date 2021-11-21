@@ -9,13 +9,15 @@ exports[`Project snapshot tests should match snapshot 1`] = `
   >
     <p
       className="name"
-    />
+    >
+      test-name
+    </p>
     <div
       className="github-container"
     >
       <Github />
       <TabLink
-        href="https://github.com/ivaylo9512/undefined"
+        href="https://github.com/ivaylo9512/test-repo"
         shouldMatch={true}
       >
         Github
@@ -25,7 +27,9 @@ exports[`Project snapshot tests should match snapshot 1`] = `
       className="info"
     >
       <Circle />
-      <p />
+      <p>
+        test-info
+      </p>
     </div>
   </div>
   <div
@@ -33,6 +37,9 @@ exports[`Project snapshot tests should match snapshot 1`] = `
   >
     <Circle />
   </div>
-  <Rect />
+  <Rect
+    height="34"
+    width="24"
+  />
 </div>
 `;

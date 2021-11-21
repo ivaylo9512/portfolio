@@ -3,7 +3,7 @@ import TasksAnimation from '../TasksAnimation'
 
 describe('TasksAnimation snapshot tests', () => {
     const createWrapper = () => shallow(
-        <TasksAnimation />
+        <TasksAnimation className='test-class' />
     )
 
     it('should match snapshot', () => {

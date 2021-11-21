@@ -7,5 +7,6 @@ exports[`Technology snapshot tests should match snapshot 1`] = `
   <Circle
     viewBoxUnit="129"
   />
+  <Rect />
 </div>
 `;

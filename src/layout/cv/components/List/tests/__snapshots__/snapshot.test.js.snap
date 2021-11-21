@@ -2,10 +2,13 @@
 
 exports[`List snapshot tests should match snapshot 1`] = `
 <div
-  className="list undefined"
+  className="list test-class"
 >
-  <Ribon>
+  <Ribon
+    name="test-name"
+  >
     <ListSvg />
   </Ribon>
+  <Ribon />
 </div>
 `;

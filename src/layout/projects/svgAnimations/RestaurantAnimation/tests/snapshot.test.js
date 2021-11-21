@@ -3,7 +3,7 @@ import RestaurantAnimation from '../RestaurantAnimation'
 
 describe('RestaurantAnimation snapshot tests', () => {
     const createWrapper = () => shallow(
-        <RestaurantAnimation />
+        <RestaurantAnimation className='test-class' />
     )
 
     it('should match snapshot', () => {

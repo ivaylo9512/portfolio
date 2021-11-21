@@ -3,7 +3,7 @@ import ProfileAnimation from '../ProfileAnimation'
 
 describe('ProfileAnimation snapshot tests', () => {
     const createWrapper = () => shallow(
-        <ProfileAnimation />
+        <ProfileAnimation className='test-class' />
     )
 
     it('should match snapshot', () => {

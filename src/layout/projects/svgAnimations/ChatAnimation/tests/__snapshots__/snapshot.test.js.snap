@@ -2,6 +2,7 @@
 
 exports[`ChatAnimation snapshot tests should match snapshot 1`] = `
 <svg
+  className="test-class"
   viewBox="0 0 274.25 331.07"
   xmlns="http://www.w3.org/2000/svg"
 >

@@ -2,6 +2,7 @@
 
 exports[`RestaurantAnimation snapshot tests should match snapshot 1`] = `
 <svg
+  className="test-class"
   viewBox="0 0 378.19 191.41"
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
