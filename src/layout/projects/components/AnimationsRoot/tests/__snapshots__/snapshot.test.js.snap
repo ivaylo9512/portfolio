@@ -3,6 +3,7 @@
 exports[`AnimationsRoot snapshot tests should match snapshot with visited 1`] = `
 <div
   className="animations tasks"
+  data-testid="animations"
 >
   <AnimationWrapper
     SvgAnimation={[Function]}
@@ -30,6 +31,7 @@ exports[`AnimationsRoot snapshot tests should match snapshot with visited 1`] = 
 exports[`AnimationsRoot snapshot tests should match snapshot without visited 1`] = `
 <div
   className="animations "
+  data-testid="animations"
 >
   <AnimationWrapper
     SvgAnimation={[Function]}

@@ -12,7 +12,7 @@ const Animations = () => {
     const visited = useSelector(getVisited);
 
     return(
-        <div className={`animations ${visited ? visited : ''}`}>
+        <div data-testid='animations' className={`animations ${visited ? visited : ''}`}>
             <AnimationWrapper SvgAnimation={TasksAnimation} className='tasks'/>
             <AnimationWrapper SvgAnimation={ProfileAnimation} className='profile'/>
             <AnimationWrapper SvgAnimation={RestaurantAnimation} className='restaurant'/>
