@@ -1,21 +1,21 @@
 .dots{
     display: flex;
     align-items: flex-start;
-    
+
     svg{
         width: 10%;
         fill: var(--clr-primary);
         position: relative;
-        margin-right: 0.45vw;
+        margin-right: 1.4vw;
     
         circle{
             filter: url(#dot-shadow)
         }
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
+    @media only screen and (min-width: 700px) and (orientation: landscape){
         svg{
-            margin-right: 1vw;
+            margin-right: 0.45vw;
         }
     }
 }

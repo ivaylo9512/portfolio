@@ -1,8 +1,12 @@
 .left-panel{
-    width: 64%;
-    padding-top: 2.1vw;
+    width: 100%;
     
     .github path {
         filter: url(#name-shadow);
+    }
+
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        width: 64%;
+        padding-top: 2.1vw;
     }
 }

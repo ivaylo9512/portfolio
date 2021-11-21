@@ -1,8 +1,6 @@
 .ribon{
-    display: block;
-    width: 98%;
-    margin-top: 3.2%;
     position: relative;
+    opacity: 0.9;
 
     > svg{
         display: block;
@@ -25,5 +23,9 @@
 
     span{
         flex: 1;
+    }
+
+    @media only screen and (min-width: 700px) {
+        opacity: 1; 
     }
 }

@@ -1,6 +1,7 @@
 .list{
-    margin-bottom: 3%;
     font-size: 1.5vw;
+    width: 70%;
+    margin-bottom: 4vh;
 
     > div:first-child{
         fill: var(--clr-primary);
@@ -10,15 +11,14 @@
         text-transform: uppercase;
         margin-top: 3.2%;
         fill: white;
-
     }
     
     > :first-child .name{
         height: 50%;
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
-        width: 70%;
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        width: 100%;
         margin-bottom: 2vh;
     }
 }

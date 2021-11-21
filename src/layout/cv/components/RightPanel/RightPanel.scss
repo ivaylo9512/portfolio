@@ -1,18 +1,21 @@
 .right-panel{
-    width: 30%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
-    > .dots{
-        width: 59%;
+    > .dots {
+        display: none;
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
 
-        > .dots {
-            display: none;
+
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        width: 27%;
+        display: block;
+
+        > .dots{
+            width: 59%;
         }
     }
 }

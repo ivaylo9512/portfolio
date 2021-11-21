@@ -1,8 +1,11 @@
 .more-github{
     width: 46%;
-    padding: 0 9%;
     box-sizing: border-box;
     position: relative;
+    font-family: 'Myriad Pro Regular';
+    margin: auto;
+    font-size: 3.2vw;
+
 
     &:hover,
     &:focus{
@@ -21,7 +24,6 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            font-size: 1.2vw;
             color: black;
             text-shadow: 0 0 0.1vw;
             font-weight: bold;
@@ -38,5 +40,11 @@
             fill: white;
             filter: url(#shape-shadow)
         }
+    }
+
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
+        font-size: 1.2vw;
+        padding: 0 9%;
+        margin: 0;
     }
 }
