@@ -9,9 +9,8 @@ header {
 
     button, a{
         height: 6vh;
-        outline: none;
         
-        &:hover,
+        &:active,
         &:focus{
             transform: scale(1.1);
         }
@@ -118,6 +117,13 @@ header {
             filter: url(#profile-shadow);
         }
     }
+
+    @media only screen and (max-width : 896px) and (orientation : landscape) { 
+        button,
+        a{
+            height: 10vh;
+        }
+    }
 }
 .projects-section header {
     .left-menu{
@@ -206,6 +212,22 @@ header {
                 circle{
                     fill: var(--clr-extensions-primary);
                 }
+            }
+        }
+    }
+}
+@media only screen and (max-width : 896px) and (orientation : landscape) { 
+    header{
+        button,
+        a{
+            height: 10vh;
+        }
+    }
+
+    .projects-section header {
+        &.second-slide {
+            .left-menu{    
+                transform: translateX(calc(98vw - 100% - 12vh - env(safe-area-inset-left) - env(safe-area-inset-right)));
             }
         }
     }

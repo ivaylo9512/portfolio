@@ -13,7 +13,20 @@
 }
 
 
-.technologies{
+.list.technologies{
+    flex-wrap: wrap;
+    display: flex;
+
+    > :nth-child(4n + 5){
+        margin-right: 0;
+    }
+
+    > :first-child{
+        width: 100%;
+        display: block;
+        margin-top: 0;
+    }
+
     .list-svg{
         fill: black;
     }
@@ -31,87 +44,87 @@
     }
 
     .names {
+        display: flex;
+        flex-wrap: wrap;
+
         > :nth-child(4n + 1){
-            width: 19.5%;
-            margin-right: 3.25%;
+            width: 20%;
+            margin-right: 3.5%;
+        }
+
+        > :nth-child(4n+4) {
+            width: 20%;
+            margin-left: 3.5%;
         }
     
         .name {
-            height: 66%;
+            height: 100%;
             display: inline-block;
 
             &.node-js{
-                height: 76%;
+                height: 115%;
             }
         }
     
         > div{
             position: relative;
-            display: inline-block;
             text-align: center;
-            height: 2vw;
-            width: 25.5%;
+            height: 4.2vw;
+            width: 26.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
-    @media only screen and (max-width: 742px) and (orientation:portrait){
+    @media only screen and (min-width: 700px) and (orientation: landscape) {
         .names{
             > div{
-                height: 4.2vw;
+                height: 2vw;
             }
             
             .name{
-                height: 100%;
+                height: 66%;
+            
+                &.node-js{
+                    height: 76%;
+                }
             }
         }
     }
 }
 
-.list.technologies {
-    > :nth-child(4n + 5){
-        margin: 0;
-    }
-
-    > :first-child{
-        width: 98%;
-        display: block;
-        margin-bottom: 1vh;
-        margin-top: 0;
-    }
-
-    @media only screen and (min-width: 742px) and (orientation:portrait){
-        > :first-child{
-            margin-bottom: 2%;
-        }
-    }
-}
 
 .sql{
     width: 64%;
 }
+
 .rest{
     width: 70%;
 }
+
 .jwt{
     width: 55%;
 }
+
 .node-js,
 .next-js{
     fill: var(--clr-primary);
 }
+
 .next-js{
     stroke-width: 14px;
     stroke: var(--clr-primary);
 }
+
 .jenkins{
     .circle,
     .towel{
-    fill: var(--clr-primary);
-
+        fill: var(--clr-secondary);
     }
 
     .tie{
-        fill: var(--clr-secondary);
+        fill: white;
     }
 }
 

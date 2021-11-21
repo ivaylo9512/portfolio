@@ -4,6 +4,8 @@ exports[`Technology snapshot tests should match snapshot 1`] = `
 <div
   className="technology"
 >
-  <Circle />
+  <Circle
+    viewBoxUnit="129"
+  />
 </div>
 `;

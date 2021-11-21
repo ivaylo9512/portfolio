@@ -5,40 +5,55 @@
     display: inline-block;
     margin-right: 6.5%;
     text-align: center;
-    width: 19.5%;
-}
-.technology svg.circle {
-    width: 100%;
-    display: block;
-}
-.technology .circle circle {
-    filter: url(#shape-shadow);
-}
-.technology svg:last-child {
-    position: absolute;
-    width: 59%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.technology svg:nth-of-type(2){
-    fill: black;
-}
-.angular{
-    fill: black;
-}
-.angular path{
-    fill: white;
-}
-.aws :nth-child(n + 3) {
-    fill: white;
-}
-.typescript path{
-    fill: white;
-}
-.technology svg:nth-of-type(2).react{
-    fill: white;
-}
-.react g :first-child{
-    fill: black;
+    width: 20%;
+    opacity: 0.8;
+    
+    svg.circle {
+        width: 100%;
+        display: block;
+    }
+
+    .circle circle {
+        filter: url(#shape-shadow);
+    }
+
+    svg:last-child {
+        position: absolute;
+        width: 59%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg:nth-of-type(2){
+        fill: black;
+    }
+
+    .angular{
+        fill: black;
+    }
+
+    .angular path{
+        fill: white;
+    }
+
+    .aws :nth-child(n + 3) {
+        fill: white;
+    }
+
+    .typescript path{
+        fill: white;
+    }
+
+    .technology svg:nth-of-type(2).react{
+        fill: white;
+    }
+
+    .react g {
+        fill: white;
+    }
+
+    @media only screen and (min-width: 700px) {
+        opacity: 1;
+    }
 }

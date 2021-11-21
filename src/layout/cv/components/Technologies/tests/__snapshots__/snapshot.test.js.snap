@@ -9,62 +9,50 @@ exports[`Technologies snapshot tests should match snapshot 1`] = `
   <Technology
     icon={<React />}
     key="React"
-    viewBox="129 129"
   />
   <Technology
     icon={<Spring />}
     key="Spring"
-    viewBox="129 129"
   />
   <Technology
     icon={<Aws />}
     key="Aws"
-    viewBox="129 129"
   />
   <Technology
     icon={<Jenkins />}
     key="Jenkins"
-    viewBox="129 129"
   />
   <Technology
     icon={<Redux />}
     key="Redux"
-    viewBox="129 129"
   />
   <Technology
     icon={<Angular />}
     key="Angular"
-    viewBox="129 129"
   />
   <Technology
     icon={<Ws />}
     key="Ws"
-    viewBox="129 129"
   />
   <Technology
     icon={<Jwt />}
     key="Jwt"
-    viewBox="129 129"
   />
   <Technology
     icon={<Typescript />}
     key="Typescript"
-    viewBox="129 129"
   />
   <Technology
     icon={<Graphql />}
     key="Graphql"
-    viewBox="129 129"
   />
   <Technology
     icon={<Sql />}
     key="Sql"
-    viewBox="129 129"
   />
   <Technology
     icon={<Rest />}
     key="Rest"
-    viewBox="129 129"
   />
   <div
     className="names"

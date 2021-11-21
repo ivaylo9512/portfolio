@@ -1,10 +1,10 @@
 import Circle from '@svgIcons/Circle';
 import './Technology.scss';
 
-const Technology = ({ icon, viewBox }) => {
+const Technology = ({ icon }) => {
     return(
         <div className='technology'>
-            <Circle viewBox={viewBox} />
+            <Circle viewBoxUnit='129' />
             {icon}
         </div>
     )

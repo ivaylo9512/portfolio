@@ -45,9 +45,23 @@ exports[`FiltersRoot snapshot tests should match snapshot 1`] = `
     <Shadow
       dx="0.45"
       dy="3.249"
-      floodOpacity="0.5"
+      floodOpacity="0.75"
       id="black-shadow"
-      stdDeviation="2.646"
+      stdDeviation="6.646"
+    />
+    <Shadow
+      dx="0.45"
+      dy="1.949"
+      floodOpacity="0.55"
+      id="white-shadow"
+      stdDeviation="3.646"
+    />
+    <Shadow
+      dx="0.45"
+      dy="9.949"
+      floodOpacity="0.55"
+      id="react-shadow"
+      stdDeviation="21.646"
     />
     <Shadow
       dx="0.225"

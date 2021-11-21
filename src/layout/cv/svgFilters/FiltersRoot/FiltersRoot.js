@@ -10,7 +10,9 @@ const FiltersRoot = () => {
                 <Shadow id='name-shadow' dy='0.974' dx='0.225' floodOpacity='0.35' stdDeviation='2' />
                 <Shadow id='circle-shadow' dy='3.549' dx='0.45' floodOpacity='0.55' stdDeviation='5.646' />
                 <Shadow id='dot-shadow' dy='1.949' dx='0.45' floodOpacity='0.55' stdDeviation='4.646' />
-                <Shadow id='black-shadow' dy='3.249' dx='0.45' floodOpacity='0.5' stdDeviation='2.646' />
+                <Shadow id='black-shadow' dy='3.249' dx='0.45' floodOpacity='0.75' stdDeviation='6.646' />
+                <Shadow id='white-shadow' dy='1.949' dx='0.45' floodOpacity='0.55' stdDeviation='3.646' />
+                <Shadow id='react-shadow' dy='9.949' dx='0.45' floodOpacity='0.55' stdDeviation='21.646' />
                 <Shadow id='github-shadow' dy='0.974' dx='0.225' floodOpacity='0.35' stdDeviation='1' />
                 <Shadow id='background-circle-shadow' dy='0' dx='0' floodOpacity='0.68' stdDeviation='4.583' />
             </defs>
