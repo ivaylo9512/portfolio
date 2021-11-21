@@ -8,7 +8,7 @@ const ProjectsRoot = () => {
     const currentSlide = useSelector(getCurrentSlide);
     
     return(
-        <section className={`projects-root ${currentSlide}-slide`}>
+        <section data-testid='projects-root' className={`projects-root ${currentSlide}-slide`}>
             <div className='scroll'>
                 <Background />
                 <AnimationsRoot />

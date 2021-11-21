@@ -3,6 +3,7 @@
 exports[`ProjectsRoot snapshot tests should match snapshot 1`] = `
 <section
   className="projects-root first-slide"
+  data-testid="projects-root"
 >
   <div
     className="scroll"
@@ -16,6 +17,7 @@ exports[`ProjectsRoot snapshot tests should match snapshot 1`] = `
 exports[`ProjectsRoot snapshot tests should match snapshot with second slide 1`] = `
 <section
   className="projects-root second-slide"
+  data-testid="projects-root"
 >
   <div
     className="scroll"
