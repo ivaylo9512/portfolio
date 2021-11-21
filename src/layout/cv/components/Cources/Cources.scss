@@ -1,13 +1,47 @@
 .cources{
-    & > :first-child .name{
+    > :first-child .name{
         fill: white;
+
+        margin-right: auto;
     }
 
     .name{
         height: 35%;
+        margin-right: auto;
     }
 
     .list-svg{
         fill: white;
+    }
+
+    .year{
+        height: 30%;
+        fill: black;
+    }
+
+    .angular{
+        fill: black;
+        
+        path{
+            fill: white;
+        }
+    }
+
+    :not(:first-child) .content{
+        .rect{
+            height: 8%;
+            fill: black;
+    
+            rect{
+                filter: none;
+            }
+        }
+
+        > :last-child {
+            height: 62.5%;
+            fill: white;
+            align-self: flex-start;
+            margin: -3% -4% 0 -2%;
+        }
     }
 }

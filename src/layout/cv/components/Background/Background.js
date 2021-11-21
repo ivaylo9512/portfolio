@@ -29,7 +29,9 @@ const Background = () => {
                     <O />
                 </div>
             </div>
-
+            <div className='react-big'>
+                <ReactSvg />
+            </div>
         </div>
     )
 }

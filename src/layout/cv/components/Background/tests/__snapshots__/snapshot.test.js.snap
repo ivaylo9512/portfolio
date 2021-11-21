@@ -31,5 +31,10 @@ exports[`Background snapshot tests should match snapshot 1`] = `
       <O />
     </div>
   </div>
+  <div
+    className="react-big"
+  >
+    <React />
+  </div>
 </div>
 `;

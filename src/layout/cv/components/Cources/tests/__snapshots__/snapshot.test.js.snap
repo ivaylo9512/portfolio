@@ -7,12 +7,33 @@ exports[`Cources snapshot tests should match snapshot 1`] = `
 >
   <Ribon
     name={<Self />}
-  />
+  >
+    <Year2016 />
+    <Rect
+      height={14}
+      radius={3}
+      width={30}
+    />
+    <Year2018 />
+    <Angular />
+  </Ribon>
   <Ribon
     name={<Telerik />}
-  />
+  >
+    <Year2018 />
+    <Spring />
+  </Ribon>
   <Ribon
     name={<Self />}
-  />
+  >
+    <Year2018 />
+    <Rect
+      height={14}
+      radius={3}
+      width={30}
+    />
+    <Year2021 />
+    <React />
+  </Ribon>
 </List>
 `;

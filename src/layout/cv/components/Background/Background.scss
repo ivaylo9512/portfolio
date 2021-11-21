@@ -24,6 +24,16 @@
         }
     }
 
+    .react{
+        > circle, g{
+            filter: url(#react-shadow);
+        }
+
+        > circle{
+            fill: white;
+        }
+    }
+
     .react-icons{
         width: 42%;
         padding-bottom: 176%;
@@ -47,16 +57,6 @@
         > :nth-child(3){
             left: 46%;
             top: 59%;
-        }
-
-        .react{
-            > circle, g{
-                filter: url(#react-shadow);
-            }
-
-            > circle{
-                fill: white;
-            }
         }
     }
 
@@ -97,6 +97,16 @@
             svg:first-child{
                 margin-right: 10%;
             }
+        }
+    }
+
+    .react-big{
+        top: 70%;
+        left: 71%;
+        width: 7%;
+
+        .react{
+            width: 100%;
         }
     }
 
