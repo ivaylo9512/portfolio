@@ -1,24 +1,27 @@
-.languages .list-svg{
-    fill: white;
-}
-.list.languages > div:not(:first-child) .ribon{
-    fill: white;
-}
-.list.languages > div:not(:first-child) .name{
-    fill: black;
-    height: 35%;
-}
-.list.languages > div:first-child .name{
-    fill: white;
-}
-.javascript{
-    width: 39%;
+.list.languages {
+    > div:not(:first-child) .ribon{
+        fill: white;
+    }
 
-}
-.languages .dots{
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 6%;
-    width: 56%;
-    margin-left: auto;
+    > div:not(:first-child) .name{
+        fill: black;
+        height: 35%;
+    }
+
+    > div:first-child .name{
+        fill: white;
+    }
+
+    .dots{
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 6%;
+        width: 56%;
+        margin-left: auto;
+    }
+
+    .javascript{
+        width: 39%;
+    
+    }
 }

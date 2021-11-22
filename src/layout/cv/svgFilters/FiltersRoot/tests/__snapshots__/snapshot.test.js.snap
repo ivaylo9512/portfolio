@@ -16,6 +16,13 @@ exports[`FiltersRoot snapshot tests should match snapshot 1`] = `
     />
     <Shadow
       dx="0.45"
+      dy="1.949"
+      floodOpacity="1"
+      id="year-icon-shadow"
+      stdDeviation="12.646"
+    />
+    <Shadow
+      dx="0.45"
       dy="3.549"
       floodOpacity="0.45"
       id="project-shadow"

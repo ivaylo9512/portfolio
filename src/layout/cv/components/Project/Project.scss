@@ -1,6 +1,6 @@
 .left-panel .project{
     position: relative;
-    margin-top: 5vh;
+    margin: 4% 0;
     width: 75%;
     color: #312929;
     font-family: Myriad Pro Regular;
@@ -85,9 +85,8 @@
 
     @media only screen and (min-width : 700px) and (orientation : landscape) {
         width: 46%;
-        margin-bottom: 4vh;
-        margin-top: 0;
-        
+        margin: 2.5% 0;
+
         .content{
             .name{
                 font-size: 1.2vw;

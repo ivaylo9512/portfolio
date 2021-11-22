@@ -11,7 +11,7 @@ const Info = () => {
     return(
         <div className='profile-info'>
             <div className='image-container'>
-                <img src={ProfileImage} />
+                <img alt='profile' src={ProfileImage} />
             </div>
             <div className='data'>
                 <div className="phone">

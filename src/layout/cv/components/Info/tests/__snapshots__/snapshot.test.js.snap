@@ -8,6 +8,7 @@ exports[`Info snapshot tests should match snapshot with isProjects to false 1`] 
     className="image-container"
   >
     <img
+      alt="profile"
       src="profile-image.png"
     />
   </div>
@@ -41,6 +42,7 @@ exports[`Info snapshot tests should match snapshot with isProjects to true 1`] =
     className="image-container"
   >
     <img
+      alt="profile"
       src="profile-image.png"
     />
   </div>

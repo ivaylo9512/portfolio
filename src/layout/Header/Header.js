@@ -11,7 +11,7 @@ const Header = () => {
     const currentSlide = useSelector(getCurrentSlide);
 
     const onToggleSections = () => {
-        window.scrollY = 0;
+        window.scrollTo(0, 0);
         dispatch(toggleSections());
     }
 

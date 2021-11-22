@@ -27,20 +27,20 @@
         margin-top: 0;
     }
 
+    .technology svg:not(.circle, .react, .angular) {
+        fill: black;
+    }
+
     .list-svg{
         fill: black;
     }
 
-    .technology svg:not(.circle, .react, .angular) {
-        fill: var(--clr-primary);
-    }
-
-    .list-svg{
-        fill: var(--clr-secondary);
-    }
-
-    .ribon .name{
-        fill: var(--clr-secondary);
+    .ribon {
+        fill: white;
+        
+        .name{
+            fill: black;
+        }
     }
 
     .names {
@@ -77,6 +77,40 @@
         }
     }
 
+    .sql{
+        width: 64%;
+    }
+    
+    .rest{
+        width: 70%;
+    }
+    
+    .jwt{
+        width: 55%;
+    }
+    
+    .node-js,
+    .next-js{
+        fill: black;
+    }
+    
+    .next-js{
+        stroke-width: 14px;
+        fill: black;
+        stroke: black;
+    }
+    
+    .jenkins{
+        .circle,
+        .towel{
+            fill: black;
+        }
+    
+        .tie{
+            fill: white;
+        }
+    }
+
     @media only screen and (min-width: 700px) and (orientation: landscape) {
         .names{
             > div{
@@ -94,56 +128,20 @@
     }
 }
 
-
-.sql{
-    width: 64%;
-}
-
-.rest{
-    width: 70%;
-}
-
-.jwt{
-    width: 55%;
-}
-
-.node-js,
-.next-js{
-    fill: var(--clr-primary);
-}
-
-.next-js{
-    stroke-width: 14px;
-    stroke: var(--clr-primary);
-}
-
-.jenkins{
-    .circle,
-    .towel{
-        fill: var(--clr-secondary);
-    }
-
-    .tie{
-        fill: white;
-    }
-}
-
 .first-style .technologies {
     .node-js,
     .next-js{
-        fill: var(--clr-secondary);
+        fill: var(--clr-animate);
     }
 
     .next-js{
-        stroke: var(--clr-secondary);
+        stroke: var(--clr-animate);
     }
 
-    .ribon{
-        fill: white;
-        
-        .name,
-        .list-svg{
-            fill: var(--clr-primary);
+    .jenkins{
+        .circle,
+        .towel{
+            fill: var(--clr-animate);
         }
     }
 }

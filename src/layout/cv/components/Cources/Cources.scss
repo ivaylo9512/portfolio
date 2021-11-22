@@ -19,15 +19,34 @@
         fill: black;
     }
 
-    .angular{
-        fill: black;
-        
+    .angular{        
         path{
             fill: white;
+        }
+        
+        g{
+            filter: url(#year-icon-shadow)
+        }
+    }
+
+    .react{
+        > circle{
+            fill: none;
+        }
+        g{
+            filter: url(#year-icon-shadow)
+        }
+    }
+
+    .spring{
+        path{
+            filter: url(#shape-shadow)
         }
     }
 
     :not(:first-child) .content{
+        padding-right: 5%;
+
         .rect{
             height: 8%;
             fill: black;
@@ -38,10 +57,16 @@
         }
 
         > :last-child {
-            height: 62.5%;
-            fill: white;
-            align-self: flex-start;
-            margin: -3% -4% 0 -2%;
+            fill: var(--clr-primary);
+            transform: translate(44%, -52%);
+            height: 72.5%;
+            position: absolute;
+            right: 0;
+
+            &.spring{
+                transform: translate(44%, -73%);
+                height: 55%;
+            }
         }
     }
 }

@@ -1,4 +1,3 @@
-import ProjectsShadow from '@projects/svgFilters/ProjectsShadow'
 import './RestaurantAnimation.scss'
 
 const RestaurantAnimation = ({ className }) => {
