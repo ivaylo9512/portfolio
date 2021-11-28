@@ -1,70 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Info snapshot tests should match snapshot with isProjects to false 1`] = `
+exports[`Info snapshot tests should match snapshot 1`] = `
 <div
   className="profile-info"
 >
-  <div
-    className="image-container"
-  >
-    <img
-      alt="profile"
-      src="profile-image.png"
-    />
-  </div>
-  <div
-    className="data"
-  >
-    <div
-      className="phone"
-    >
-      <Phone />
-      0886892842
-    </div>
-    <div>
-      <GithubSquare />
-      <a
-        data-testid="github-link"
-        href="https://github.com/ivaylo9512"
-      >
-        Github
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Info snapshot tests should match snapshot with isProjects to true 1`] = `
-<div
-  className="profile-info"
->
-  <div
-    className="image-container"
-  >
-    <img
-      alt="profile"
-      src="profile-image.png"
-    />
-  </div>
-  <div
-    className="data"
-  >
-    <div
-      className="phone"
-    >
-      <Phone />
-      0886892842
-    </div>
-    <div>
-      <GithubSquare />
-      <a
-        data-testid="github-link"
-        href="https://github.com/ivaylo9512"
-        tabIndex="-1"
-      >
-        Github
-      </a>
-    </div>
-  </div>
+  <ProfileImage />
+  <Data />
 </div>
 `;

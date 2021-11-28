@@ -17,14 +17,8 @@ describe('Info snapshot tests', () => {
         )
     }
 
-    it('should match snapshot with isProjects to true', () => {
-        const wrapper = createWrapper(true);
-     
-        expect(wrapper).toMatchSnapshot();
-    })
-
-    it('should match snapshot with isProjects to false', () => {
-        const wrapper = createWrapper(false);
+    it('should match snapshot', () => {
+        const wrapper = createWrapper();
      
         expect(wrapper).toMatchSnapshot();
     })
