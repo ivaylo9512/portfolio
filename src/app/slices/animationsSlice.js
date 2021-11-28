@@ -25,12 +25,16 @@ const animationSlice = createSlice({
         changeSlide: (state, { payload }) => {
             state.currentSlideIndex += payload;
             state.currentSlide = slides[state.currentSlideIndex];
+        },
+        resetSlides: (state) => {
+            state.currentSlideIndex = initialState.currentSlideIndex;
+            state.currentSlide = initialState.currentSlide;
         }
     }
 })
 
 export default animationSlice.reducer;
-export const { setVisited, resetVisited, toggleSections, changeSlide } = animationSlice.actions;
+export const { setVisited, resetVisited, toggleSections, changeSlide, resetSlides } = animationSlice.actions;
 export const getVisited = state => state.animations.currentVisited;
 export const isProjectsSection = state => state.animations.isProjectsSection;
 export const getCurrentSlide = state => state.animations.currentSlide;

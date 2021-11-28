@@ -16,10 +16,7 @@
 .list.technologies{
     flex-wrap: wrap;
     display: flex;
-
-    > :nth-child(4n + 5){
-        margin-right: 0;
-    }
+    justify-content: space-between;
 
     > :first-child{
         width: 100%;
@@ -46,34 +43,21 @@
     .names {
         display: flex;
         flex-wrap: wrap;
-
-        > :nth-child(4n + 1){
-            width: 20%;
-            margin-right: 3.5%;
-        }
-
-        > :nth-child(4n+4) {
-            width: 20%;
-            margin-left: 3.5%;
-        }
-    
-        .name {
-            height: 100%;
-            display: inline-block;
-
-            &.node-js{
-                height: 115%;
-            }
-        }
+        justify-content: space-between;
     
         > div{
             position: relative;
             text-align: center;
-            height: 4.2vw;
-            width: 26.5%;
+            height: 5.2vw;
+            width: 21%;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 0.75vw;
+        }
+
+        .name {
+            height: 100%;
         }
     }
 
@@ -114,15 +98,7 @@
     @media only screen and (min-width: 700px) and (orientation: landscape) {
         .names{
             > div{
-                height: 2vw;
-            }
-            
-            .name{
-                height: 66%;
-            
-                &.node-js{
-                    height: 76%;
-                }
+                height: 1.3vw;
             }
         }
     }

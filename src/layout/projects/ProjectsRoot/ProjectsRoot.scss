@@ -9,7 +9,6 @@
         height: 100%;
         display: inline-block;
         width: 100%;
-        transition: transform 1.5s;
     }
 
     @media only screen and (min-aspect-ratio: 10 / 6 ) {
@@ -31,6 +30,7 @@
             width: auto;
         }
     }
+
     @media only screen and (max-aspect-ratio: 10 / 6) and (min-aspect-ratio: 6 / 11){
         .scroll{
             width: 100%;
@@ -39,11 +39,14 @@
 }
 
 .projects-section{
+    .scroll{
+        transition: transform 1.5s;
+    }
+    
     .projects-root{
         @media only screen and (max-aspect-ratio: 10 / 6 ) {
             height: 100%;
             overflow: visible;
         }
     }
-
 }

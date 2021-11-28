@@ -1,4 +1,4 @@
-import { changeSlide, getCurrentSlide, isProjectsSection, toggleSections } from 'app/slices/animationsSlice';
+import { changeSlide, getCurrentSlide, isProjectsSection, resetSlides, toggleSections } from 'app/slices/animationsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Arrow from '@svgIcons/Arrow';
 import Circle from '@svgIcons/Circle';
@@ -13,6 +13,10 @@ const Header = () => {
     const onToggleSections = () => {
         window.scrollTo(0, 0);
         dispatch(toggleSections());
+
+        if(isProjectsSection){
+            dispatch(resetSlides())
+        }
     }
 
     const onChangeSlide = (byAmount) => {
@@ -25,7 +29,7 @@ const Header = () => {
                 <ul>
                     <ul className='left-menu'> 
                          <li>
-                            <a data-testid='sections-toggle' className='sections-toggle' onClick={onToggleSections}>
+                            <a href='/#' data-testid='sections-toggle' className='sections-toggle' onClick={onToggleSections}>
                                 <Rect width={200} height={90} radius={40} />
                                 <span data-testid={isProjects ? 'cv' : 'projects'}>{isProjects ? 'Cv' : 'Projects'}
                                     <Arrow />

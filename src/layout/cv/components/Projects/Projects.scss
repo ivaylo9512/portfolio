@@ -82,21 +82,17 @@
 }
 
 .first-style .projects{
-    > :nth-child(2){
-        .circle{
+    > :nth-child(n+2):nth-child(-n+4){
+        circle{
             fill: white;
         }
     }
 
-    > :nth-child(3){
-        .circle{
-            fill: white;
-        }
-    }
 
-    > :nth-child(4){
-        .circle{
-            fill: white;
+    > :nth-child(5){
+        .clip circle{
+            fill: var(--clr-accent);
+            filter: url(#shape-shadow);
         }
     }
 }

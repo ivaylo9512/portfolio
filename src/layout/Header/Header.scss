@@ -10,7 +10,7 @@ header {
     button, a{
         height: 6vh;
         
-        &:active,
+        &:hover,
         &:focus{
             transform: scale(1.1);
         }
@@ -111,7 +111,6 @@ header {
     .slide-left{
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.5s;
 
         circle{
             filter: url(#profile-shadow);
@@ -128,6 +127,10 @@ header {
 .projects-section header {
     .left-menu{
         transform: translateX(0);
+    }
+
+    .slide-left{
+        transition: opacity 0.5s;
     }
 
     .sections-toggle{
@@ -216,6 +219,7 @@ header {
         }
     }
 }
+
 @media only screen and (max-width : 896px) and (orientation : landscape) { 
     header{
         button,

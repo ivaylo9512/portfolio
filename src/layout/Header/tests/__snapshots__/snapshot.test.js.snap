@@ -13,6 +13,7 @@ exports[`Header snapshot tests should match snapshot with cv secton 1`] = `
           <a
             className="sections-toggle"
             data-testid="sections-toggle"
+            href="/#"
             onClick={[Function]}
           >
             <Rect
@@ -67,6 +68,7 @@ exports[`Header snapshot tests should match snapshot with projects secton 1`] = 
           <a
             className="sections-toggle"
             data-testid="sections-toggle"
+            href="/#"
             onClick={[Function]}
           >
             <Rect

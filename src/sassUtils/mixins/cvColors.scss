@@ -3,8 +3,15 @@
 
 @mixin getStyleColors($style) {
     $map: map.get($cv, $style);
+    $secondary: #{map.get($map, 'secondary')};
 
     --clr-primary: #{map.get($map, 'primary')};
-    --clr-secondary: #{map.get($map, 'secondary')};
+    --clr-secondary: $secondary;
     --clr-accent: #{map.get($map, 'accent')};
+
+    @if map.has-key($map, 'animate') {
+        --clr-animate: #{map.get($map, 'animate')};
+    } @else {
+        --clr-animate: $secondary;
+    }
 }
