@@ -9,7 +9,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Long polling restaurant app with integrated chat"
     key="Restaurant App"
     name="Restaurant App"
-    repo="restaurant-app-with-chat-javaFx-desktop-app-3-designs-client"
+    repo="restaurant-app-with-chat-long-polling-server"
     width={496}
   />
   <Project
@@ -17,7 +17,7 @@ exports[`Projects snapshot tests should match snapshot 1`] = `
     info="Desktop client for restaurant app"
     key="Restaurant Client Desktop"
     name="Restaurant Client Desktop"
-    repo="restaurant-app-with-chat-long-polling-server"
+    repo="restaurant-app-with-chat-javaFx-desktop-app-3-designs-client"
     width={641.5652173913044}
   />
   <Project

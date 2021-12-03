@@ -6,4 +6,126 @@
     .shadow {
         filter: url(#profile-shadow);
     }
+
+    .lines rect,
+    .squares rect,
+    .circles circle{
+        transform-box: fill-box;
+    }
+
+    .circles circle{
+        transform-origin: center;
+    }
+
+    &:hover{
+        .lines rect{
+            width: 0;
+        }
+
+        .squares rect{
+            transform: scale(0);
+        }
+
+        .circles circle{
+            transform: scale(0);
+        }
+
+        .lines rect:nth-child(1){
+            animation: ProfileWidthTransition 3s 0.5s infinite;
+        }
+
+        .lines rect:nth-child(2){
+            animation: ProfileWidthTransitionFading 3s 1s infinite;
+        }
+
+        .lines rect:nth-child(3){
+            animation: ProfileWidthTransitionSecond 3s 1.5s infinite;
+        }
+
+        .squares rect:nth-child(1){
+            animation: bounceIn 3s 0.5s infinite cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        .squares rect:nth-child(2){
+            animation: bounceInDelayed 3s 1s infinite cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        .circles circle{
+            animation: scaleIn 3s 0.5s infinite cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+    }
+
+    @keyframes ProfileWidthTransition {
+        0%{
+            width: 0;
+        }
+        50%, 83.38%{
+            width: 36px;
+        }
+        83.39%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes ProfileWidthTransitionFading {
+        0%{
+            width: 0;
+        }
+        50%, 66.66%{
+            width: 36px;
+        }
+        66.67%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes ProfileWidthTransitionSecond {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 36px;
+        }
+        50.01%, 100%{
+            width: 0;
+        }
+    }
+
+    @keyframes bounceIn {
+        0%{
+            transform: scale(0.65) rotate(15deg);
+        }
+        50%, 80%{
+            transform: scale(1) rotate(0deg);
+        }
+        100%{
+            transform: scale(0.65) rotate(15deg);
+        }
+    }
+
+    @keyframes bounceInDelayed {
+        0%{
+            transform: scale(0.65) rotate(15deg);
+
+        }
+        50%, 66.66%{
+            transform: scale(1) rotate(0deg);
+        }
+        100%{
+            transform: scale(0.65) rotate(15deg);
+
+        }
+    }
+
+    @keyframes scaleIn {
+        0%{
+            transform: scale(0.6);
+        }
+        50%, 80%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0.6);
+        }
+    }
 }

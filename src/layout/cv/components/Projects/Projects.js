@@ -15,13 +15,13 @@ export default Projects
 
 const projectsInfo = [
     { 
-        repo: 'restaurant-app-with-chat-javaFx-desktop-app-3-designs-client', 
+        repo: 'restaurant-app-with-chat-long-polling-server', 
         info: 'Long polling restaurant app with integrated chat',
         name: 'Restaurant App',
         ratio: 1
     },
     { 
-        repo: 'restaurant-app-with-chat-long-polling-server', 
+        repo: 'restaurant-app-with-chat-javaFx-desktop-app-3-designs-client', 
         info: 'Desktop client for restaurant app',
         name: 'Restaurant Client Desktop',
         ratio: 59.5 / 46
