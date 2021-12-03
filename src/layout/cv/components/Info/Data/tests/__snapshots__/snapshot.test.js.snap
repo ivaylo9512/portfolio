@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data snapshot tests should match snapshot 1`] = `
+<div
+  className="data"
+>
+  <div
+    className="name"
+  >
+    <User />
+    <InfoName />
+  </div>
+  <div>
+    <Brush />
+    Sofia
+  </div>
+  <div>
+    <TabLink
+      href="https://github.com/ivaylo9512"
+      shouldMatch={true}
+    >
+      Github
+    </TabLink>
+    <ProfileGit />
+  </div>
+  <div>
+    <Age />
+    26
+  </div>
+  <div
+    className="phone"
+  >
+    0886892842
+    <Phone />
+  </div>
+</div>
+`;
