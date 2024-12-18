@@ -24,7 +24,6 @@ import Rest from '@svgIcons/Rest';
 import Sql from '@svgIcons/Sql';
 
 const Technologies = () => {
-    
     const getIcons = () => [ 
         <ReactSvg/>, <Spring/>, <Aws/>, <Jenkins/>, 
         <Redux/>, <Angular/>, <Ws/>, <Jwt/>, 
@@ -32,7 +31,7 @@ const Technologies = () => {
     ].map(i => <Technology key={i.type.name} icon={i} />)
             
     return(
-        <List className='technologies' data-style='first-style' name={<TechnologiesSvg />}>
+        <List className='technologies' data-style='first-style' ribon={<span>Technologies</span>}>
             {getIcons()}
             <div className='names'>
                 <div><Orm /></div>
