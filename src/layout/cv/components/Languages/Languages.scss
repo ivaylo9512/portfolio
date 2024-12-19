@@ -1,14 +1,21 @@
 .list.languages {
+    .title{
+        color: white;
+    }
+    
     > div:not(:first-child) .ribon{
         fill: white;
     }
 
     > div:not(:first-child) .name{
         fill: black;
-        height: 35%;
+        height: 17%;
     }
 
     > div:first-child .name{
+        fill: white;
+    }
+    > div:first-child .list-svg{
         fill: white;
     }
 
@@ -16,12 +23,21 @@
         align-items: center;
         justify-content: flex-end;
         padding-right: 6%;
-        width: 56%;
+        width: 37%;
         margin-left: auto;
     }
 
     .javascript{
         width: 39%;
     
+    }
+    @media only screen and (min-width: 700px) and (orientation:landscape){
+        > div:not(:first-child) .name{
+            fill: black;
+            height: 35%;
+        }
+        .dots{
+            width: 56%;
+        }
     }
 }
