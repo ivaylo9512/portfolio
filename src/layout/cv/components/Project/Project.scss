@@ -3,32 +3,73 @@
     margin: 4% 0;
     width: 75%;
     color: #312929;
-    font-family: Myriad Pro Regular;
+    font-family: "Myriad Pro Regular";
+    margin: 2.5% 0;
+    padding-bottom: 30%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: padding 2s, transform 0s;
+    background: hsl(0, 13%, 97%);
+    overflow: hidden;
 
+    &:hover{
+        transform: scale(1.02);
+    }
+
+    .content{
+        a,
+        .github-container,
+        .info{
+            opacity: 1;
+            transition: opacity 1s, margin 1s;
+        }
+    }
+
+    &.hidden{
+        .content{
+            .info{
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .github-container{
+                margin-top: 2%;
+            }
+
+        }
+    }
     .content{
         position: absolute;
         height: 100%;
         width: 100%;
-        padding: 2% 0 5% 4%;
+        padding: 2% 0 5% 2%;
         box-sizing: border-box;
-        justify-content: space-between;
         display: flex;
         flex-direction: column;
-        font-weight: bold;
+        fill: #353232;
+        stroke: #353232;
+        color: #423f3f;
 
         svg{
             margin-right: 2%;
+            color: #353232;
         }
 
         .name{
+            display: flex;
+            align-items: center;
             margin: 0;
-            font-size: 5.2vw;
+            font-size: 4.2vw;
+            text-shadow: 0 0 1px;
+            font-weight: bold;
+            color: #1e1e1e;
         }
 
         a{
-            font-size: 4.1vw;
+            font-size: 2.1vw;
             text-decoration: underline;
-            color: #312929;
+            color: #353232;
+            text-shadow: 0 0 1px;
 
             &:hover,
             &:focus{
@@ -40,24 +81,23 @@
 
         .github-container{
             display: flex;
-            align-items: center;
-            height: 25%;
+            margin-top: 6%;
 
             svg{
-                height: 50%;
+                height: 0.9vw;
                 margin-right: 2%;
             }
         }
 
         .info{
             display: flex;
-            align-items: center;
-            height: 31%;
-            width: 80%;
-            font-size: 3.9vw;
+            align-items: flex-start;
+            font-size: 1.9vw;
+            margin-top: 2%;
+            text-shadow: 0 0 1px;
 
-            .circle{
-                height: 36%;
+            svg{
+                height: 0.9vw;
             }
         }
     }
@@ -79,25 +119,25 @@
         fill: white;
     
         rect{
-            filter: url(#project-shadow);
+            filter: url(#shape-shadow);
         }
     }
 
     @media only screen and (min-width : 700px) and (orientation : landscape) {
-        width: 46%;
+        width: 51%;
         margin: 2.5% 0;
 
         .content{
             .name{
-                font-size: 1.2vw;
-            }
-
-            a{
                 font-size: 1.1vw;
             }
 
+            a{
+                font-size: 0.85vw;
+            }
+
             .info{
-                font-size: 0.9vw;
+                font-size: 0.85vw;
             }
         }
     }
