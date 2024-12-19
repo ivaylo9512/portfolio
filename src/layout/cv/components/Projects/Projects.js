@@ -5,7 +5,7 @@ const Projects = () => {
     return(
         <div className='projects'>
             {projectsInfo.map(p => 
-                <Project key={p.name} height={310} width={310 * 1.6 * p.ratio} name={p.name} repo={p.repo} info={p.info} />)
+                <Project key={p.name} height={310} toggleHeight={105} width={310 * 1.6 * p.ratio} name={p.name} repo={p.repo} info={p.info} />)
             }
         </div>
     )
@@ -16,31 +16,31 @@ export default Projects
 const projectsInfo = [
     { 
         repo: 'restaurant-app-with-chat-long-polling-server', 
-        info: 'Long polling restaurant app with integrated chat',
+        info: ['Long polling restaurant app','with integrated chat for client desktop app created with JavaFx.', 'The project is run on Java and Spring Mvc. Tests are both unit and integration with Junit'],
         name: 'Restaurant App',
         ratio: 1
     },
     { 
         repo: 'restaurant-app-with-chat-javaFx-desktop-app-3-designs-client', 
-        info: 'Desktop client for restaurant app',
+        info: ['Desktop client for restaurant app'],
         name: 'Restaurant Client Desktop',
         ratio: 59.5 / 46
     },
     { 
         repo: 'chat-application-web-sockets-server', 
-        info: 'Chat app with websockets and spring',
+        info: ['Chat app with websockets and spring'],
         name: 'Chat App',
         ratio: 1
     },
     { 
         repo: 'chat-application-client-react', 
-        info: 'Chat app web application with React',
+        info: ['Chat app web application with React'],
         name: 'Chat App Web',
         ratio: 1
     },
     { 
         repo: 'tasks-app-client-next', 
-        info: 'Task app with graphql and react',
+        info: ['Task app with graphql and react'],
         name: 'Task App',
         ratio: 1
     }
