@@ -13,7 +13,7 @@ const Data = () => {
                 <Name />
             </div>
             <div className="info">
-                <div className='location'>
+                <div className='locationn'>
                     <div className='icon'>
                         <FontAwesomeIcon icon={faLocationDot} />
                     </div>
