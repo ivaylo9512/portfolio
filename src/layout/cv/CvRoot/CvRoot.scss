@@ -6,10 +6,9 @@ $ratio: var(--ratio);
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     position: relative;
     z-index: 3;
-    background: white;
+    background: hsl(0 9% 98% / 1);
     width: 50%;
     box-sizing: border-box;
-    height: 100vh;
 
     svg{
         *{
@@ -31,7 +30,26 @@ $ratio: var(--ratio);
         margin: auto;
         position: relative;
         flex-direction: column;
-        transform: scale(calc($ratio / 5.47));
+        transform: scale(1);
+
+        &.animate{
+            transform: scale(calc(100% * $ratio));
+        
+            .mid-logo circle,
+            .technologies .names svg,
+            .projects > :last-child .circle circle,
+            .background .circle circle,
+            .jenkins .circle{
+                fill:black;
+                stroke: black;
+            }
+            .jenkins .towel{
+                fill: white;
+            }
+        }
+        &.animated{
+            transition: transform 7s;
+        }
     }
 
     .panels{
@@ -45,7 +63,6 @@ $ratio: var(--ratio);
     @media only screen and (min-width: 700px) and (orientation: landscape) {
         .translate-wrapper{
             padding-bottom: 4%;    
-            transform: scale(calc($ratio / 0.85));
             width: 60%;
         }
 
@@ -56,28 +73,13 @@ $ratio: var(--ratio);
 
     @media only screen and (min-width : 896px) and (max-width: 1100px){
         .translate-wrapper{
-            transform: scale(calc($ratio / 1.2));
             width: 86%;
-        }
-    }
-
-    @media only screen and (min-width : 896px) and (max-width: 1100px) and (orientation: portrait){
-        .translate-wrapper{
-            transform: scale(calc($ratio / 4.8));
         }
     }
 
     @media only screen and (min-width: 700px) and (max-width : 896px) and (orientation : landscape) { 
         .translate-wrapper{
-            transform: scale(calc($ratio / 1.35));
             width: 95%;
-        }
-    }
-
-    &.animate{
-        .translate-wrapper{
-            transition: transform 12s;
-            transform: scale(1);
         }
     }
 
