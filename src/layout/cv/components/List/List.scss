@@ -1,23 +1,49 @@
 .list{
     font-size: 1.5vw;
     width: 70%;
-    margin-bottom: 5%;
+    width: 105%;
+    margin-bottom: 0.4vw;
 
     > div:first-child{
         fill: var(--clr-primary);
+        width: 90%;
+        margin-top: 0;
+        margin-left: 5%;
     }
-    
+    > div:first-child:hover{
+        transform: scale(1.05);
+    }
     > div:not(:first-child){
-        text-transform: uppercase;
+        margin-top: 1.2%;
+        fill: white;
+    }
+
+    .overflow > div{
         margin-top: 3.2%;
         fill: white;
     }
     
     > :first-child .name{
-        height: 50%;
+        height: 26%;
+    }
+
+    span{
+        text-shadow: 0 0 1px;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: 'Myriad Pro Regular';
+    }
+
+    .overflow{
+        overflow: hidden;
+        padding: 1% 5%;
+        transition: all 2s;
     }
 
     @media only screen and (min-width: 700px) and (orientation: landscape) {
+        > :first-child .name{
+            height: 46%;
+        }
         width: 100%;
     }
 }
@@ -30,8 +56,12 @@
 }
 
 .list-svg{
-    height: 50%;
+    height: 29%;
     fill: black;
     margin-left: auto;
     margin-right: 6%;
+
+    @media only screen and (min-width:700px) and (orientation:landscape){
+        height: 38%;
+    }
 }
