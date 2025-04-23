@@ -1,10 +1,11 @@
 .cources{
     > :first-child .name{
         fill: white;
-
         margin-right: auto;
     }
-
+    .work{
+        color: white;
+    }
     .name{
         height: 35%;
         margin-right: auto;
@@ -48,12 +49,21 @@
         padding-right: 5%;
 
         .rect{
-            height: 8%;
+            height: 4%;
             fill: black;
-    
+            padding: 0.1vw;
             rect{
                 filter: none;
             }
+        }
+        
+        @media only screen and (min-width: 700px) and (orientation: landscape){
+            .rect{
+                height: 8%;
+            }
+        }
+        span:first-child{
+            margin-right: auto;
         }
 
         > :last-child {

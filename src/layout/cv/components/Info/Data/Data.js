@@ -1,10 +1,9 @@
-import Phone from '@svgIcons/Phone';
 import TabLink from '@cv/components/TabLink/TabLink';
-import ProfileGit from '@svgIcons/ProfileGit';
-import Brush from '@svgIcons/Brush';
-import Age from '@svgIcons/Age';
 import User from '@svgIcons/User';
 import Name from '@svgIcons/Name';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faCalendarDays, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Data = () => {
     return(
@@ -13,23 +12,33 @@ const Data = () => {
                 <User />
                 <Name />
             </div>
-            <div>
-                <Brush />
-                Sofia
-            </div>
-            <div>
-                <TabLink shouldMatch={true} href={'https://github.com/ivaylo9512'}>
-                    Github
-                </TabLink>
-                <ProfileGit />
-            </div>
-            <div>
-                <Age />
-                26
-            </div>
-            <div className="phone">
-                0886892842
-                <Phone />
+            <div className="info">
+                <div className='location'>
+                    <div className='icon'>
+                        <FontAwesomeIcon icon={faLocationDot} />
+                    </div>
+                    Sofia
+                </div>
+                <div>
+                    <div className='icon'>
+                    <FontAwesomeIcon icon={faGithub} />
+                    </div>
+                    <TabLink shouldMatch={true} href={'https://github.com/ivaylo9512'}>
+                        Github
+                    </TabLink>
+                </div>
+                <div>
+                    <div className='icon'>
+                        <FontAwesomeIcon icon={faCalendarDays} />
+                    </div>
+                    27
+                </div>
+                <div className="phone">
+                    <div className='icon'>
+                        <FontAwesomeIcon icon={faPhone} />
+                    </div>
+                    <span>+359882603703</span>
+                </div>
             </div>
         </div>     
     )

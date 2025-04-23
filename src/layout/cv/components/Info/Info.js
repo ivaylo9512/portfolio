@@ -5,8 +5,8 @@ import ProfileImage from './ProfileImage/ProfileImage';
 const Info = () => {
     return(
         <div className='profile-info'>
-            <ProfileImage />
             <Data />
+            <ProfileImage />
         </div>
     )
 }

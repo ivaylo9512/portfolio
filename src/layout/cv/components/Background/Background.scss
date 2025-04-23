@@ -20,7 +20,8 @@
         width: 60%;
         left: -15%;
         top: 21%;
-
+        filter: url(#name-shadow);
+        
         circle{
             fill: var(--clr-animate);
             filter: url(#background-circle-shadow);
@@ -73,7 +74,7 @@
             width: 20%;
             padding-bottom: 20%;
             top: 46.5%;
-            left: 111.5%;
+            left: 114.5%;
     
             div{
                 width: 43%;
@@ -106,7 +107,7 @@
     }
 
     .react-big{
-        top: 70%;
+        top: 77%;
         left: 71%;
         width: 7%;
 
