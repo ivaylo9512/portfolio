@@ -1,11 +1,11 @@
 import Rect from '@svgIcons/Rect';
 import './Ribon.scss';
 
-const Ribon = ({ name, children }) => {
+const Ribon = ({ name, ribon, children }) => {
     return(
         <div className='ribon'>
             <div className='content'>
-                {name}
+                {ribon ? ribon : name ? <span>{name}</span> : ""}
                 {children}
             </div>
             <Rect height='85' width={564}/>

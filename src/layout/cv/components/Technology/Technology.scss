@@ -4,8 +4,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
-    width: 21%;
-    opacity: 0.8;
+    width: 15%;
     
     svg.circle {
         width: 100%;
@@ -52,7 +51,8 @@
         fill: white;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 700px) and (orientation:landscape){
+        width: 21%;
         opacity: 1;
     }
 }

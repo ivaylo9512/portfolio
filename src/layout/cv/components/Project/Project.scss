@@ -3,14 +3,13 @@
     margin: 4% 0;
     width: 75%;
     color: #312929;
-    font-family: "Myriad Pro Regular";
+    font-family: Myriad Pro Regular;
     margin: 2.5% 0;
     padding-bottom: 30%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transition: padding 2s, transform 0s;
     background: hsl(0, 13%, 97%);
-    overflow: hidden;
 
     &:hover{
         transform: scale(1.02);
@@ -21,55 +20,44 @@
         .github-container,
         .info{
             opacity: 1;
-            transition: opacity 1s, margin 1s;
+            transition: opacity 1s;
         }
     }
 
     &.hidden{
         .content{
+            a,
+            .github-container,
             .info{
                 opacity: 0;
                 pointer-events: none;
             }
-
-            .github-container{
-                margin-top: 2%;
-            }
-
         }
     }
     .content{
         position: absolute;
         height: 100%;
         width: 100%;
-        padding: 2% 0 5% 2%;
+        padding: 2% 0 5% 4%;
         box-sizing: border-box;
+        justify-content: space-between;
         display: flex;
         flex-direction: column;
-        fill: #353232;
-        stroke: #353232;
-        color: #423f3f;
+        font-weight: bold;
 
         svg{
             margin-right: 2%;
-            color: #353232;
         }
 
         .name{
-            display: flex;
-            align-items: center;
             margin: 0;
             font-size: 4.2vw;
-            text-shadow: 0 0 1px;
-            font-weight: bold;
-            color: #1e1e1e;
         }
 
         a{
             font-size: 2.1vw;
             text-decoration: underline;
-            color: #353232;
-            text-shadow: 0 0 1px;
+            color: #312929;
 
             &:hover,
             &:focus{
@@ -81,24 +69,26 @@
 
         .github-container{
             display: flex;
-            margin-top: 6%;
+            align-items: center;
+            height: 25%;
 
             svg{
-                height: 0.9vw;
+                height: 50%;
                 margin-right: 2%;
             }
         }
 
         .info{
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            height: 31%;
+            width: 80%;
             font-size: 1.9vw;
-            margin-top: 2%;
-            text-shadow: 0 0 1px;
 
-            svg{
-                height: 0.9vw;
-            }
+            .circle{
+                height: 36%;
+                filter: url(#shape-shadow);
+           }
         }
     }
 
@@ -133,11 +123,11 @@
             }
 
             a{
-                font-size: 0.85vw;
+                font-size: 0.9vw;
             }
 
             .info{
-                font-size: 0.85vw;
+                font-size: 0.8vw;
             }
         }
     }
