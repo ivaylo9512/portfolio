@@ -21,7 +21,10 @@ header {
         position: relative;
         align-items: center;
         justify-content: center;
-
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: "Myriad Pro Regular";
+        
         span{
             color: white;
             border-radius: 1vw;
@@ -224,7 +227,7 @@ header {
     header{
         button,
         a{
-            height: 10vh;
+            height: 7vh;
         }
     }
 
